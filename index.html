@@ -281,6 +281,7 @@
     .servicios {
       position: relative;
       overflow: hidden;
+
       background:
         linear-gradient(
           180deg,
@@ -288,6 +289,7 @@
           #06162b 45%,
           #071a30 100%
         );
+
       padding: 100px 7% 110px;
     }
 
@@ -309,26 +311,34 @@
 
       background-size: cover;
       background-position: center right;
+
       opacity: 0.42;
+
       pointer-events: none;
     }
 
     .servicios::after {
       content: "";
       position: absolute;
+
       left: 0;
       right: 0;
       top: 50%;
+
       height: 1px;
-      background: linear-gradient(
-        90deg,
-        rgba(86, 215, 213, 0) 0%,
-        rgba(86, 215, 213, 0.12) 18%,
-        rgba(86, 215, 213, 0.42) 50%,
-        rgba(86, 215, 213, 0.12) 82%,
-        rgba(86, 215, 213, 0) 100%
-      );
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(86, 215, 213, 0) 0%,
+          rgba(86, 215, 213, 0.12) 18%,
+          rgba(86, 215, 213, 0.42) 50%,
+          rgba(86, 215, 213, 0.12) 82%,
+          rgba(86, 215, 213, 0) 100%
+        );
+
       transform: translateY(-50%);
+
       pointer-events: none;
     }
 
@@ -340,15 +350,12 @@
       margin: 0 auto;
     }
 
-    .servicios .section-label {
-      color: #56d7d5;
-      margin-bottom: 14px;
-    }
-
     .servicios h2 {
       color: #ffffff;
+
       font-size: clamp(40px, 4.3vw, 58px);
       line-height: 1.08;
+
       margin-bottom: 42px;
     }
 
@@ -365,6 +372,7 @@
       grid-column: span 2;
 
       min-height: 220px;
+
       padding: 28px 28px 26px;
 
       background:
@@ -395,28 +403,43 @@
 
     .servicio-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(86, 215, 213, 0.56);
+
+      border-color:
+        rgba(86, 215, 213, 0.56);
+
       box-shadow:
-        0 18px 38px rgba(0, 0, 0, 0.22);
+        0 18px 38px
+        rgba(0, 0, 0, 0.22);
     }
 
     .servicio-card::after {
       content: "";
+
       position: absolute;
+
       width: 100px;
       height: 100px;
-      border: 1px solid rgba(86, 215, 213, 0.08);
+
+      border:
+        1px solid
+        rgba(86, 215, 213, 0.08);
+
       border-radius: 50%;
+
       right: -42px;
       bottom: -42px;
     }
 
     .servicio-numero {
       display: block;
+
       color: #56d7d5;
+
       font-size: 13px;
       font-weight: 700;
+
       letter-spacing: 2px;
+
       margin-bottom: 18px;
     }
 
@@ -429,8 +452,10 @@
       z-index: 2;
 
       color: #ffffff;
+
       font-size: 20px;
       line-height: 1.25;
+
       margin-bottom: 14px;
     }
 
@@ -439,6 +464,7 @@
       z-index: 2;
 
       color: #c5d8df;
+
       font-size: 15px;
       line-height: 1.68;
     }
@@ -478,7 +504,8 @@
       }
 
       .servicios-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
 
       .servicio-card,
@@ -489,8 +516,12 @@
 
       .servicio-card:last-child {
         grid-column: 1 / -1;
-        max-width: calc(50% - 11px);
+
+        max-width:
+          calc(50% - 11px);
+
         width: 100%;
+
         justify-self: center;
       }
 
@@ -523,9 +554,13 @@
 
       .navbar nav {
         width: 100%;
+
         justify-content: flex-start;
+
         gap: 18px;
+
         overflow-x: auto;
+
         padding-bottom: 5px;
       }
 
@@ -533,9 +568,14 @@
         font-size: 12px;
       }
 
+
+      /* HERO */
+
       .hero {
         padding: 180px 6% 60px;
-        background-position: 65% center;
+
+        background-position:
+          65% center;
       }
 
       .nombre {
@@ -544,12 +584,16 @@
       }
 
       h1 {
-        font-size: clamp(42px, 12vw, 56px);
+        font-size:
+          clamp(42px, 12vw, 56px);
       }
 
       .frase {
         font-size: 18px;
       }
+
+
+      /* SOBRE MÍ */
 
       .sobre-mi {
         padding: 70px 6%;
@@ -573,6 +617,9 @@
         line-height: 1.7;
       }
 
+
+      /* SERVICIOS */
+
       .servicios {
         padding: 75px 6% 85px;
       }
@@ -591,8 +638,10 @@
       .servicio-card:nth-child(5),
       .servicio-card:last-child {
         grid-column: auto;
+
         max-width: none;
         width: 100%;
+
         min-height: auto;
       }
 
@@ -628,13 +677,35 @@
       >
 
       <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#formacion">Formación</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#contacto">Contacto</a>
+
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#servicios">
+          Servicios
+        </a>
+
+        <a href="#experiencia">
+          Experiencia
+        </a>
+
+        <a href="#formacion">
+          Formación
+        </a>
+
+        <a href="#proyectos">
+          Proyectos
+        </a>
+
+        <a href="#newsletter">
+          Newsletter
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
       </nav>
 
     </div>
@@ -703,10 +774,12 @@
     <div class="sobre-mi-inner">
 
       <div class="sobre-mi-foto">
+
         <img
           src="renato-perfil.jpg"
           alt="Renato Chumbiauca Rebagliati"
         >
+
       </div>
 
       <div class="sobre-mi-texto">
@@ -764,66 +837,119 @@
 
     <div class="servicios-inner">
 
-      <div class="section-label">
-        Servicios
-      </div>
-
       <h2>
         Servicios
       </h2>
 
+
       <div class="servicios-grid">
 
+
+        <!-- 01 -->
+
         <article class="servicio-card">
-          <span class="servicio-numero">01</span>
-          <h3>Branding & Rebranding</h3>
+
+          <span class="servicio-numero">
+            01
+          </span>
+
+          <h3>
+            Branding & Rebranding
+          </h3>
+
           <p>
             Naming, posicionamiento, identidad visual
             y definición de marca para lanzamientos
             o relanzamientos.
           </p>
+
         </article>
 
+
+        <!-- 02 -->
+
         <article class="servicio-card">
-          <span class="servicio-numero">02</span>
-          <h3>Marketing Digital & Contenidos</h3>
+
+          <span class="servicio-numero">
+            02
+          </span>
+
+          <h3>
+            Marketing Digital & Contenidos
+          </h3>
+
           <p>
             Estrategia digital, mensajes clave, copys,
             contenidos y piezas para construir una
             presencia coherente y diferenciada.
           </p>
+
         </article>
 
+
+        <!-- 03 -->
+
         <article class="servicio-card">
-          <span class="servicio-numero">03</span>
-          <h3>Contenido Audiovisual</h3>
+
+          <span class="servicio-numero">
+            03
+          </span>
+
+          <h3>
+            Contenido Audiovisual
+          </h3>
+
           <p>
             Conceptos, guiones, reels y videos pensados
             para captar atención y comunicar con impacto
             en redes.
           </p>
+
         </article>
 
+
+        <!-- 04 -->
+
         <article class="servicio-card">
-          <span class="servicio-numero">04</span>
-          <h3>Prensa & Vocería</h3>
+
+          <span class="servicio-numero">
+            04
+          </span>
+
+          <h3>
+            Prensa & Vocería
+          </h3>
+
           <p>
             Notas de prensa, media training,
             preparación de voceros y mensajes
             para comunicar con claridad frente
             a medios y públicos.
           </p>
+
         </article>
 
+
+        <!-- 05 -->
+
         <article class="servicio-card">
-          <span class="servicio-numero">05</span>
-          <h3>Web & Experiencia Digital</h3>
+
+          <span class="servicio-numero">
+            05
+          </span>
+
+          <h3>
+            Web & Experiencia Digital
+          </h3>
+
           <p>
             Conceptualización de páginas web y landing
             pages, arquitectura de contenidos, mensajes,
             estructura y experiencia de navegación.
           </p>
+
         </article>
+
 
       </div>
 
