@@ -9,6 +9,10 @@
 
   <style>
 
+    /* ========================================
+       CONFIGURACIÓN GENERAL
+    ======================================== */
+
     * {
       margin: 0;
       padding: 0;
@@ -25,9 +29,10 @@
       color: white;
     }
 
-    /* =========================
+
+    /* ========================================
        CABECERA
-    ========================== */
+    ======================================== */
 
     .navbar {
       position: absolute;
@@ -46,13 +51,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 40px;
     }
 
     .logo {
       width: auto;
       height: 60px;
+
+      display: block;
       object-fit: contain;
+
       flex-shrink: 0;
     }
 
@@ -60,15 +69,20 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
       gap: 26px;
     }
 
     .navbar nav a {
-      color: white;
+      color: #ffffff;
+
       text-decoration: none;
+
       font-size: 14px;
       font-weight: 500;
+
       white-space: nowrap;
+
       transition: color 0.25s ease;
     }
 
@@ -76,9 +90,10 @@
       color: #56d7d5;
     }
 
-    /* =========================
+
+    /* ========================================
        HERO
-    ========================== */
+    ======================================== */
 
     .hero {
       min-height: 100vh;
@@ -109,17 +124,23 @@
 
     .nombre {
       color: #56d7d5;
+
       font-size: 17px;
       font-weight: 500;
+
       letter-spacing: 3px;
       text-transform: uppercase;
+
       margin-bottom: 22px;
     }
 
     h1 {
+      max-width: 780px;
+
       font-size: clamp(48px, 5.6vw, 78px);
       line-height: 1.04;
       letter-spacing: -1px;
+
       margin-bottom: 28px;
     }
 
@@ -129,15 +150,19 @@
 
     .frase {
       max-width: 660px;
+
       color: #d9eef2;
+
       font-size: 21px;
       line-height: 1.65;
+
       margin-bottom: 36px;
     }
 
-    /* =========================
+
+    /* ========================================
        BOTONES
-    ========================== */
+    ======================================== */
 
     .botones {
       display: flex;
@@ -147,27 +172,39 @@
 
     .boton {
       display: inline-block;
+
       padding: 15px 25px;
+
       border-radius: 6px;
+
       font-size: 15px;
       font-weight: 700;
+
       text-decoration: none;
-      transition: 0.25s ease;
+
+      transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
     }
 
     .boton-principal {
       background: #56d7d5;
       color: #06162b;
+
       border: 1px solid #56d7d5;
     }
 
     .boton-principal:hover {
-      background: white;
-      border-color: white;
+      background: #ffffff;
+      border-color: #ffffff;
     }
 
     .boton-secundario {
+      background: transparent;
+
       border: 1px solid #56d7d5;
+
       color: #56d7d5;
     }
 
@@ -176,14 +213,16 @@
       color: #06162b;
     }
 
-    /* =========================
+
+    /* ========================================
        SOBRE MÍ
-    ========================== */
+    ======================================== */
 
     .sobre-mi {
       background: #f4f8fa;
       color: #10253a;
-      padding: 110px 7%;
+
+      padding: 95px 7%;
     }
 
     .sobre-mi-inner {
@@ -191,33 +230,34 @@
       margin: 0 auto;
 
       display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 80px;
+
+      grid-template-columns: 0.78fr 1.22fr;
+
+      gap: 75px;
+
       align-items: center;
     }
+
+
+    /* FOTO */
 
     .sobre-mi-foto {
       position: relative;
     }
 
-    .sobre-mi-foto img {
-      width: 100%;
-      display: block;
-      border-radius: 18px;
-      object-fit: cover;
-      box-shadow: 0 24px 60px rgba(16, 37, 58, 0.16);
-    }
-
     .sobre-mi-foto::before {
       content: "";
+
       position: absolute;
+
       width: 65%;
       height: 65%;
-      border: 2px solid #56d7d5;
-      border-radius: 18px;
 
       left: -18px;
       bottom: -18px;
+
+      border: 2px solid #56d7d5;
+      border-radius: 18px;
 
       z-index: 0;
     }
@@ -225,28 +265,50 @@
     .sobre-mi-foto img {
       position: relative;
       z-index: 1;
+
+      width: 100%;
+
+      display: block;
+
+      border-radius: 18px;
+
+      object-fit: cover;
+
+      box-shadow:
+        0 24px 60px
+        rgba(16, 37, 58, 0.16);
     }
+
+
+    /* TEXTO */
 
     .section-label {
       color: #2baeb0;
+
       font-size: 14px;
       font-weight: 700;
+
       letter-spacing: 3px;
       text-transform: uppercase;
-      margin-bottom: 18px;
+
+      margin-bottom: 16px;
     }
 
     .sobre-mi h2 {
-      font-size: clamp(40px, 4vw, 58px);
-      line-height: 1.1;
-      margin-bottom: 30px;
       color: #10253a;
+
+      font-size: clamp(34px, 3.2vw, 46px);
+      line-height: 1.12;
+
+      margin-bottom: 28px;
     }
 
     .sobre-mi p {
-      font-size: 18px;
-      line-height: 1.8;
       color: #435568;
+
+      font-size: 17px;
+      line-height: 1.75;
+
       margin-bottom: 20px;
     }
 
@@ -254,13 +316,10 @@
       color: #10253a;
     }
 
-    .sobre-mi-acento {
-      color: #ff7b72;
-    }
 
-    /* =========================
-       RESPONSIVE
-    ========================== */
+    /* ========================================
+       TABLET
+    ======================================== */
 
     @media (max-width: 1100px) {
 
@@ -289,7 +348,13 @@
       .sobre-mi-inner {
         gap: 50px;
       }
+
     }
+
+
+    /* ========================================
+       CELULAR
+    ======================================== */
 
     @media (max-width: 760px) {
 
@@ -300,6 +365,7 @@
       .navbar-inner {
         flex-direction: column;
         align-items: flex-start;
+
         gap: 16px;
       }
 
@@ -309,9 +375,13 @@
 
       .navbar nav {
         width: 100%;
+
         justify-content: flex-start;
+
         gap: 18px;
+
         overflow-x: auto;
+
         padding-bottom: 5px;
       }
 
@@ -319,8 +389,12 @@
         font-size: 12px;
       }
 
+
+      /* HERO CELULAR */
+
       .hero {
         padding: 180px 6% 60px;
+
         background-position: 65% center;
       }
 
@@ -337,30 +411,44 @@
         font-size: 18px;
       }
 
+
+      /* SOBRE MÍ CELULAR */
+
       .sobre-mi {
-        padding: 75px 6%;
+        padding: 70px 6%;
       }
 
       .sobre-mi-inner {
         grid-template-columns: 1fr;
-        gap: 50px;
+
+        gap: 45px;
       }
 
       .sobre-mi-foto {
-        max-width: 480px;
+        max-width: 470px;
+      }
+
+      .sobre-mi h2 {
+        font-size: 34px;
       }
 
       .sobre-mi p {
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 1.7;
       }
+
     }
 
   </style>
 </head>
 
+
 <body>
 
-  <!-- CABECERA -->
+
+  <!-- ========================================
+       CABECERA
+  ======================================== -->
 
   <header class="navbar">
 
@@ -373,20 +461,45 @@
       >
 
       <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#formacion">Formación</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#contacto">Contacto</a>
+
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#servicios">
+          Servicios
+        </a>
+
+        <a href="#experiencia">
+          Experiencia
+        </a>
+
+        <a href="#formacion">
+          Formación
+        </a>
+
+        <a href="#proyectos">
+          Proyectos
+        </a>
+
+        <a href="#newsletter">
+          Newsletter
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
       </nav>
 
     </div>
 
   </header>
 
-  <!-- HERO -->
+
+  <!-- ========================================
+       HERO
+  ======================================== -->
 
   <section class="hero">
 
@@ -399,21 +512,30 @@
       <h1>
         Marketing, comunicación e
         inteligencia
-        <span class="destacado">artificial.</span>
+        <span class="destacado">
+          artificial.
+        </span>
       </h1>
 
       <p class="frase">
-        Conecto estrategia, contenidos, datos y tecnología
-        para construir marcas y experiencias con sentido.
+        Conecto estrategia, contenidos,
+        datos y tecnología para construir
+        marcas y experiencias con sentido.
       </p>
 
       <div class="botones">
 
-        <a href="#experiencia" class="boton boton-principal">
+        <a
+          href="#experiencia"
+          class="boton boton-principal"
+        >
           Conoce mi experiencia
         </a>
 
-        <a href="#newsletter" class="boton boton-secundario">
+        <a
+          href="#newsletter"
+          class="boton boton-secundario"
+        >
           Marketing en SintonIA
         </a>
 
@@ -423,11 +545,20 @@
 
   </section>
 
-  <!-- SOBRE MÍ -->
 
-  <section class="sobre-mi" id="sobre-mi">
+  <!-- ========================================
+       SOBRE MÍ
+  ======================================== -->
+
+  <section
+    class="sobre-mi"
+    id="sobre-mi"
+  >
 
     <div class="sobre-mi-inner">
+
+
+      <!-- FOTO -->
 
       <div class="sobre-mi-foto">
 
@@ -438,46 +569,44 @@
 
       </div>
 
-      <div>
+
+      <!-- TEXTO -->
+
+      <div class="sobre-mi-texto">
 
         <div class="section-label">
           Sobre mí
         </div>
 
         <h2>
-          Estrategia, comunicación y tecnología
-          con una mirada <span class="sobre-mi-acento">integral.</span>
+          Marketing, Comunicación y Sostenibilidad
         </h2>
 
         <p>
-          <strong>Soy Renato Chumbiauca Rebagliati</strong>,
-          profesional de marketing y comunicación con experiencia
-          en estrategia, branding, reputación, sostenibilidad,
-          contenidos y entornos digitales.
+          <strong>
+            Soy Renato Chumbiauca Rebagliati
+          </strong>,
+          profesional de marketing y comunicación
+          con experiencia en estrategia, branding,
+          reputación, sostenibilidad, contenidos
+          y entornos digitales.
         </p>
 
         <p>
-          A lo largo de mi trayectoria he conectado objetivos de negocio
-          con marketing, comunicación y tecnología, con foco en construir
-          marcas coherentes, fortalecer su reputación y desarrollar
-          estrategias alineadas con las personas, el negocio y su entorno.
+          Me interesa la relación entre estrategia,
+          creatividad, datos e inteligencia artificial,
+          así como las nuevas formas en las cuales
+          las marcas construyen valor, gestionan
+          su reputación y se relacionan con
+          sus audiencias.
         </p>
 
         <p>
-          Me interesa especialmente la relación entre estrategia,
-          creatividad, datos e inteligencia artificial, así como las nuevas
-          formas en las cuales las marcas construyen valor, gestionan su
-          reputación y se relacionan con sus audiencias.
-        </p>
-
-        <p>
-          Hoy pongo esa experiencia al servicio de organizaciones,
-          marcas y profesionales a través de asesoría y proyectos en
-          marketing, comunicación, branding, reputación, sostenibilidad
-          y transformación digital.
-          <strong>Marketing en SintonIA</strong> es también mi espacio
-          para compartir ideas, análisis y aprendizajes sobre los temas
-          con los cuales trabajo.
+          Hoy pongo esa experiencia al servicio
+          de organizaciones, marcas y profesionales
+          a través de asesoría y proyectos en marketing,
+          comunicación, branding, reputación,
+          sostenibilidad y transformación digital.
         </p>
 
       </div>
@@ -485,6 +614,7 @@
     </div>
 
   </section>
+
 
 </body>
 
