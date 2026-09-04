@@ -110,6 +110,7 @@
 
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
 
       display: flex;
       align-items: center;
@@ -512,9 +513,6 @@
       margin: 0 auto;
     }
 
-
-    /* ENCABEZADO EXPERIENCIA */
-
     .experiencia-eyebrow {
       color: #56d7d5;
 
@@ -577,9 +575,6 @@
       padding-bottom: 0;
     }
 
-
-    /* FECHA */
-
     .timeline-periodo {
       padding-top: 31px;
 
@@ -592,9 +587,6 @@
 
       white-space: nowrap;
     }
-
-
-    /* PUNTOS */
 
     .timeline-punto {
       position: absolute;
@@ -685,9 +677,6 @@
         rgba(0, 0, 0, 0.22);
     }
 
-
-    /* LOGOS */
-
     .experiencia-logo {
       width: 100%;
       max-width: 135px;
@@ -699,9 +688,6 @@
 
       display: block;
     }
-
-
-    /* EMPRESA */
 
     .experiencia-empresa {
       color: #39d8dd;
@@ -715,9 +701,6 @@
       margin-bottom: 6px;
     }
 
-
-    /* CARGO */
-
     .experiencia-card h3 {
       color: #ffffff;
 
@@ -726,9 +709,6 @@
 
       margin-bottom: 10px;
     }
-
-
-    /* DESCRIPCIÓN */
 
     .experiencia-card p {
       color: #c8dae2;
@@ -825,6 +805,201 @@
 
 
     /* ========================================
+       FORMACIÓN
+    ======================================== */
+
+    .formacion {
+      background: #f4f8fa;
+      color: #10253a;
+
+      padding: 105px 7% 115px;
+    }
+
+    .formacion-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .formacion-eyebrow {
+      color: #2baeb0;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      margin-bottom: 14px;
+    }
+
+    .formacion h2 {
+      color: #10253a;
+
+      font-size: clamp(42px, 4.4vw, 58px);
+      line-height: 1.06;
+
+      margin-bottom: 16px;
+    }
+
+    .formacion-intro {
+      max-width: 720px;
+
+      color: #607281;
+
+      font-size: 18px;
+      line-height: 1.65;
+
+      margin-bottom: 58px;
+    }
+
+
+    /* ========================================
+       FORMACIÓN - DOS COLUMNAS
+    ======================================== */
+
+    .formacion-layout {
+      display: grid;
+
+      grid-template-columns:
+        0.82fr 1.18fr;
+
+      gap: 80px;
+
+      align-items: start;
+    }
+
+
+    /* ========================================
+       FORMACIÓN - INSTITUCIÓN
+    ======================================== */
+
+    .formacion-institucion {
+      position: sticky;
+      top: 60px;
+
+      padding-right: 20px;
+    }
+
+    .formacion-imagen {
+      width: 100%;
+      max-width: 460px;
+
+      display: block;
+
+      object-fit: contain;
+
+      margin-bottom: 28px;
+    }
+
+    .formacion-institucion h3 {
+      color: #10253a;
+
+      font-size: 21px;
+      line-height: 1.3;
+
+      margin-bottom: 10px;
+    }
+
+    .formacion-institucion p {
+      max-width: 430px;
+
+      color: #657786;
+
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+
+    /* ========================================
+       FORMACIÓN - LÍNEA ACADÉMICA
+    ======================================== */
+
+    .formacion-lista {
+      position: relative;
+
+      padding-left: 46px;
+    }
+
+    .formacion-lista::before {
+      content: "";
+
+      position: absolute;
+
+      left: 10px;
+      top: 8px;
+      bottom: 8px;
+
+      width: 2px;
+
+      background: #39d8dd;
+    }
+
+    .formacion-item {
+      position: relative;
+
+      padding: 0 0 42px 18px;
+    }
+
+    .formacion-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .formacion-punto {
+      position: absolute;
+
+      left: -47px;
+      top: 2px;
+
+      width: 18px;
+      height: 18px;
+
+      background: #f4f8fa;
+
+      border: 4px solid #39d8dd;
+
+      border-radius: 50%;
+
+      box-shadow:
+        0 0 0 4px
+        rgba(57, 216, 221, 0.12);
+    }
+
+    .formacion-periodo {
+      color: #2baeb0;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing: 1.5px;
+
+      margin-bottom: 8px;
+    }
+
+    .formacion-item h3 {
+      color: #10253a;
+
+      font-size: 23px;
+      line-height: 1.25;
+
+      margin-bottom: 10px;
+    }
+
+    .formacion-item p {
+      color: #5c6d7b;
+
+      font-size: 15px;
+      line-height: 1.7;
+
+      max-width: 660px;
+    }
+
+    .formacion-destacado {
+      color: #10253a;
+      font-weight: 700;
+    }
+
+
+    /* ========================================
        TABLET
     ======================================== */
 
@@ -849,7 +1024,8 @@
       .hero,
       .sobre-mi,
       .servicios,
-      .experiencia {
+      .experiencia,
+      .formacion {
         padding-left: 5%;
         padding-right: 5%;
       }
@@ -880,9 +1056,6 @@
         justify-self: center;
       }
 
-
-      /* EXPERIENCIA TABLET */
-
       .timeline::before {
         left: 160px;
       }
@@ -901,6 +1074,10 @@
       .experiencia-card {
         grid-template-columns:
           120px 1fr;
+      }
+
+      .formacion-layout {
+        gap: 50px;
       }
 
     }
@@ -1103,6 +1280,55 @@
 
       .otra-item {
         min-height: 100px;
+      }
+
+
+      /* FORMACIÓN */
+
+      .formacion {
+        padding: 80px 6% 90px;
+      }
+
+      .formacion h2 {
+        font-size: 36px;
+      }
+
+      .formacion-intro {
+        font-size: 16px;
+
+        margin-bottom: 45px;
+      }
+
+      .formacion-layout {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+      }
+
+      .formacion-institucion {
+        position: static;
+
+        padding-right: 0;
+      }
+
+      .formacion-imagen {
+        max-width: 340px;
+      }
+
+      .formacion-lista {
+        padding-left: 38px;
+      }
+
+      .formacion-lista::before {
+        left: 8px;
+      }
+
+      .formacion-punto {
+        left: -39px;
+      }
+
+      .formacion-item h3 {
+        font-size: 20px;
       }
 
     }
@@ -1657,9 +1883,7 @@
       </div>
 
 
-      <!-- ========================================
-           OTRAS EXPERIENCIAS
-      ======================================== -->
+      <!-- OTRAS EXPERIENCIAS -->
 
       <div class="otras-experiencias">
 
@@ -1726,6 +1950,166 @@
 
       </div>
 
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       FORMACIÓN
+  ======================================== -->
+
+  <section
+    class="formacion"
+    id="formacion"
+  >
+
+    <div class="formacion-inner">
+
+      <div class="formacion-eyebrow">
+        Formación
+      </div>
+
+      <h2>
+        Formación académica
+      </h2>
+
+      <p class="formacion-intro">
+        Una trayectoria que conecta comunicación,
+        reputación y negocios digitales.
+      </p>
+
+
+      <div class="formacion-layout">
+
+
+        <!-- INSTITUCIÓN -->
+
+        <div class="formacion-institucion">
+
+          <img
+            src="formacion-usmp.png"
+            alt="Universidad de San Martín de Porres"
+            class="formacion-imagen"
+          >
+
+          <h3>
+            Universidad de San Martín de Porres
+          </h3>
+
+          <p>
+            Formación profesional y de posgrado
+            desarrollada en Ciencias de la Comunicación,
+            Relaciones Públicas, Comunicación Interna
+            y E-Business.
+          </p>
+
+        </div>
+
+
+        <!-- RECORRIDO ACADÉMICO -->
+
+        <div class="formacion-lista">
+
+
+          <!-- MAESTRÍA -->
+
+          <article class="formacion-item">
+
+            <div class="formacion-punto"></div>
+
+            <div class="formacion-periodo">
+              2020 – 2024
+            </div>
+
+            <h3>
+              Maestría en E-Business
+            </h3>
+
+            <p>
+              Formación orientada a negocios digitales,
+              comercio electrónico, estrategia digital
+              y transformación de modelos de negocio.
+            </p>
+
+          </article>
+
+
+          <!-- DIPLOMADO -->
+
+          <article class="formacion-item">
+
+            <div class="formacion-punto"></div>
+
+            <div class="formacion-periodo">
+              2016
+            </div>
+
+            <h3>
+              Diplomado en Comunicación Interna
+            </h3>
+
+            <p>
+              Formación en comunicación organizacional,
+              cultura interna, gestión de mensajes
+              y relación con colaboradores.
+            </p>
+
+          </article>
+
+
+          <!-- LICENCIATURA -->
+
+          <article class="formacion-item">
+
+            <div class="formacion-punto"></div>
+
+            <div class="formacion-periodo">
+              2015
+            </div>
+
+            <h3>
+              Licenciatura en Ciencias de la Comunicación
+            </h3>
+
+            <p>
+              <span class="formacion-destacado">
+                Mención honrosa en Relaciones Públicas.
+              </span>
+
+              Formación orientada a comunicación estratégica,
+              reputación y gestión de públicos.
+            </p>
+
+          </article>
+
+
+          <!-- BACHILLER -->
+
+          <article class="formacion-item">
+
+            <div class="formacion-punto"></div>
+
+            <div class="formacion-periodo">
+              2009
+            </div>
+
+            <h3>
+              Bachiller en Ciencias de la Comunicación
+            </h3>
+
+            <p>
+              Formación con especialización en
+              Publicidad y Relaciones Públicas.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
 
     </div>
 
