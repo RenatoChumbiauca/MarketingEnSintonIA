@@ -9,15 +9,13 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>
-    Renato Chumbiauca Rebagliati | Marketing en SintonIA
-  </title>
+  <title>Renato Chumbiauca Rebagliati | Marketing en SintonIA</title>
 
   <style>
 
-    /* =========================
+    /* ========================================
        CONFIGURACIÓN GENERAL
-    ========================== */
+    ======================================== */
 
     * {
       margin: 0;
@@ -36,45 +34,63 @@
     }
 
 
-    /* =========================
-       MENÚ SUPERIOR
-    ========================== */
+    /* ========================================
+       CABECERA / MENÚ
+    ======================================== */
 
     .navbar {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
+      z-index: 20;
 
-      padding: 22px 8%;
+      padding: 22px 7%;
+    }
+
+    .navbar-inner {
+      width: 100%;
+      max-width: 1500px;
+      margin: 0 auto;
 
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
 
-      z-index: 10;
+      gap: 40px;
     }
 
     .logo {
-      width: 170px;
-      height: auto;
       display: block;
+
+      width: auto;
+      height: 60px;
+
+      object-fit: contain;
+
+      flex-shrink: 0;
     }
 
     .navbar nav {
       display: flex;
       align-items: center;
-      gap: 24px;
+      justify-content: flex-end;
+
+      gap: 26px;
+
+      flex-wrap: nowrap;
     }
 
     .navbar nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
 
       font-size: 14px;
       font-weight: 500;
 
-      transition: color 0.3s ease;
+      white-space: nowrap;
+
+      transition: color 0.25s ease;
     }
 
     .navbar nav a:hover {
@@ -82,9 +98,9 @@
     }
 
 
-    /* =========================
+    /* ========================================
        HERO
-    ========================== */
+    ======================================== */
 
     .hero {
       min-height: 100vh;
@@ -92,41 +108,48 @@
       background:
         linear-gradient(
           90deg,
-          rgba(6, 22, 43, 0.98) 0%,
-          rgba(6, 22, 43, 0.85) 35%,
-          rgba(6, 22, 43, 0.25) 65%,
-          rgba(6, 22, 43, 0.05) 100%
+          rgba(6, 22, 43, 0.99) 0%,
+          rgba(6, 22, 43, 0.93) 28%,
+          rgba(6, 22, 43, 0.68) 48%,
+          rgba(6, 22, 43, 0.18) 72%,
+          rgba(6, 22, 43, 0.02) 100%
         ),
         url('hero-sintonia.png');
 
       background-size: cover;
-      background-position: center;
+      background-position: center center;
 
       display: flex;
       align-items: center;
 
-      padding: 100px 8% 60px;
+      padding: 150px 7% 70px;
     }
 
     .hero-content {
-      max-width: 720px;
+      width: 100%;
+      max-width: 760px;
     }
 
     .nombre {
-      font-size: 18px;
+      color: #56d7d5;
+
+      font-size: 17px;
+      font-weight: 500;
+
       letter-spacing: 3px;
       text-transform: uppercase;
 
-      color: #56d7d5;
-
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     h1 {
-      font-size: clamp(42px, 6vw, 76px);
-      line-height: 1.05;
+      font-size: clamp(48px, 5.6vw, 78px);
+      line-height: 1.04;
+      letter-spacing: -1px;
 
-      margin-bottom: 24px;
+      margin-bottom: 28px;
+
+      max-width: 780px;
     }
 
     .destacado {
@@ -134,51 +157,65 @@
     }
 
     .frase {
-      font-size: 21px;
-      line-height: 1.6;
+      max-width: 660px;
 
       color: #d9eef2;
 
-      max-width: 650px;
+      font-size: 21px;
+      line-height: 1.65;
 
-      margin-bottom: 35px;
+      margin-bottom: 36px;
     }
 
 
-    /* =========================
+    /* ========================================
        BOTONES
-    ========================== */
+    ======================================== */
 
     .botones {
       display: flex;
+      align-items: center;
+
       gap: 16px;
+
       flex-wrap: wrap;
     }
 
     .boton {
       display: inline-block;
 
-      padding: 14px 24px;
+      padding: 15px 25px;
 
-      text-decoration: none;
       border-radius: 6px;
 
-      font-weight: bold;
+      font-size: 15px;
+      font-weight: 700;
 
-      transition: 0.3s ease;
+      text-decoration: none;
+
+      transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
     }
 
     .boton-principal {
       background: #56d7d5;
       color: #06162b;
+
+      border: 1px solid #56d7d5;
     }
 
     .boton-principal:hover {
-      background: white;
+      background: #ffffff;
+      border-color: #ffffff;
     }
 
     .boton-secundario {
+      background: transparent;
+
       border: 1px solid #56d7d5;
+
       color: #56d7d5;
     }
 
@@ -188,54 +225,26 @@
     }
 
 
-    /* =========================
+    /* ========================================
        TABLET
-    ========================== */
+    ======================================== */
 
-    @media (max-width: 1000px) {
-
-      .navbar {
-        align-items: flex-start;
-        gap: 20px;
-      }
-
-      .navbar nav {
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 10px 18px;
-      }
-
-      .hero {
-        padding-top: 140px;
-      }
-
-    }
-
-
-    /* =========================
-       CELULAR
-    ========================== */
-
-    @media (max-width: 700px) {
+    @media (max-width: 1100px) {
 
       .navbar {
-        position: absolute;
+        padding: 20px 5%;
+      }
 
-        flex-direction: column;
-        align-items: flex-start;
-
-        gap: 18px;
-
-        padding: 22px 7%;
+      .navbar-inner {
+        gap: 25px;
       }
 
       .logo {
-        width: 150px;
+        height: 52px;
       }
 
       .navbar nav {
-        justify-content: flex-start;
-        gap: 10px 15px;
+        gap: 16px;
       }
 
       .navbar nav a {
@@ -243,18 +252,67 @@
       }
 
       .hero {
-        padding: 190px 7% 50px;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+    }
+
+
+    /* ========================================
+       CELULAR
+    ======================================== */
+
+    @media (max-width: 760px) {
+
+      .navbar {
+        padding: 18px 6%;
+      }
+
+      .navbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 16px;
+      }
+
+      .logo {
+        height: 48px;
+      }
+
+      .navbar nav {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        gap: 18px;
+
+        overflow-x: auto;
+        padding-bottom: 5px;
+      }
+
+      .navbar nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 100vh;
+
+        padding:
+          180px
+          6%
+          60px;
 
         background-position: 65% center;
       }
 
-      h1 {
-        font-size: 44px;
+      .nombre {
+        font-size: 13px;
+        letter-spacing: 2px;
       }
 
-      .nombre {
-        font-size: 14px;
-        letter-spacing: 2px;
+      h1 {
+        font-size: clamp(42px, 12vw, 56px);
       }
 
       .frase {
@@ -270,34 +328,38 @@
 <body>
 
 
-  <!-- =========================
-       MENÚ
-  ========================== -->
+  <!-- ========================================
+       CABECERA
+  ======================================== -->
 
   <header class="navbar">
 
-    <img
-      src="logo-sintonia.jpg"
-      alt="Marketing en SintonIA"
-      class="logo"
-    >
+    <div class="navbar-inner">
 
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#formacion">Formación</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#newsletter">Newsletter</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+      <img
+        src="logo-sintonia.png"
+        alt="Marketing en SintonIA"
+        class="logo"
+      >
+
+      <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+    </div>
 
   </header>
 
 
-  <!-- =========================
+  <!-- ========================================
        HERO
-  ========================== -->
+  ======================================== -->
 
   <section class="hero">
 
@@ -307,21 +369,16 @@
         Renato Chumbiauca Rebagliati
       </div>
 
-
       <h1>
         Marketing, comunicación e
         inteligencia
-        <span class="destacado">
-          artificial.
-        </span>
+        <span class="destacado">artificial.</span>
       </h1>
-
 
       <p class="frase">
         Conecto estrategia, contenidos, datos y tecnología
         para construir marcas y experiencias con sentido.
       </p>
-
 
       <div class="botones">
 
@@ -347,4 +404,5 @@
 
 
 </body>
+
 </html>
