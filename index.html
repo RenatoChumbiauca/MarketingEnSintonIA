@@ -3,19 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Renato Chumbiauca Rebagliati | Marketing en SintonIA</title>
 
   <style>
-
-    /* ========================================
-       CONFIGURACIÓN GENERAL
-    ======================================== */
 
     * {
       margin: 0;
@@ -33,10 +25,9 @@
       color: white;
     }
 
-
-    /* ========================================
-       CABECERA / MENÚ
-    ======================================== */
+    /* =========================
+       CABECERA
+    ========================== */
 
     .navbar {
       position: absolute;
@@ -44,7 +35,6 @@
       left: 0;
       width: 100%;
       z-index: 20;
-
       padding: 22px 7%;
     }
 
@@ -56,18 +46,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 40px;
     }
 
     .logo {
-      display: block;
-
       width: auto;
       height: 60px;
-
       object-fit: contain;
-
       flex-shrink: 0;
     }
 
@@ -75,21 +60,15 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-
       gap: 26px;
-
-      flex-wrap: nowrap;
     }
 
     .navbar nav a {
-      color: #ffffff;
+      color: white;
       text-decoration: none;
-
       font-size: 14px;
       font-weight: 500;
-
       white-space: nowrap;
-
       transition: color 0.25s ease;
     }
 
@@ -97,10 +76,9 @@
       color: #56d7d5;
     }
 
-
-    /* ========================================
+    /* =========================
        HERO
-    ======================================== */
+    ========================== */
 
     .hero {
       min-height: 100vh;
@@ -117,7 +95,7 @@
         url('hero-sintonia.png');
 
       background-size: cover;
-      background-position: center center;
+      background-position: center;
 
       display: flex;
       align-items: center;
@@ -126,19 +104,15 @@
     }
 
     .hero-content {
-      width: 100%;
       max-width: 760px;
     }
 
     .nombre {
       color: #56d7d5;
-
       font-size: 17px;
       font-weight: 500;
-
       letter-spacing: 3px;
       text-transform: uppercase;
-
       margin-bottom: 22px;
     }
 
@@ -146,10 +120,7 @@
       font-size: clamp(48px, 5.6vw, 78px);
       line-height: 1.04;
       letter-spacing: -1px;
-
       margin-bottom: 28px;
-
-      max-width: 780px;
     }
 
     .destacado {
@@ -158,64 +129,45 @@
 
     .frase {
       max-width: 660px;
-
       color: #d9eef2;
-
       font-size: 21px;
       line-height: 1.65;
-
       margin-bottom: 36px;
     }
 
-
-    /* ========================================
+    /* =========================
        BOTONES
-    ======================================== */
+    ========================== */
 
     .botones {
       display: flex;
-      align-items: center;
-
       gap: 16px;
-
       flex-wrap: wrap;
     }
 
     .boton {
       display: inline-block;
-
       padding: 15px 25px;
-
       border-radius: 6px;
-
       font-size: 15px;
       font-weight: 700;
-
       text-decoration: none;
-
-      transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease;
+      transition: 0.25s ease;
     }
 
     .boton-principal {
       background: #56d7d5;
       color: #06162b;
-
       border: 1px solid #56d7d5;
     }
 
     .boton-principal:hover {
-      background: #ffffff;
-      border-color: #ffffff;
+      background: white;
+      border-color: white;
     }
 
     .boton-secundario {
-      background: transparent;
-
       border: 1px solid #56d7d5;
-
       color: #56d7d5;
     }
 
@@ -224,23 +176,96 @@
       color: #06162b;
     }
 
+    /* =========================
+       SOBRE MÍ
+    ========================== */
 
-    /* ========================================
-       TABLET
-    ======================================== */
+    .sobre-mi {
+      background: #f4f8fa;
+      color: #10253a;
+      padding: 110px 7%;
+    }
+
+    .sobre-mi-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .sobre-mi-foto {
+      position: relative;
+    }
+
+    .sobre-mi-foto img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 24px 60px rgba(16, 37, 58, 0.16);
+    }
+
+    .sobre-mi-foto::before {
+      content: "";
+      position: absolute;
+      width: 65%;
+      height: 65%;
+      border: 2px solid #56d7d5;
+      border-radius: 18px;
+
+      left: -18px;
+      bottom: -18px;
+
+      z-index: 0;
+    }
+
+    .sobre-mi-foto img {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-label {
+      color: #2baeb0;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .sobre-mi h2 {
+      font-size: clamp(40px, 4vw, 58px);
+      line-height: 1.1;
+      margin-bottom: 30px;
+      color: #10253a;
+    }
+
+    .sobre-mi p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #435568;
+      margin-bottom: 20px;
+    }
+
+    .sobre-mi strong {
+      color: #10253a;
+    }
+
+    .sobre-mi-acento {
+      color: #ff7b72;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
 
     @media (max-width: 1100px) {
 
       .navbar {
         padding: 20px 5%;
-      }
-
-      .navbar-inner {
-        gap: 25px;
-      }
-
-      .logo {
-        height: 52px;
       }
 
       .navbar nav {
@@ -251,17 +276,20 @@
         font-size: 12px;
       }
 
-      .hero {
+      .logo {
+        height: 52px;
+      }
+
+      .hero,
+      .sobre-mi {
         padding-left: 5%;
         padding-right: 5%;
       }
 
+      .sobre-mi-inner {
+        gap: 50px;
+      }
     }
-
-
-    /* ========================================
-       CELULAR
-    ======================================== */
 
     @media (max-width: 760px) {
 
@@ -272,7 +300,6 @@
       .navbar-inner {
         flex-direction: column;
         align-items: flex-start;
-
         gap: 16px;
       }
 
@@ -282,11 +309,8 @@
 
       .navbar nav {
         width: 100%;
-
         justify-content: flex-start;
-
         gap: 18px;
-
         overflow-x: auto;
         padding-bottom: 5px;
       }
@@ -296,13 +320,7 @@
       }
 
       .hero {
-        min-height: 100vh;
-
-        padding:
-          180px
-          6%
-          60px;
-
+        padding: 180px 6% 60px;
         background-position: 65% center;
       }
 
@@ -319,18 +337,30 @@
         font-size: 18px;
       }
 
+      .sobre-mi {
+        padding: 75px 6%;
+      }
+
+      .sobre-mi-inner {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .sobre-mi-foto {
+        max-width: 480px;
+      }
+
+      .sobre-mi p {
+        font-size: 17px;
+      }
     }
 
   </style>
 </head>
 
-
 <body>
 
-
-  <!-- ========================================
-       CABECERA
-  ======================================== -->
+  <!-- CABECERA -->
 
   <header class="navbar">
 
@@ -356,10 +386,7 @@
 
   </header>
 
-
-  <!-- ========================================
-       HERO
-  ======================================== -->
+  <!-- HERO -->
 
   <section class="hero">
 
@@ -382,17 +409,11 @@
 
       <div class="botones">
 
-        <a
-          href="#experiencia"
-          class="boton boton-principal"
-        >
+        <a href="#experiencia" class="boton boton-principal">
           Conoce mi experiencia
         </a>
 
-        <a
-          href="#newsletter"
-          class="boton boton-secundario"
-        >
+        <a href="#newsletter" class="boton boton-secundario">
           Marketing en SintonIA
         </a>
 
@@ -402,6 +423,68 @@
 
   </section>
 
+  <!-- SOBRE MÍ -->
+
+  <section class="sobre-mi" id="sobre-mi">
+
+    <div class="sobre-mi-inner">
+
+      <div class="sobre-mi-foto">
+
+        <img
+          src="renato-perfil.jpg"
+          alt="Renato Chumbiauca Rebagliati"
+        >
+
+      </div>
+
+      <div>
+
+        <div class="section-label">
+          Sobre mí
+        </div>
+
+        <h2>
+          Estrategia, comunicación y tecnología
+          con una mirada <span class="sobre-mi-acento">integral.</span>
+        </h2>
+
+        <p>
+          <strong>Soy Renato Chumbiauca Rebagliati</strong>,
+          profesional de marketing y comunicación con experiencia
+          en estrategia, branding, reputación, sostenibilidad,
+          contenidos y entornos digitales.
+        </p>
+
+        <p>
+          A lo largo de mi trayectoria he conectado objetivos de negocio
+          con marketing, comunicación y tecnología, con foco en construir
+          marcas coherentes, fortalecer su reputación y desarrollar
+          estrategias alineadas con las personas, el negocio y su entorno.
+        </p>
+
+        <p>
+          Me interesa especialmente la relación entre estrategia,
+          creatividad, datos e inteligencia artificial, así como las nuevas
+          formas en las cuales las marcas construyen valor, gestionan su
+          reputación y se relacionan con sus audiencias.
+        </p>
+
+        <p>
+          Hoy pongo esa experiencia al servicio de organizaciones,
+          marcas y profesionales a través de asesoría y proyectos en
+          marketing, comunicación, branding, reputación, sostenibilidad
+          y transformación digital.
+          <strong>Marketing en SintonIA</strong> es también mi espacio
+          para compartir ideas, análisis y aprendizajes sobre los temas
+          con los cuales trabajo.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
 
 </body>
 
