@@ -3,11 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marketing en SintonIA</title>
+  <title>Renato Chumbiauca Rebagliati | Marketing en SintonIA</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #06162b;
+      color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(6, 22, 43, 0.98) 0%,
+          rgba(6, 22, 43, 0.85) 35%,
+          rgba(6, 22, 43, 0.25) 65%,
+          rgba(6, 22, 43, 0.05) 100%
+        ),
+        url('hero-sintonia.png');
+
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 60px 8%;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .nombre {
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #56d7d5;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .destacado {
+      color: #ff7b72;
+    }
+
+    .frase {
+      font-size: 21px;
+      line-height: 1.6;
+      color: #d9eef2;
+      max-width: 650px;
+      margin-bottom: 35px;
+    }
+
+    .botones {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .boton-principal {
+      background: #56d7d5;
+      color: #06162b;
+    }
+
+    .boton-secundario {
+      border: 1px solid #56d7d5;
+      color: #56d7d5;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding: 40px 7%;
+        background-position: 65% center;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .frase {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Marketing en SintonIA</h1>
-  <p>Mi primera página web está funcionando 🚀</p>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="nombre">
+        Renato Chumbiauca Rebagliati
+      </div>
+
+      <h1>
+        Marketing, comunicación e
+        inteligencia <span class="destacado">artificial.</span>
+      </h1>
+
+      <p class="frase">
+        Conecto estrategia, contenidos, datos y tecnología
+        para construir marcas y experiencias con sentido.
+      </p>
+
+      <div class="botones">
+        <a href="#experiencia" class="boton boton-principal">
+          Conoce mi experiencia
+        </a>
+
+        <a href="#newsletter" class="boton boton-secundario">
+          Marketing en SintonIA
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
 </body>
 </html>
