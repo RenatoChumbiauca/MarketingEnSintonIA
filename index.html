@@ -125,11 +125,9 @@
 
     h1 {
       max-width: 780px;
-
       font-size: clamp(48px, 5.6vw, 78px);
       line-height: 1.04;
       letter-spacing: -1px;
-
       margin-bottom: 28px;
     }
 
@@ -139,12 +137,9 @@
 
     .frase {
       max-width: 660px;
-
       color: #d9eef2;
-
       font-size: 21px;
       line-height: 1.65;
-
       margin-bottom: 36px;
     }
 
@@ -161,14 +156,10 @@
 
     .boton {
       display: inline-block;
-
       padding: 15px 25px;
-
       border-radius: 6px;
-
       font-size: 15px;
       font-weight: 700;
-
       text-decoration: none;
 
       transition:
@@ -311,16 +302,13 @@
 
       background-size: cover;
       background-position: center right;
-
       opacity: 0.42;
-
       pointer-events: none;
     }
 
     .servicios::after {
       content: "";
       position: absolute;
-
       left: 0;
       right: 0;
       top: 50%;
@@ -337,25 +325,20 @@
           rgba(86, 215, 213, 0) 100%
         );
 
-      transform: translateY(-50%);
-
       pointer-events: none;
     }
 
     .servicios-inner {
       position: relative;
       z-index: 2;
-
       max-width: 1300px;
       margin: 0 auto;
     }
 
     .servicios h2 {
       color: #ffffff;
-
       font-size: clamp(40px, 4.3vw, 58px);
       line-height: 1.08;
-
       margin-bottom: 42px;
     }
 
@@ -384,8 +367,6 @@
 
       border: 1px solid rgba(86, 215, 213, 0.16);
       border-radius: 14px;
-
-      backdrop-filter: blur(2px);
 
       transition:
         transform 0.3s ease,
@@ -471,6 +452,253 @@
 
 
     /* ========================================
+       EXPERIENCIA
+    ======================================== */
+
+    .experiencia {
+      background: #f4f8fa;
+      color: #10253a;
+      padding: 100px 7% 110px;
+    }
+
+    .experiencia-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .experiencia h2 {
+      color: #10253a;
+      font-size: clamp(40px, 4.3vw, 58px);
+      line-height: 1.08;
+      margin-bottom: 60px;
+    }
+
+
+    /* CRONOLOGÍA */
+
+    .timeline {
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 143px;
+      top: 15px;
+      bottom: 15px;
+      width: 2px;
+
+      background:
+        linear-gradient(
+          180deg,
+          #56d7d5 0%,
+          rgba(86, 215, 213, 0.38) 70%,
+          rgba(255, 123, 114, 0.45) 100%
+        );
+    }
+
+    .timeline-item {
+      position: relative;
+
+      display: grid;
+      grid-template-columns: 115px 1fr;
+
+      gap: 58px;
+
+      padding-bottom: 42px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-periodo {
+      padding-top: 25px;
+
+      color: #2baeb0;
+
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.5;
+
+      text-align: right;
+
+      letter-spacing: 0.5px;
+    }
+
+    .timeline-punto {
+      position: absolute;
+
+      left: 136px;
+      top: 31px;
+
+      width: 16px;
+      height: 16px;
+
+      background: #56d7d5;
+
+      border: 4px solid #f4f8fa;
+      border-radius: 50%;
+
+      box-shadow:
+        0 0 0 1px
+        rgba(43, 174, 176, 0.35);
+
+      z-index: 3;
+    }
+
+    .timeline-item:nth-child(5) .timeline-punto {
+      background: #ff7b72;
+    }
+
+
+    /* TARJETAS DE EXPERIENCIA */
+
+    .experiencia-card {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      gap: 28px;
+      align-items: start;
+
+      background: #ffffff;
+
+      border:
+        1px solid
+        rgba(16, 37, 58, 0.08);
+
+      border-radius: 16px;
+
+      padding: 28px 32px;
+
+      box-shadow:
+        0 12px 32px
+        rgba(16, 37, 58, 0.06);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .experiencia-card:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 18px 40px
+        rgba(16, 37, 58, 0.10);
+    }
+
+    .experiencia-logo {
+      width: 100%;
+      max-width: 110px;
+      height: 62px;
+
+      object-fit: contain;
+      object-position: center;
+
+      display: block;
+    }
+
+    .experiencia-empresa {
+      color: #2baeb0;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      margin-bottom: 7px;
+    }
+
+    .experiencia-card h3 {
+      color: #10253a;
+
+      font-size: 22px;
+      line-height: 1.25;
+
+      margin-bottom: 14px;
+    }
+
+    .experiencia-card p {
+      color: #536477;
+
+      font-size: 15.5px;
+      line-height: 1.72;
+    }
+
+
+    /* ========================================
+       OTRAS EXPERIENCIAS
+    ======================================== */
+
+    .otras-experiencias {
+      margin-top: 55px;
+
+      padding: 34px 36px;
+
+      background: #eaf2f5;
+
+      border-radius: 16px;
+    }
+
+    .otras-experiencias h3 {
+      color: #10253a;
+
+      font-size: 20px;
+
+      margin-bottom: 26px;
+    }
+
+    .otras-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 22px;
+
+      max-width: 820px;
+    }
+
+    .otra-item {
+      display: flex;
+      align-items: center;
+
+      gap: 18px;
+
+      padding: 18px 20px;
+
+      background:
+        rgba(255, 255, 255, 0.72);
+
+      border-radius: 12px;
+    }
+
+    .otra-item img {
+      width: 70px;
+      height: 40px;
+
+      object-fit: contain;
+    }
+
+    .otra-item strong {
+      display: block;
+
+      color: #10253a;
+
+      font-size: 14px;
+
+      margin-bottom: 4px;
+    }
+
+    .otra-item span {
+      color: #6b7d8e;
+
+      font-size: 13px;
+    }
+
+
+    /* ========================================
        TABLET
     ======================================== */
 
@@ -494,7 +722,8 @@
 
       .hero,
       .sobre-mi,
-      .servicios {
+      .servicios,
+      .experiencia {
         padding-left: 5%;
         padding-right: 5%;
       }
@@ -525,8 +754,21 @@
         justify-self: center;
       }
 
-      .servicio-card h3 {
-        font-size: 19px;
+      .timeline::before {
+        left: 113px;
+      }
+
+      .timeline-item {
+        grid-template-columns: 90px 1fr;
+        gap: 48px;
+      }
+
+      .timeline-punto {
+        left: 106px;
+      }
+
+      .experiencia-card {
+        grid-template-columns: 90px 1fr;
       }
 
     }
@@ -573,9 +815,7 @@
 
       .hero {
         padding: 180px 6% 60px;
-
-        background-position:
-          65% center;
+        background-position: 65% center;
       }
 
       .nombre {
@@ -649,8 +889,67 @@
         padding: 26px 24px;
       }
 
-      .servicio-card h3 {
-        font-size: 21px;
+
+      /* EXPERIENCIA */
+
+      .experiencia {
+        padding: 75px 6% 85px;
+      }
+
+      .experiencia h2 {
+        font-size: 34px;
+        margin-bottom: 42px;
+      }
+
+      .timeline::before {
+        left: 7px;
+      }
+
+      .timeline-item {
+        display: block;
+
+        padding-left: 34px;
+        padding-bottom: 34px;
+      }
+
+      .timeline-periodo {
+        text-align: left;
+        padding-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .timeline-punto {
+        left: 0;
+        top: 4px;
+      }
+
+      .experiencia-card {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 24px;
+      }
+
+      .experiencia-logo {
+        max-width: 100px;
+        height: 50px;
+      }
+
+      .experiencia-card h3 {
+        font-size: 20px;
+      }
+
+      .experiencia-card p {
+        font-size: 15px;
+      }
+
+      .otras-experiencias {
+        padding: 26px 22px;
+      }
+
+      .otras-grid {
+        grid-template-columns: 1fr;
       }
 
     }
@@ -677,35 +976,13 @@
       >
 
       <nav>
-
-        <a href="#sobre-mi">
-          Sobre mí
-        </a>
-
-        <a href="#servicios">
-          Servicios
-        </a>
-
-        <a href="#experiencia">
-          Experiencia
-        </a>
-
-        <a href="#formacion">
-          Formación
-        </a>
-
-        <a href="#proyectos">
-          Proyectos
-        </a>
-
-        <a href="#newsletter">
-          Newsletter
-        </a>
-
-        <a href="#contacto">
-          Contacto
-        </a>
-
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contacto">Contacto</a>
       </nav>
 
     </div>
@@ -841,17 +1118,10 @@
         Servicios
       </h2>
 
-
       <div class="servicios-grid">
 
-
-        <!-- 01 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            01
-          </span>
+          <span class="servicio-numero">01</span>
 
           <h3>
             Branding & Rebranding
@@ -862,17 +1132,11 @@
             y definición de marca para lanzamientos
             o relanzamientos.
           </p>
-
         </article>
 
 
-        <!-- 02 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            02
-          </span>
+          <span class="servicio-numero">02</span>
 
           <h3>
             Marketing Digital & Contenidos
@@ -883,17 +1147,11 @@
             contenidos y piezas para construir una
             presencia coherente y diferenciada.
           </p>
-
         </article>
 
 
-        <!-- 03 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            03
-          </span>
+          <span class="servicio-numero">03</span>
 
           <h3>
             Contenido Audiovisual
@@ -904,17 +1162,11 @@
             para captar atención y comunicar con impacto
             en redes.
           </p>
-
         </article>
 
 
-        <!-- 04 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            04
-          </span>
+          <span class="servicio-numero">04</span>
 
           <h3>
             Prensa & Vocería
@@ -926,17 +1178,11 @@
             para comunicar con claridad frente
             a medios y públicos.
           </p>
-
         </article>
 
 
-        <!-- 05 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            05
-          </span>
+          <span class="servicio-numero">05</span>
 
           <h3>
             Web & Experiencia Digital
@@ -947,11 +1193,316 @@
             pages, arquitectura de contenidos, mensajes,
             estructura y experiencia de navegación.
           </p>
-
         </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       EXPERIENCIA
+  ======================================== -->
+
+  <section
+    class="experiencia"
+    id="experiencia"
+  >
+
+    <div class="experiencia-inner">
+
+      <h2>
+        Experiencia
+      </h2>
+
+
+      <div class="timeline">
+
+
+        <!-- UNIVERSIDAD CIENTÍFICA -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-periodo">
+            2026<br>
+            Actualidad
+          </div>
+
+          <div class="timeline-punto"></div>
+
+          <article class="experiencia-card">
+
+            <img
+              src="logo-cientifica.png"
+              alt="Universidad Científica del Sur"
+              class="experiencia-logo"
+            >
+
+            <div>
+
+              <div class="experiencia-empresa">
+                Universidad Científica del Sur
+              </div>
+
+              <h3>
+                Docente a tiempo parcial
+              </h3>
+
+              <p>
+                Docencia en la Facultad de Comunicaciones,
+                vinculada a estrategia publicitaria,
+                gestión de redes sociales y comportamiento
+                psicológico, conectando fundamentos académicos
+                con casos, herramientas y dinámicas aplicadas
+                al entorno actual de marketing y comunicación.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- TOULOUSE -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-periodo">
+            2025<br>
+            Actualidad
+          </div>
+
+          <div class="timeline-punto"></div>
+
+          <article class="experiencia-card">
+
+            <img
+              src="logo-toulouse.png"
+              alt="Toulouse Lautrec"
+              class="experiencia-logo"
+            >
+
+            <div>
+
+              <div class="experiencia-empresa">
+                Toulouse Lautrec
+              </div>
+
+              <h3>
+                Docente a tiempo parcial
+              </h3>
+
+              <p>
+                Docencia en la Facultad de Negocios en cursos
+                de E-Business, Marketing, Analytics, tendencias
+                globales, emprendimiento y audiencias, con foco
+                en estrategia, comportamiento del consumidor,
+                entorno digital y toma de decisiones basada
+                en información.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- PRECISO -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-periodo">
+            2025<br>
+            2026
+          </div>
+
+          <div class="timeline-punto"></div>
+
+          <article class="experiencia-card">
+
+            <img
+              src="logo-preciso.png"
+              alt="Preciso Comunicación Integral"
+              class="experiencia-logo"
+            >
+
+            <div>
+
+              <div class="experiencia-empresa">
+                Preciso Comunicación Integral
+              </div>
+
+              <h3>
+                Líder de Contenido Digital
+              </h3>
+
+              <p>
+                Liderazgo de estrategias de marketing digital,
+                contenidos y branding B2B, orientadas a
+                posicionamiento, reputación y generación de
+                oportunidades. Participación en proyectos como
+                el relanzamiento de Negocios Verdes del MINAM
+                y la creación de Sustenia, integrando estrategia,
+                mensajes, SEO, campañas, contenidos y medición
+                de resultados.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- MIGIVA -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-periodo">
+            2018<br>
+            2024
+          </div>
+
+          <div class="timeline-punto"></div>
+
+          <article class="experiencia-card">
+
+            <img
+              src="logo-migiva.png"
+              alt="MIGIVA Group"
+              class="experiencia-logo"
+            >
+
+            <div>
+
+              <div class="experiencia-empresa">
+                MIGIVA Group
+              </div>
+
+              <h3>
+                Coordinador de Marketing y Comunicaciones
+              </h3>
+
+              <p>
+                Gestión integral de la estrategia de marketing
+                y comunicaciones para las marcas del grupo,
+                combinando posicionamiento, marketing digital,
+                contenidos, campañas y cultura corporativa.
+                Desarrollo y supervisión de estrategias en redes
+                sociales, activaciones BTL, eventos, comunicación
+                interna, materiales de marca y empaques para
+                exportación, orientadas a fortalecer presencia,
+                reputación, experiencia de marca y vínculo con
+                públicos clave.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- LIBÉLULA -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-periodo">
+            2014<br>
+            2018
+          </div>
+
+          <div class="timeline-punto"></div>
+
+          <article class="experiencia-card">
+
+            <img
+              src="logo-libelula.png"
+              alt="Libélula"
+              class="experiencia-logo"
+            >
+
+            <div>
+
+              <div class="experiencia-empresa">
+                Libélula – Gestión en Cambio Climático
+              </div>
+
+              <h3>
+                Community Manager
+              </h3>
+
+              <p>
+                Gestión estratégica de la presencia y reputación
+                digital de Libélula, con foco en posicionamiento,
+                contenidos y construcción de comunidad alrededor
+                de cambio climático y desarrollo sostenible.
+                Desarrollo de estrategias para redes sociales,
+                SEO y comunicación interna, incluyendo la cobertura
+                digital del evento regional Nexos+1, cuya conversación
+                alcanzó trending topic mediante planificación de
+                contenidos, mensajes clave y activación en tiempo real.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
 
 
       </div>
+
+
+      <!-- OTRAS EXPERIENCIAS -->
+
+      <div class="otras-experiencias">
+
+        <h3>
+          Otras experiencias relevantes
+        </h3>
+
+        <div class="otras-grid">
+
+
+          <div class="otra-item">
+
+            <img
+              src="logo-cafe-taipa.png"
+              alt="Café Taipá"
+            >
+
+            <div>
+              <strong>Café Taipá</strong>
+              <span>2013 – 2014</span>
+            </div>
+
+          </div>
+
+
+          <div class="otra-item">
+
+            <img
+              src="logo-llyc.png"
+              alt="LLYC"
+            >
+
+            <div>
+              <strong>LLYC</strong>
+              <span>2010 – 2012</span>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
 
     </div>
 
