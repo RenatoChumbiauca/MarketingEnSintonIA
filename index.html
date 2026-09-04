@@ -221,14 +221,9 @@
       align-items: center;
     }
 
-
-    /* FOTO SOBRE MÍ */
-
     .sobre-mi-foto {
       position: relative;
-
       padding: 6px;
-
       border-radius: 22px;
 
       background:
@@ -247,42 +242,30 @@
     .sobre-mi-foto img {
       width: 100%;
       display: block;
-
       border-radius: 16px;
-
       object-fit: cover;
     }
 
-
-    /* TEXTO SOBRE MÍ */
-
     .section-label {
       color: #2baeb0;
-
       font-size: 14px;
       font-weight: 700;
-
       letter-spacing: 3px;
       text-transform: uppercase;
-
       margin-bottom: 16px;
     }
 
     .sobre-mi h2 {
       color: #10253a;
-
       font-size: clamp(34px, 3.2vw, 46px);
       line-height: 1.12;
-
       margin-bottom: 28px;
     }
 
     .sobre-mi p {
       color: #435568;
-
       font-size: 17px;
       line-height: 1.75;
-
       margin-bottom: 20px;
     }
 
@@ -298,46 +281,55 @@
     .servicios {
       position: relative;
       overflow: hidden;
-
       background:
-        radial-gradient(
-          circle at 85% 20%,
-          rgba(86, 215, 213, 0.08),
-          transparent 28%
-        ),
-        #06162b;
-
-      padding: 105px 7% 115px;
+        linear-gradient(
+          180deg,
+          #04152a 0%,
+          #06162b 45%,
+          #071a30 100%
+        );
+      padding: 100px 7% 110px;
     }
 
     .servicios::before {
       content: "";
-
       position: absolute;
+      inset: 0;
 
-      width: 380px;
-      height: 380px;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(6, 22, 43, 0.96) 0%,
+          rgba(6, 22, 43, 0.86) 28%,
+          rgba(6, 22, 43, 0.52) 55%,
+          rgba(6, 22, 43, 0.14) 78%,
+          rgba(6, 22, 43, 0.04) 100%
+        ),
+        url('hero-sintonia.png');
 
-      border: 1px solid rgba(86, 215, 213, 0.10);
-      border-radius: 50%;
-
-      top: -180px;
-      right: -80px;
+      background-size: cover;
+      background-position: center right;
+      opacity: 0.42;
+      pointer-events: none;
     }
 
     .servicios::after {
       content: "";
-
       position: absolute;
-
-      width: 220px;
-      height: 220px;
-
-      border: 1px solid rgba(255, 123, 114, 0.09);
-      border-radius: 50%;
-
-      top: -95px;
-      right: 15px;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        rgba(86, 215, 213, 0) 0%,
+        rgba(86, 215, 213, 0.12) 18%,
+        rgba(86, 215, 213, 0.42) 50%,
+        rgba(86, 215, 213, 0.12) 82%,
+        rgba(86, 215, 213, 0) 100%
+      );
+      transform: translateY(-50%);
+      pointer-events: none;
     }
 
     .servicios-inner {
@@ -350,27 +342,20 @@
 
     .servicios .section-label {
       color: #56d7d5;
+      margin-bottom: 14px;
     }
 
     .servicios h2 {
-      max-width: 650px;
-
       color: #ffffff;
-
-      font-size: clamp(36px, 4vw, 52px);
-      line-height: 1.12;
-
-      margin-bottom: 55px;
+      font-size: clamp(40px, 4.3vw, 58px);
+      line-height: 1.08;
+      margin-bottom: 42px;
     }
-
-
-    /* GRILLA 3 + 2 */
 
     .servicios-grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-
-      gap: 24px;
+      gap: 22px;
     }
 
     .servicio-card {
@@ -379,19 +364,20 @@
 
       grid-column: span 2;
 
-      min-height: 290px;
-
-      padding: 34px 30px;
+      min-height: 220px;
+      padding: 28px 28px 26px;
 
       background:
         linear-gradient(
           145deg,
-          rgba(16, 44, 67, 0.95),
-          rgba(8, 30, 49, 0.96)
+          rgba(12, 42, 66, 0.93),
+          rgba(8, 29, 47, 0.92)
         );
 
-      border: 1px solid rgba(86, 215, 213, 0.13);
+      border: 1px solid rgba(86, 215, 213, 0.16);
       border-radius: 14px;
+
+      backdrop-filter: blur(2px);
 
       transition:
         transform 0.3s ease,
@@ -409,40 +395,33 @@
 
     .servicio-card:hover {
       transform: translateY(-6px);
-
-      border-color: rgba(86, 215, 213, 0.6);
-
+      border-color: rgba(86, 215, 213, 0.56);
       box-shadow:
-        0 20px 45px
-        rgba(0, 0, 0, 0.22);
+        0 18px 38px rgba(0, 0, 0, 0.22);
     }
 
     .servicio-card::after {
       content: "";
-
       position: absolute;
-
-      width: 110px;
-      height: 110px;
-
+      width: 100px;
+      height: 100px;
       border: 1px solid rgba(86, 215, 213, 0.08);
       border-radius: 50%;
-
-      right: -40px;
-      bottom: -40px;
+      right: -42px;
+      bottom: -42px;
     }
 
     .servicio-numero {
       display: block;
-
       color: #56d7d5;
-
       font-size: 13px;
       font-weight: 700;
-
       letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
 
-      margin-bottom: 28px;
+    .servicio-card:nth-child(5) .servicio-numero {
+      color: #ff7b72;
     }
 
     .servicio-card h3 {
@@ -450,25 +429,18 @@
       z-index: 2;
 
       color: #ffffff;
-
-      font-size: 24px;
-      line-height: 1.22;
-
-      margin-bottom: 18px;
+      font-size: 20px;
+      line-height: 1.25;
+      margin-bottom: 14px;
     }
 
     .servicio-card p {
       position: relative;
       z-index: 2;
 
-      color: #bcd4dc;
-
-      font-size: 15.5px;
-      line-height: 1.7;
-    }
-
-    .servicio-card:nth-child(5) .servicio-numero {
-      color: #ff7b72;
+      color: #c5d8df;
+      font-size: 15px;
+      line-height: 1.68;
     }
 
 
@@ -517,9 +489,13 @@
 
       .servicio-card:last-child {
         grid-column: 1 / -1;
-        max-width: calc(50% - 12px);
+        max-width: calc(50% - 11px);
         width: 100%;
         justify-self: center;
+      }
+
+      .servicio-card h3 {
+        font-size: 19px;
       }
 
     }
@@ -538,7 +514,6 @@
       .navbar-inner {
         flex-direction: column;
         align-items: flex-start;
-
         gap: 16px;
       }
 
@@ -548,22 +523,15 @@
 
       .navbar nav {
         width: 100%;
-
         justify-content: flex-start;
-
         gap: 18px;
-
         overflow-x: auto;
-
         padding-bottom: 5px;
       }
 
       .navbar nav a {
         font-size: 12px;
       }
-
-
-      /* HERO */
 
       .hero {
         padding: 180px 6% 60px;
@@ -582,9 +550,6 @@
       .frase {
         font-size: 18px;
       }
-
-
-      /* SOBRE MÍ */
 
       .sobre-mi {
         padding: 70px 6%;
@@ -608,16 +573,13 @@
         line-height: 1.7;
       }
 
-
-      /* SERVICIOS */
-
       .servicios {
         padding: 75px 6% 85px;
       }
 
       .servicios h2 {
         font-size: 34px;
-        margin-bottom: 40px;
+        margin-bottom: 34px;
       }
 
       .servicios-grid {
@@ -629,15 +591,17 @@
       .servicio-card:nth-child(5),
       .servicio-card:last-child {
         grid-column: auto;
-
         max-width: none;
         width: 100%;
-
         min-height: auto;
       }
 
       .servicio-card {
-        padding: 30px 26px;
+        padding: 26px 24px;
+      }
+
+      .servicio-card h3 {
+        font-size: 21px;
       }
 
     }
@@ -664,35 +628,13 @@
       >
 
       <nav>
-
-        <a href="#sobre-mi">
-          Sobre mí
-        </a>
-
-        <a href="#servicios">
-          Servicios
-        </a>
-
-        <a href="#experiencia">
-          Experiencia
-        </a>
-
-        <a href="#formacion">
-          Formación
-        </a>
-
-        <a href="#proyectos">
-          Proyectos
-        </a>
-
-        <a href="#newsletter">
-          Newsletter
-        </a>
-
-        <a href="#contacto">
-          Contacto
-        </a>
-
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contacto">Contacto</a>
       </nav>
 
     </div>
@@ -760,20 +702,12 @@
 
     <div class="sobre-mi-inner">
 
-
-      <!-- FOTO -->
-
       <div class="sobre-mi-foto">
-
         <img
           src="renato-perfil.jpg"
           alt="Renato Chumbiauca Rebagliati"
         >
-
       </div>
-
-
-      <!-- TEXTO -->
 
       <div class="sobre-mi-texto">
 
@@ -835,118 +769,61 @@
       </div>
 
       <h2>
-        Áreas en las que trabajo
+        Servicios
       </h2>
-
 
       <div class="servicios-grid">
 
-
-        <!-- 01 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            01
-          </span>
-
-          <h3>
-            Branding & Rebranding
-          </h3>
-
+          <span class="servicio-numero">01</span>
+          <h3>Branding & Rebranding</h3>
           <p>
             Naming, posicionamiento, identidad visual
             y definición de marca para lanzamientos
             o relanzamientos.
           </p>
-
         </article>
 
-
-        <!-- 02 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            02
-          </span>
-
-          <h3>
-            Marketing Digital & Contenidos
-          </h3>
-
+          <span class="servicio-numero">02</span>
+          <h3>Marketing Digital & Contenidos</h3>
           <p>
             Estrategia digital, mensajes clave, copys,
             contenidos y piezas para construir una
             presencia coherente y diferenciada.
           </p>
-
         </article>
 
-
-        <!-- 03 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            03
-          </span>
-
-          <h3>
-            Contenido Audiovisual
-          </h3>
-
+          <span class="servicio-numero">03</span>
+          <h3>Contenido Audiovisual</h3>
           <p>
             Conceptos, guiones, reels y videos pensados
             para captar atención y comunicar con impacto
             en redes.
           </p>
-
         </article>
 
-
-        <!-- 04 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            04
-          </span>
-
-          <h3>
-            Prensa & Vocería
-          </h3>
-
+          <span class="servicio-numero">04</span>
+          <h3>Prensa & Vocería</h3>
           <p>
             Notas de prensa, media training,
             preparación de voceros y mensajes
             para comunicar con claridad frente
             a medios y públicos.
           </p>
-
         </article>
 
-
-        <!-- 05 -->
-
         <article class="servicio-card">
-
-          <span class="servicio-numero">
-            05
-          </span>
-
-          <h3>
-            Web & Experiencia Digital
-          </h3>
-
+          <span class="servicio-numero">05</span>
+          <h3>Web & Experiencia Digital</h3>
           <p>
             Conceptualización de páginas web y landing
             pages, arquitectura de contenidos, mensajes,
             estructura y experiencia de navegación.
           </p>
-
         </article>
-
 
       </div>
 
