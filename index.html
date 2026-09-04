@@ -75,7 +75,6 @@
 
     .navbar nav a {
       color: #ffffff;
-
       text-decoration: none;
 
       font-size: 14px;
@@ -596,13 +595,7 @@
 
       width: 2px;
 
-      background:
-        linear-gradient(
-          180deg,
-          #39d8dd 0%,
-          #39d8dd 75%,
-          #ff766d 100%
-        );
+      background: #39d8dd;
     }
 
     .timeline-item {
@@ -636,11 +629,6 @@
       text-align: right;
 
       white-space: nowrap;
-    }
-
-    .timeline-item:last-child
-    .timeline-periodo {
-      color: #ff766d;
     }
 
 
@@ -684,15 +672,6 @@
       background: #ffffff;
 
       border-radius: 50%;
-    }
-
-    .timeline-item:last-child
-    .timeline-punto {
-      border-color: #ff766d;
-
-      box-shadow:
-        0 0 0 3px
-        rgba(255, 118, 109, 0.20);
     }
 
 
@@ -827,7 +806,7 @@
 
       gap: 18px;
 
-      max-width: 800px;
+      width: 100%;
     }
 
     .otra-item {
@@ -836,7 +815,9 @@
 
       gap: 18px;
 
-      padding: 17px 20px;
+      padding: 18px 22px;
+
+      min-height: 96px;
 
       background:
         rgba(9, 36, 58, 0.72);
@@ -849,8 +830,8 @@
     }
 
     .otra-item img {
-      width: 75px;
-      height: 42px;
+      width: 85px;
+      height: 48px;
 
       object-fit: contain;
     }
@@ -860,7 +841,7 @@
 
       color: #ffffff;
 
-      font-size: 14px;
+      font-size: 15px;
 
       margin-bottom: 4px;
     }
