@@ -7,6 +7,13 @@
 
   <title>Renato Chumbiauca Rebagliati | Marketing en SintonIA</title>
 
+  <!-- FAVICON -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="favicon.png"
+  >
+
   <style>
 
     /* ========================================
@@ -29,23 +36,64 @@
       color: #ffffff;
     }
 
+    section[id] {
+      scroll-margin-top: 95px;
+    }
+
 
     /* ========================================
-       CABECERA
+       CABECERA / STICKY HEADER
     ======================================== */
 
     .navbar {
-      position: absolute;
+      position: fixed;
+
       top: 0;
       left: 0;
+
       width: 100%;
-      z-index: 20;
+
+      z-index: 1000;
+
       padding: 22px 7%;
+
+      background: transparent;
+
+      border-bottom:
+        1px solid
+        transparent;
+
+      transition:
+        background 0.3s ease,
+        backdrop-filter 0.3s ease,
+        border-color 0.3s ease,
+        padding 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      padding-top: 13px;
+      padding-bottom: 13px;
+
+      background:
+        rgba(6, 22, 43, 0.91);
+
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+
+      border-bottom:
+        1px solid
+        rgba(86, 215, 213, 0.16);
+
+      box-shadow:
+        0 8px 28px
+        rgba(0, 0, 0, 0.16);
     }
 
     .navbar-inner {
       width: 100%;
       max-width: 1500px;
+
       margin: 0 auto;
 
       display: flex;
@@ -63,6 +111,13 @@
       object-fit: contain;
 
       flex-shrink: 0;
+
+      transition:
+        height 0.3s ease;
+    }
+
+    .navbar.scrolled .logo {
+      height: 48px;
     }
 
     .navbar nav {
@@ -75,6 +130,7 @@
 
     .navbar nav a {
       color: #ffffff;
+
       text-decoration: none;
 
       font-size: 14px;
@@ -82,7 +138,8 @@
 
       white-space: nowrap;
 
-      transition: color 0.25s ease;
+      transition:
+        color 0.25s ease;
     }
 
     .navbar nav a:hover {
@@ -137,8 +194,11 @@
     h1 {
       max-width: 780px;
 
-      font-size: clamp(48px, 5.6vw, 78px);
+      font-size:
+        clamp(48px, 5.6vw, 78px);
+
       line-height: 1.04;
+
       letter-spacing: -1px;
 
       margin-bottom: 28px;
@@ -166,7 +226,9 @@
 
     .botones {
       display: flex;
+
       gap: 16px;
+
       flex-wrap: wrap;
     }
 
@@ -192,24 +254,30 @@
       background: #56d7d5;
       color: #06162b;
 
-      border: 1px solid #56d7d5;
+      border:
+        1px solid
+        #56d7d5;
     }
 
     .boton-principal:hover {
       background: #ffffff;
+
       border-color: #ffffff;
     }
 
     .boton-secundario {
       background: transparent;
 
-      border: 1px solid #56d7d5;
+      border:
+        1px solid
+        #56d7d5;
 
       color: #56d7d5;
     }
 
     .boton-secundario:hover {
       background: #56d7d5;
+
       color: #06162b;
     }
 
@@ -220,6 +288,7 @@
 
     .sobre-mi {
       background: #f4f8fa;
+
       color: #10253a;
 
       padding: 95px 7%;
@@ -227,10 +296,13 @@
 
     .sobre-mi-inner {
       max-width: 1300px;
+
       margin: 0 auto;
 
       display: grid;
-      grid-template-columns: 0.78fr 1.22fr;
+
+      grid-template-columns:
+        0.78fr 1.22fr;
 
       gap: 75px;
 
@@ -259,6 +331,7 @@
 
     .sobre-mi-foto img {
       width: 100%;
+
       display: block;
 
       border-radius: 16px;
@@ -281,7 +354,9 @@
     .sobre-mi h2 {
       color: #10253a;
 
-      font-size: clamp(34px, 3.2vw, 46px);
+      font-size:
+        clamp(34px, 3.2vw, 46px);
+
       line-height: 1.12;
 
       margin-bottom: 28px;
@@ -307,6 +382,7 @@
 
     .servicios {
       position: relative;
+
       overflow: hidden;
 
       background:
@@ -317,13 +393,15 @@
           #071a30 100%
         );
 
-      padding: 100px 7% 110px;
+      padding:
+        100px 7% 110px;
     }
 
     .servicios::before {
       content: "";
 
       position: absolute;
+
       inset: 0;
 
       background:
@@ -338,7 +416,9 @@
         url('hero-sintonia.png');
 
       background-size: cover;
-      background-position: center right;
+
+      background-position:
+        center right;
 
       opacity: 0.42;
 
@@ -347,16 +427,20 @@
 
     .servicios-inner {
       position: relative;
+
       z-index: 2;
 
       max-width: 1300px;
+
       margin: 0 auto;
     }
 
     .servicios h2 {
       color: #ffffff;
 
-      font-size: clamp(40px, 4.3vw, 58px);
+      font-size:
+        clamp(40px, 4.3vw, 58px);
+
       line-height: 1.08;
 
       margin-bottom: 42px;
@@ -365,20 +449,23 @@
     .servicios-grid {
       display: grid;
 
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns:
+        repeat(6, 1fr);
 
       gap: 22px;
     }
 
     .servicio-card {
       position: relative;
+
       overflow: hidden;
 
       grid-column: span 2;
 
       min-height: 220px;
 
-      padding: 28px 28px 26px;
+      padding:
+        28px 28px 26px;
 
       background:
         linear-gradient(
@@ -400,15 +487,18 @@
     }
 
     .servicio-card:nth-child(4) {
-      grid-column: 2 / span 2;
+      grid-column:
+        2 / span 2;
     }
 
     .servicio-card:nth-child(5) {
-      grid-column: 4 / span 2;
+      grid-column:
+        4 / span 2;
     }
 
     .servicio-card:hover {
-      transform: translateY(-6px);
+      transform:
+        translateY(-6px);
 
       border-color:
         rgba(86, 215, 213, 0.56);
@@ -449,12 +539,14 @@
       margin-bottom: 18px;
     }
 
-    .servicio-card:nth-child(5) .servicio-numero {
+    .servicio-card:nth-child(5)
+    .servicio-numero {
       color: #ff7b72;
     }
 
     .servicio-card h3 {
       position: relative;
+
       z-index: 2;
 
       color: #ffffff;
@@ -467,6 +559,7 @@
 
     .servicio-card p {
       position: relative;
+
       z-index: 2;
 
       color: #c5d8df;
@@ -482,6 +575,7 @@
 
     .experiencia {
       position: relative;
+
       overflow: hidden;
 
       background:
@@ -495,21 +589,27 @@
         url('experiencia-sintonia.png');
 
       background-size: cover;
-      background-position: center right;
+
+      background-position:
+        center right;
+
       background-repeat: no-repeat;
 
       background-attachment: fixed;
 
       color: #ffffff;
 
-      padding: 95px 7% 115px;
+      padding:
+        95px 7% 115px;
     }
 
     .experiencia-inner {
       position: relative;
+
       z-index: 2;
 
       max-width: 1280px;
+
       margin: 0 auto;
     }
 
@@ -528,7 +628,9 @@
     .experiencia h2 {
       color: #ffffff;
 
-      font-size: clamp(42px, 4.6vw, 62px);
+      font-size:
+        clamp(42px, 4.6vw, 62px);
+
       line-height: 1.05;
 
       margin-bottom: 58px;
@@ -536,7 +638,7 @@
 
 
     /* ========================================
-       CRONOLOGÍA EXPERIENCIA
+       TIMELINE EXPERIENCIA
     ======================================== */
 
     .timeline {
@@ -563,7 +665,8 @@
 
       display: grid;
 
-      grid-template-columns: 155px 1fr;
+      grid-template-columns:
+        155px 1fr;
 
       gap: 70px;
 
@@ -598,7 +701,9 @@
 
       background: #06162b;
 
-      border: 5px solid #39d8dd;
+      border:
+        5px solid
+        #39d8dd;
 
       border-radius: 50%;
 
@@ -633,7 +738,8 @@
     .experiencia-card {
       display: grid;
 
-      grid-template-columns: 150px 1fr;
+      grid-template-columns:
+        150px 1fr;
 
       gap: 30px;
 
@@ -654,16 +760,19 @@
 
       border-radius: 14px;
 
-      padding: 24px 30px;
+      padding:
+        24px 30px;
     }
 
     .experiencia-logo {
       width: 100%;
+
       max-width: 135px;
 
       height: 72px;
 
       object-fit: contain;
+
       object-position: center;
 
       display: block;
@@ -676,6 +785,7 @@
       font-weight: 700;
 
       letter-spacing: 1px;
+
       text-transform: uppercase;
 
       margin-bottom: 6px;
@@ -685,6 +795,7 @@
       color: #ffffff;
 
       font-size: 21px;
+
       line-height: 1.25;
 
       margin-bottom: 10px;
@@ -694,6 +805,7 @@
       color: #c8dae2;
 
       font-size: 14.5px;
+
       line-height: 1.6;
     }
 
@@ -733,11 +845,13 @@
 
     .otra-item {
       display: flex;
+
       align-items: center;
 
       gap: 20px;
 
-      padding: 20px 24px;
+      padding:
+        20px 24px;
 
       min-height: 110px;
 
@@ -790,9 +904,11 @@
 
     .formacion {
       background: #f4f8fa;
+
       color: #10253a;
 
-      padding: 105px 7% 115px;
+      padding:
+        105px 7% 115px;
     }
 
     .formacion-inner {
@@ -816,7 +932,9 @@
     .formacion h2 {
       color: #10253a;
 
-      font-size: clamp(42px, 4.4vw, 58px);
+      font-size:
+        clamp(42px, 4.4vw, 58px);
+
       line-height: 1.06;
 
       margin-bottom: 16px;
@@ -846,13 +964,15 @@
 
     .formacion-institucion {
       position: sticky;
-      top: 60px;
+
+      top: 110px;
 
       padding-right: 20px;
     }
 
     .formacion-imagen {
       width: 100%;
+
       max-width: 460px;
 
       display: block;
@@ -866,6 +986,7 @@
       color: #10253a;
 
       font-size: 21px;
+
       line-height: 1.3;
 
       margin-bottom: 10px;
@@ -877,6 +998,7 @@
       color: #657786;
 
       font-size: 15px;
+
       line-height: 1.7;
     }
 
@@ -892,6 +1014,7 @@
       position: absolute;
 
       left: 10px;
+
       top: 8px;
       bottom: 8px;
 
@@ -903,7 +1026,8 @@
     .formacion-item {
       position: relative;
 
-      padding: 0 0 42px 18px;
+      padding:
+        0 0 42px 18px;
     }
 
     .formacion-item:last-child {
@@ -947,6 +1071,7 @@
       color: #10253a;
 
       font-size: 23px;
+
       line-height: 1.25;
 
       margin-bottom: 10px;
@@ -956,6 +1081,7 @@
       color: #5c6d7b;
 
       font-size: 15px;
+
       line-height: 1.7;
 
       max-width: 660px;
@@ -974,6 +1100,7 @@
 
     .proyectos {
       position: relative;
+
       overflow: hidden;
 
       background:
@@ -987,16 +1114,21 @@
         url('hero-sintonia.png');
 
       background-size: cover;
-      background-position: center right;
+
+      background-position:
+        center right;
+
       background-repeat: no-repeat;
 
       background-attachment: fixed;
 
-      padding: 105px 7% 120px;
+      padding:
+        105px 7% 120px;
     }
 
     .proyectos-inner {
       position: relative;
+
       z-index: 2;
 
       max-width: 1280px;
@@ -1033,6 +1165,7 @@
       color: #b8ced7;
 
       font-size: 18px;
+
       line-height: 1.7;
 
       margin-bottom: 52px;
@@ -1052,11 +1185,13 @@
     .proyecto-card,
     .proyecto-cta {
       width: 100%;
+
       min-width: 0;
     }
 
     .proyecto-card {
       display: flex;
+
       flex-direction: column;
 
       overflow: hidden;
@@ -1081,7 +1216,8 @@
     }
 
     .proyecto-card:hover {
-      transform: translateY(-5px);
+      transform:
+        translateY(-5px);
 
       border-color:
         rgba(86, 215, 213, 0.50);
@@ -1097,6 +1233,7 @@
       aspect-ratio: 2 / 1;
 
       display: flex;
+
       align-items: center;
       justify-content: center;
 
@@ -1114,6 +1251,7 @@
       height: 100%;
 
       display: flex;
+
       align-items: center;
       justify-content: center;
 
@@ -1127,6 +1265,7 @@
       display: block;
 
       object-fit: contain;
+
       object-position: center;
 
       transform: none;
@@ -1136,6 +1275,7 @@
       flex: 1;
 
       display: flex;
+
       flex-direction: column;
 
       padding: 24px;
@@ -1148,6 +1288,7 @@
       font-weight: 700;
 
       letter-spacing: 1.7px;
+
       text-transform: uppercase;
 
       margin-bottom: 10px;
@@ -1157,6 +1298,7 @@
       color: #ffffff;
 
       font-size: 21px;
+
       line-height: 1.2;
 
       margin-bottom: 9px;
@@ -1166,6 +1308,7 @@
       color: #d5e6ec;
 
       font-size: 14px;
+
       font-weight: 600;
 
       line-height: 1.45;
@@ -1177,28 +1320,35 @@
       color: #aebfc8;
 
       font-size: 14px;
+
       line-height: 1.62;
 
       margin-top: auto;
     }
 
 
-    /* CTA PROYECTOS */
+    /* ========================================
+       CTA PROYECTOS
+    ======================================== */
 
     .proyecto-cta {
       min-height: 100%;
 
       display: flex;
+
       flex-direction: column;
 
       align-items: flex-start;
+
       justify-content: center;
 
-      padding: 38px 34px;
+      padding:
+        38px 34px;
 
       background: transparent;
 
       border: none;
+
       border-radius: 0;
     }
 
@@ -1219,6 +1369,7 @@
       color: #ffffff;
 
       font-size: 30px;
+
       line-height: 1.18;
 
       margin-bottom: 32px;
@@ -1228,10 +1379,13 @@
       width: 100%;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
-      padding: 17px 22px;
+      padding:
+        17px 22px;
 
       background: #56d7d5;
 
@@ -1240,6 +1394,7 @@
       text-decoration: none;
 
       font-size: 16px;
+
       font-weight: 700;
 
       border-radius: 7px;
@@ -1253,7 +1408,8 @@
     .cta-proyecto:hover {
       background: #ffffff;
 
-      transform: translateY(-3px);
+      transform:
+        translateY(-3px);
 
       box-shadow:
         0 14px 30px
@@ -1267,6 +1423,7 @@
 
     .newsletter {
       position: relative;
+
       overflow: hidden;
 
       min-height: 690px;
@@ -1280,6 +1437,7 @@
         #06162b;
 
       display: flex;
+
       align-items: center;
 
       padding: 0;
@@ -1289,7 +1447,9 @@
       width: 100%;
 
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+
+      grid-template-columns:
+        1.05fr 0.95fr;
 
       align-items: stretch;
 
@@ -1318,6 +1478,7 @@
       inset: 0;
 
       object-fit: cover;
+
       object-position: center;
 
       display: block;
@@ -1327,6 +1488,7 @@
       content: "";
 
       position: absolute;
+
       inset: 0;
 
       background:
@@ -1348,12 +1510,15 @@
 
     .newsletter-content {
       position: relative;
+
       z-index: 3;
 
       display: flex;
+
       flex-direction: column;
 
       justify-content: center;
+
       align-items: flex-start;
 
       padding:
@@ -1364,9 +1529,11 @@
       color: #56d7d5;
 
       font-size: 13px;
+
       font-weight: 700;
 
       letter-spacing: 4px;
+
       text-transform: uppercase;
 
       margin-bottom: 28px;
@@ -1381,9 +1548,6 @@
       margin-bottom: 30px;
     }
 
-
-    /* LOGO MARKETING EN SINTONIA */
-
     .newsletter-brand {
       width: 100%;
 
@@ -1392,13 +1556,17 @@
 
     .newsletter-brand img {
       width: 100%;
+
       max-width: 440px;
+
       height: auto;
 
       display: block;
 
       object-fit: contain;
-      object-position: left center;
+
+      object-position:
+        left center;
     }
 
 
@@ -1410,6 +1578,7 @@
       width: 100%;
 
       display: flex;
+
       align-items: center;
 
       gap: 18px;
@@ -1423,10 +1592,13 @@
       min-height: 64px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
-      padding: 18px 28px;
+      padding:
+        18px 28px;
 
       background: #56d7d5;
 
@@ -1435,6 +1607,7 @@
       text-decoration: none;
 
       font-size: 16px;
+
       font-weight: 700;
 
       text-align: center;
@@ -1450,7 +1623,8 @@
     .newsletter-boton:hover {
       background: #ffffff;
 
-      transform: translateY(-3px);
+      transform:
+        translateY(-3px);
 
       box-shadow:
         0 16px 32px
@@ -1464,7 +1638,9 @@
       flex-shrink: 0;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       border-radius: 9px;
@@ -1488,8 +1664,18 @@
 
     @media (max-width: 1100px) {
 
+      section[id] {
+        scroll-margin-top: 90px;
+      }
+
       .navbar {
-        padding: 20px 5%;
+        padding:
+          20px 5%;
+      }
+
+      .navbar.scrolled {
+        padding:
+          12px 5%;
       }
 
       .navbar nav {
@@ -1502,6 +1688,10 @@
 
       .logo {
         height: 52px;
+      }
+
+      .navbar.scrolled .logo {
+        height: 44px;
       }
 
       .hero,
@@ -1617,31 +1807,61 @@
 
     @media (max-width: 760px) {
 
+      section[id] {
+        scroll-margin-top: 125px;
+      }
+
+
+      /* CABECERA */
+
       .navbar {
-        padding: 18px 6%;
+        padding:
+          18px 6%;
+      }
+
+      .navbar.scrolled {
+        padding:
+          10px 6% 12px;
       }
 
       .navbar-inner {
         flex-direction: column;
+
         align-items: flex-start;
 
         gap: 16px;
+      }
+
+      .navbar.scrolled
+      .navbar-inner {
+        gap: 10px;
       }
 
       .logo {
         height: 48px;
       }
 
+      .navbar.scrolled .logo {
+        height: 40px;
+      }
+
       .navbar nav {
         width: 100%;
 
-        justify-content: flex-start;
+        justify-content:
+          flex-start;
 
         gap: 18px;
 
         overflow-x: auto;
 
         padding-bottom: 5px;
+
+        scrollbar-width: none;
+      }
+
+      .navbar nav::-webkit-scrollbar {
+        display: none;
       }
 
       .navbar nav a {
@@ -1661,6 +1881,7 @@
 
       .nombre {
         font-size: 13px;
+
         letter-spacing: 2px;
       }
 
@@ -1677,11 +1898,13 @@
       /* SOBRE MÍ */
 
       .sobre-mi {
-        padding: 70px 6%;
+        padding:
+          70px 6%;
       }
 
       .sobre-mi-inner {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
 
         gap: 45px;
       }
@@ -1704,7 +1927,8 @@
       /* SERVICIOS */
 
       .servicios {
-        padding: 75px 6% 85px;
+        padding:
+          75px 6% 85px;
       }
 
       .servicios h2 {
@@ -1714,7 +1938,8 @@
       }
 
       .servicios-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
       }
 
       .servicio-card,
@@ -1724,6 +1949,7 @@
         grid-column: auto;
 
         max-width: none;
+
         width: 100%;
 
         min-height: auto;
@@ -1757,6 +1983,7 @@
         display: block;
 
         padding-left: 40px;
+
         padding-bottom: 24px;
       }
 
@@ -1772,11 +1999,13 @@
 
       .timeline-punto {
         left: -2px;
+
         top: 0;
       }
 
       .experiencia-card {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
 
         gap: 14px;
 
@@ -1784,14 +2013,16 @@
       }
 
       .otras-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
       }
 
 
       /* FORMACIÓN */
 
       .formacion {
-        padding: 80px 6% 90px;
+        padding:
+          80px 6% 90px;
       }
 
       .formacion h2 {
@@ -1805,7 +2036,8 @@
       }
 
       .formacion-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
 
         gap: 50px;
       }
@@ -1857,7 +2089,8 @@
       }
 
       .proyectos-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
       }
 
       .proyecto-contenido {
@@ -1871,7 +2104,8 @@
       .proyecto-cta {
         min-height: 240px;
 
-        padding: 30px 18px;
+        padding:
+          30px 18px;
       }
 
       .proyecto-cta h3 {
@@ -1888,7 +2122,8 @@
       }
 
       .newsletter-inner {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
 
         min-height: auto;
       }
@@ -1911,7 +2146,8 @@
         padding:
           35px 6% 80px;
 
-        align-items: flex-start;
+        align-items:
+          flex-start;
       }
 
       .newsletter-eyebrow {
@@ -1937,7 +2173,8 @@
       .newsletter-boton {
         min-height: 58px;
 
-        padding: 15px 18px;
+        padding:
+          15px 18px;
 
         font-size: 14px;
       }
@@ -1973,13 +2210,33 @@
 
       <nav>
 
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#formacion">Formación</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#servicios">
+          Servicios
+        </a>
+
+        <a href="#experiencia">
+          Experiencia
+        </a>
+
+        <a href="#formacion">
+          Formación
+        </a>
+
+        <a href="#proyectos">
+          Proyectos
+        </a>
+
+        <a href="#newsletter">
+          Newsletter
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
 
       </nav>
 
@@ -2001,17 +2258,22 @@
       </div>
 
       <h1>
+
         Marketing, comunicación e
         inteligencia
+
         <span class="destacado">
           artificial.
         </span>
+
       </h1>
 
       <p class="frase">
+
         Conecto estrategia, contenidos,
         datos y tecnología para construir
         marcas y experiencias con sentido.
+
       </p>
 
       <div class="botones">
@@ -2069,30 +2331,37 @@
         </h2>
 
         <p>
+
           <strong>
             Soy Renato Chumbiauca Rebagliati
           </strong>,
+
           profesional de marketing y comunicación
           con experiencia en estrategia, branding,
           reputación, sostenibilidad, contenidos
           y entornos digitales.
+
         </p>
 
         <p>
+
           Me interesa la relación entre estrategia,
           creatividad, datos e inteligencia artificial,
           así como las nuevas formas en las cuales
           las marcas construyen valor, gestionan
           su reputación y se relacionan con
           sus audiencias.
+
         </p>
 
         <p>
+
           Hoy pongo esa experiencia al servicio
           de organizaciones, marcas y profesionales
           a través de asesoría y proyectos en marketing,
           comunicación, branding, reputación,
           sostenibilidad y transformación digital.
+
         </p>
 
       </div>
@@ -2117,21 +2386,26 @@
         Servicios
       </h2>
 
+
       <div class="servicios-grid">
 
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">01</span>
+          <span class="servicio-numero">
+            01
+          </span>
 
           <h3>
             Branding & Rebranding
           </h3>
 
           <p>
+
             Naming, posicionamiento, identidad visual
             y definición de marca para lanzamientos
             o relanzamientos.
+
           </p>
 
         </article>
@@ -2139,16 +2413,20 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">02</span>
+          <span class="servicio-numero">
+            02
+          </span>
 
           <h3>
             Marketing Digital & Contenidos
           </h3>
 
           <p>
+
             Estrategia digital, mensajes clave, copys,
             contenidos y piezas para construir una
             presencia coherente y diferenciada.
+
           </p>
 
         </article>
@@ -2156,16 +2434,20 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">03</span>
+          <span class="servicio-numero">
+            03
+          </span>
 
           <h3>
             Contenido Audiovisual
           </h3>
 
           <p>
+
             Conceptos, guiones, reels y videos pensados
             para captar atención y comunicar con impacto
             en redes.
+
           </p>
 
         </article>
@@ -2173,17 +2455,21 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">04</span>
+          <span class="servicio-numero">
+            04
+          </span>
 
           <h3>
             Prensa & Vocería
           </h3>
 
           <p>
+
             Notas de prensa, media training,
             preparación de voceros y mensajes
             para comunicar con claridad frente
             a medios y públicos.
+
           </p>
 
         </article>
@@ -2191,16 +2477,21 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">05</span>
+          <span class="servicio-numero">
+            05
+          </span>
 
           <h3>
             Web & Experiencia Digital
           </h3>
 
           <p>
-            Conceptualización de páginas web y landing
-            pages, arquitectura de contenidos, mensajes,
-            estructura y experiencia de navegación.
+
+            Conceptualización de páginas web
+            y landing pages, arquitectura de contenidos,
+            mensajes, estructura y experiencia
+            de navegación.
+
           </p>
 
         </article>
@@ -2236,6 +2527,8 @@
       <div class="timeline">
 
 
+        <!-- UNIVERSIDAD CIENTÍFICA -->
+
         <div class="timeline-item">
 
           <div class="timeline-periodo">
@@ -2263,12 +2556,14 @@
               </h3>
 
               <p>
+
                 Docencia en la Facultad de Comunicaciones,
                 vinculada a estrategia publicitaria,
                 gestión de redes sociales y comportamiento
                 psicológico, conectando fundamentos académicos
                 con casos, herramientas y dinámicas aplicadas
                 al entorno actual de marketing y comunicación.
+
               </p>
 
             </div>
@@ -2277,6 +2572,8 @@
 
         </div>
 
+
+        <!-- TOULOUSE -->
 
         <div class="timeline-item">
 
@@ -2305,6 +2602,7 @@
               </h3>
 
               <p>
+
                 Docencia en la Facultad de Negocios
                 en cursos de E-Business, Marketing,
                 Analytics, tendencias globales,
@@ -2312,6 +2610,7 @@
                 en estrategia, comportamiento del consumidor,
                 entorno digital y toma de decisiones
                 basada en información.
+
               </p>
 
             </div>
@@ -2320,6 +2619,8 @@
 
         </div>
 
+
+        <!-- PRECISO -->
 
         <div class="timeline-item">
 
@@ -2348,6 +2649,7 @@
               </h3>
 
               <p>
+
                 Liderazgo de estrategias de marketing digital,
                 contenidos y branding B2B, orientadas a
                 posicionamiento, reputación y generación de
@@ -2356,6 +2658,7 @@
                 y la creación de Sustenia, integrando estrategia,
                 mensajes, SEO, campañas, contenidos y medición
                 de resultados.
+
               </p>
 
             </div>
@@ -2364,6 +2667,8 @@
 
         </div>
 
+
+        <!-- MIGIVA -->
 
         <div class="timeline-item">
 
@@ -2392,6 +2697,7 @@
               </h3>
 
               <p>
+
                 Gestión integral de la estrategia de marketing
                 y comunicaciones para las marcas del grupo,
                 combinando posicionamiento, marketing digital,
@@ -2402,6 +2708,7 @@
                 exportación, orientadas a fortalecer presencia,
                 reputación, experiencia de marca y vínculo
                 con públicos clave.
+
               </p>
 
             </div>
@@ -2410,6 +2717,8 @@
 
         </div>
 
+
+        <!-- LIBÉLULA -->
 
         <div class="timeline-item">
 
@@ -2438,6 +2747,7 @@
               </h3>
 
               <p>
+
                 Gestión estratégica de la presencia y reputación
                 digital de Libélula, con foco en posicionamiento,
                 contenidos y construcción de comunidad alrededor
@@ -2447,6 +2757,7 @@
                 digital del evento regional Nexos+1, cuya conversación
                 alcanzó trending topic mediante planificación de
                 contenidos, mensajes clave y activación en tiempo real.
+
               </p>
 
             </div>
@@ -2459,11 +2770,14 @@
       </div>
 
 
+      <!-- OTRAS EXPERIENCIAS -->
+
       <div class="otras-experiencias">
 
         <h3>
           Otras experiencias relevantes
         </h3>
+
 
         <div class="otras-grid">
 
@@ -2549,8 +2863,10 @@
       </h2>
 
       <p class="formacion-intro">
+
         Una trayectoria que conecta comunicación,
         reputación y negocios digitales.
+
       </p>
 
 
@@ -2570,10 +2886,12 @@
           </h3>
 
           <p>
+
             Formación profesional y de posgrado
             desarrollada en Ciencias de la Comunicación,
             Relaciones Públicas, Comunicación Interna
             y E-Business.
+
           </p>
 
         </div>
@@ -2595,9 +2913,11 @@
             </h3>
 
             <p>
+
               Formación orientada a negocios digitales,
               comercio electrónico, estrategia digital
               y transformación de modelos de negocio.
+
             </p>
 
           </article>
@@ -2616,9 +2936,11 @@
             </h3>
 
             <p>
+
               Formación en comunicación organizacional,
               cultura interna, gestión de mensajes
               y relación con colaboradores.
+
             </p>
 
           </article>
@@ -2637,12 +2959,14 @@
             </h3>
 
             <p>
+
               <span class="formacion-destacado">
                 Mención honrosa en Relaciones Públicas.
               </span>
 
               Formación orientada a comunicación estratégica,
               reputación y gestión de públicos.
+
             </p>
 
           </article>
@@ -2661,8 +2985,10 @@
             </h3>
 
             <p>
+
               Formación con especialización
               en Publicidad y Relaciones Públicas.
+
             </p>
 
           </article>
@@ -2697,10 +3023,12 @@
       </h2>
 
       <p class="proyectos-intro">
+
         Una selección de proyectos desarrollados
         en comunicación, branding, contenidos,
         estrategia digital y posicionamiento,
         para organizaciones y marcas de distintos sectores.
+
       </p>
 
 
@@ -2735,15 +3063,19 @@
             </h3>
 
             <div class="proyecto-tipo">
+
               Estrategia de comunicaciones para el
               Consejo Nacional de Competitividad y Formalización
+
             </div>
 
             <p class="proyecto-descripcion">
+
               Diseño de una estrategia orientada a ordenar
               mensajes, públicos y canales para comunicar
               los ejes de competitividad y productividad
               de forma clara y consistente.
+
             </p>
 
           </div>
@@ -2779,14 +3111,19 @@
             </h3>
 
             <div class="proyecto-tipo">
-              Contenidos, videoclips y reels para gira promocional
+
+              Contenidos, videoclips y reels
+              para gira promocional
+
             </div>
 
             <p class="proyecto-descripcion">
+
               Desarrollo de una línea de contenidos digitales
               y audiovisuales para acompañar la promoción de la gira,
               con piezas adaptadas al lenguaje de redes sociales
               y a la identidad de la propuesta musical.
+
             </p>
 
           </div>
@@ -2826,11 +3163,13 @@
             </div>
 
             <p class="proyecto-descripcion">
+
               Definición de propuesta de valor,
               personalidad y posicionamiento,
               estableciendo los fundamentos conceptuales
               y visuales para una comunicación coherente
               en sus distintos puntos de contacto.
+
             </p>
 
           </div>
@@ -2870,10 +3209,12 @@
             </div>
 
             <p class="proyecto-descripcion">
+
               Estructuración y desarrollo de contenidos web
               orientados a mejorar la claridad de la oferta
               y fortalecer la visibilidad orgánica mediante
               arquitectura de contenidos, keywords y criterios SEO.
+
             </p>
 
           </div>
@@ -2913,10 +3254,12 @@
             </div>
 
             <p class="proyecto-descripcion">
+
               Creación de la marca desde su base estratégica,
               definiendo naming, esencia, posicionamiento,
               identidad y lineamientos de comunicación para
               construir una presencia coherente desde su lanzamiento.
+
             </p>
 
           </div>
@@ -2924,7 +3267,7 @@
         </article>
 
 
-        <!-- CTA -->
+        <!-- CTA PROYECTOS -->
 
         <aside class="proyecto-cta">
 
@@ -2984,7 +3327,7 @@
         <div class="newsletter-linea"></div>
 
 
-        <!-- LOGO MARKETING EN SINTONIA -->
+        <!-- LOGO -->
 
         <div class="newsletter-brand">
 
@@ -2996,7 +3339,7 @@
         </div>
 
 
-        <!-- SUSCRIPCIÓN -->
+        <!-- LINKEDIN -->
 
         <div class="newsletter-accion">
 
@@ -3032,6 +3375,40 @@
     </div>
 
   </section>
+
+
+  <!-- ========================================
+       STICKY HEADER SCRIPT
+  ======================================== -->
+
+  <script>
+
+    const navbar =
+      document.querySelector('.navbar');
+
+    function actualizarNavbar() {
+
+      if (window.scrollY > 40) {
+
+        navbar.classList.add('scrolled');
+
+      } else {
+
+        navbar.classList.remove('scrolled');
+
+      }
+
+    }
+
+    actualizarNavbar();
+
+    window.addEventListener(
+      'scroll',
+      actualizarNavbar,
+      { passive: true }
+    );
+
+  </script>
 
 
 </body>
