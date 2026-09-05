@@ -365,8 +365,7 @@
     .servicios-grid {
       display: grid;
 
-      grid-template-columns:
-        repeat(6, 1fr);
+      grid-template-columns: repeat(6, 1fr);
 
       gap: 22px;
     }
@@ -564,8 +563,7 @@
 
       display: grid;
 
-      grid-template-columns:
-        155px 1fr;
+      grid-template-columns: 155px 1fr;
 
       gap: 70px;
 
@@ -600,9 +598,7 @@
 
       background: #06162b;
 
-      border:
-        5px solid
-        #39d8dd;
+      border: 5px solid #39d8dd;
 
       border-radius: 50%;
 
@@ -637,8 +633,7 @@
     .experiencia-card {
       display: grid;
 
-      grid-template-columns:
-        150px 1fr;
+      grid-template-columns: 150px 1fr;
 
       gap: 30px;
 
@@ -660,22 +655,6 @@
       border-radius: 14px;
 
       padding: 24px 30px;
-
-      transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-    .experiencia-card:hover {
-      transform: translateY(-3px);
-
-      border-color:
-        rgba(57, 216, 221, 0.55);
-
-      box-shadow:
-        0 18px 40px
-        rgba(0, 0, 0, 0.22);
     }
 
     .experiencia-logo {
@@ -984,13 +963,13 @@
 
     .formacion-destacado {
       color: #10253a;
+
       font-weight: 700;
     }
 
 
     /* ========================================
        PROYECTOS
-       PARALLAX
     ======================================== */
 
     .proyectos {
@@ -1059,12 +1038,6 @@
       margin-bottom: 52px;
     }
 
-
-    /* ========================================
-       GRID PROYECTOS
-       3 X 2
-    ======================================== */
-
     .proyectos-grid {
       display: grid;
 
@@ -1081,11 +1054,6 @@
       width: 100%;
       min-width: 0;
     }
-
-
-    /* ========================================
-       TARJETAS PROYECTOS
-    ======================================== */
 
     .proyecto-card {
       display: flex;
@@ -1123,12 +1091,6 @@
         rgba(0, 0, 0, 0.25);
     }
 
-
-    /* ========================================
-       RECURSOS PROYECTOS
-       PROPORCIÓN 600 X 300
-    ======================================== */
-
     .proyecto-visual {
       width: 100%;
 
@@ -1139,8 +1101,6 @@
       justify-content: center;
 
       overflow: hidden;
-
-      padding: 0;
 
       background: #f4f8fa;
 
@@ -1171,11 +1131,6 @@
 
       transform: none;
     }
-
-
-    /* ========================================
-       CONTENIDO PROYECTOS
-    ======================================== */
 
     .proyecto-contenido {
       flex: 1;
@@ -1228,10 +1183,7 @@
     }
 
 
-    /* ========================================
-       CTA PROYECTOS
-       FLOTANTE / SIN RECUADRO
-    ======================================== */
+    /* CTA PROYECTOS */
 
     .proyecto-cta {
       min-height: 100%;
@@ -1279,8 +1231,6 @@
       align-items: center;
       justify-content: center;
 
-      gap: 12px;
-
       padding: 17px 22px;
 
       background: #56d7d5;
@@ -1308,6 +1258,229 @@
       box-shadow:
         0 14px 30px
         rgba(0, 0, 0, 0.22);
+    }
+
+
+    /* ========================================
+       NEWSLETTER
+    ======================================== */
+
+    .newsletter {
+      position: relative;
+      overflow: hidden;
+
+      min-height: 690px;
+
+      background:
+        radial-gradient(
+          circle at 72% 48%,
+          rgba(9, 52, 80, 0.34) 0%,
+          rgba(6, 22, 43, 0) 44%
+        ),
+        #06162b;
+
+      display: flex;
+      align-items: center;
+
+      padding: 0;
+    }
+
+    .newsletter-inner {
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+
+      align-items: stretch;
+
+      min-height: 690px;
+    }
+
+
+    /* IMAGEN NEWSLETTER */
+
+    .newsletter-visual {
+      position: relative;
+
+      min-height: 690px;
+
+      overflow: hidden;
+    }
+
+    .newsletter-visual img {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      inset: 0;
+
+      object-fit: cover;
+      object-position: center;
+
+      display: block;
+    }
+
+    .newsletter-visual::after {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(6, 22, 43, 0.03) 0%,
+          rgba(6, 22, 43, 0.03) 65%,
+          rgba(6, 22, 43, 0.72) 88%,
+          #06162b 100%
+        );
+
+      pointer-events: none;
+    }
+
+
+    /* CONTENIDO NEWSLETTER */
+
+    .newsletter-content {
+      position: relative;
+      z-index: 3;
+
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: flex-start;
+
+      padding:
+        90px 8% 90px 5%;
+    }
+
+    .newsletter-eyebrow {
+      color: #56d7d5;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing: 4px;
+      text-transform: uppercase;
+
+      margin-bottom: 28px;
+    }
+
+    .newsletter-linea {
+      width: 56px;
+      height: 3px;
+
+      background: #56d7d5;
+
+      margin-bottom: 28px;
+    }
+
+    .newsletter-content h2 {
+      color: #ffffff;
+
+      font-size:
+        clamp(44px, 4.6vw, 66px);
+
+      line-height: 1.04;
+
+      letter-spacing: -1px;
+
+      margin-bottom: 24px;
+    }
+
+    .newsletter-content h2 span {
+      color: #56d7d5;
+    }
+
+    .newsletter-frase {
+      max-width: 600px;
+
+      color: #d5e7ed;
+
+      font-size:
+        clamp(19px, 1.5vw, 24px);
+
+      line-height: 1.55;
+
+      margin-bottom: 38px;
+    }
+
+
+    /* CTA LINKEDIN */
+
+    .newsletter-accion {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+
+      gap: 18px;
+
+      max-width: 650px;
+    }
+
+    .newsletter-boton {
+      flex: 1;
+
+      min-height: 64px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 18px 28px;
+
+      background: #56d7d5;
+
+      color: #06162b;
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      border-radius: 9px;
+
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .newsletter-boton:hover {
+      background: #ffffff;
+
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 16px 32px
+        rgba(0, 0, 0, 0.24);
+    }
+
+    .newsletter-linkedin {
+      width: 64px;
+      height: 64px;
+
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 9px;
+
+      overflow: hidden;
+    }
+
+    .newsletter-linkedin img {
+      width: 100%;
+      height: 100%;
+
+      display: block;
+
+      object-fit: contain;
     }
 
 
@@ -1414,6 +1587,33 @@
         min-height: 300px;
       }
 
+
+      /* NEWSLETTER */
+
+      .newsletter-inner {
+        grid-template-columns:
+          0.95fr 1.05fr;
+
+        min-height: 620px;
+      }
+
+      .newsletter-visual {
+        min-height: 620px;
+      }
+
+      .newsletter-content {
+        padding:
+          70px 6% 70px 4%;
+      }
+
+      .newsletter-content h2 {
+        font-size: 46px;
+      }
+
+      .newsletter-frase {
+        font-size: 19px;
+      }
+
     }
 
 
@@ -1488,6 +1688,7 @@
 
       .sobre-mi-inner {
         grid-template-columns: 1fr;
+
         gap: 45px;
       }
 
@@ -1501,6 +1702,7 @@
 
       .sobre-mi p {
         font-size: 16px;
+
         line-height: 1.7;
       }
 
@@ -1513,6 +1715,7 @@
 
       .servicios h2 {
         font-size: 34px;
+
         margin-bottom: 34px;
       }
 
@@ -1544,10 +1747,6 @@
 
         background-attachment:
           scroll;
-      }
-
-      .experiencia-eyebrow {
-        font-size: 11px;
       }
 
       .experiencia h2 {
@@ -1583,8 +1782,7 @@
       }
 
       .experiencia-card {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
 
         gap: 14px;
 
@@ -1688,6 +1886,77 @@
         max-width: 300px;
       }
 
+
+      /* NEWSLETTER */
+
+      .newsletter {
+        min-height: auto;
+      }
+
+      .newsletter-inner {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+      }
+
+      .newsletter-visual {
+        min-height: 410px;
+      }
+
+      .newsletter-visual::after {
+        background:
+          linear-gradient(
+            180deg,
+            rgba(6, 22, 43, 0) 0%,
+            rgba(6, 22, 43, 0.15) 65%,
+            #06162b 100%
+          );
+      }
+
+      .newsletter-content {
+        padding:
+          35px 6% 80px;
+
+        align-items: flex-start;
+      }
+
+      .newsletter-eyebrow {
+        margin-bottom: 20px;
+      }
+
+      .newsletter-linea {
+        margin-bottom: 22px;
+      }
+
+      .newsletter-content h2 {
+        font-size: 39px;
+
+        margin-bottom: 20px;
+      }
+
+      .newsletter-frase {
+        font-size: 18px;
+
+        margin-bottom: 30px;
+      }
+
+      .newsletter-accion {
+        gap: 12px;
+      }
+
+      .newsletter-boton {
+        min-height: 58px;
+
+        padding: 15px 18px;
+
+        font-size: 14px;
+      }
+
+      .newsletter-linkedin {
+        width: 58px;
+        height: 58px;
+      }
+
     }
 
   </style>
@@ -1698,9 +1967,7 @@
 <body>
 
 
-  <!-- ========================================
-       CABECERA
-  ======================================== -->
+  <!-- CABECERA -->
 
   <header class="navbar">
 
@@ -1714,33 +1981,13 @@
 
       <nav>
 
-        <a href="#sobre-mi">
-          Sobre mí
-        </a>
-
-        <a href="#servicios">
-          Servicios
-        </a>
-
-        <a href="#experiencia">
-          Experiencia
-        </a>
-
-        <a href="#formacion">
-          Formación
-        </a>
-
-        <a href="#proyectos">
-          Proyectos
-        </a>
-
-        <a href="#newsletter">
-          Newsletter
-        </a>
-
-        <a href="#contacto">
-          Contacto
-        </a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contacto">Contacto</a>
 
       </nav>
 
@@ -1749,9 +1996,7 @@
   </header>
 
 
-  <!-- ========================================
-       HERO
-  ======================================== -->
+  <!-- HERO -->
 
   <section class="hero">
 
@@ -1798,9 +2043,7 @@
   </section>
 
 
-  <!-- ========================================
-       SOBRE MÍ
-  ======================================== -->
+  <!-- SOBRE MÍ -->
 
   <section
     class="sobre-mi"
@@ -1817,7 +2060,6 @@
         >
 
       </div>
-
 
       <div class="sobre-mi-texto">
 
@@ -1863,9 +2105,7 @@
   </section>
 
 
-  <!-- ========================================
-       SERVICIOS
-  ======================================== -->
+  <!-- SERVICIOS -->
 
   <section
     class="servicios"
@@ -1878,15 +2118,11 @@
         Servicios
       </h2>
 
-
       <div class="servicios-grid">
-
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">
-            01
-          </span>
+          <span class="servicio-numero">01</span>
 
           <h3>
             Branding & Rebranding
@@ -1903,9 +2139,7 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">
-            02
-          </span>
+          <span class="servicio-numero">02</span>
 
           <h3>
             Marketing Digital & Contenidos
@@ -1922,9 +2156,7 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">
-            03
-          </span>
+          <span class="servicio-numero">03</span>
 
           <h3>
             Contenido Audiovisual
@@ -1941,9 +2173,7 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">
-            04
-          </span>
+          <span class="servicio-numero">04</span>
 
           <h3>
             Prensa & Vocería
@@ -1961,9 +2191,7 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">
-            05
-          </span>
+          <span class="servicio-numero">05</span>
 
           <h3>
             Web & Experiencia Digital
@@ -1977,7 +2205,6 @@
 
         </article>
 
-
       </div>
 
     </div>
@@ -1985,9 +2212,7 @@
   </section>
 
 
-  <!-- ========================================
-       EXPERIENCIA
-  ======================================== -->
+  <!-- EXPERIENCIA -->
 
   <section
     class="experiencia"
@@ -2004,11 +2229,8 @@
         Experiencia
       </h2>
 
-
       <div class="timeline">
 
-
-        <!-- UNIVERSIDAD CIENTÍFICA -->
 
         <div class="timeline-item">
 
@@ -2051,8 +2273,6 @@
 
         </div>
 
-
-        <!-- TOULOUSE -->
 
         <div class="timeline-item">
 
@@ -2097,8 +2317,6 @@
         </div>
 
 
-        <!-- PRECISO -->
-
         <div class="timeline-item">
 
           <div class="timeline-periodo">
@@ -2142,8 +2360,6 @@
 
         </div>
 
-
-        <!-- MIGIVA -->
 
         <div class="timeline-item">
 
@@ -2191,8 +2407,6 @@
         </div>
 
 
-        <!-- LIBÉLULA -->
-
         <div class="timeline-item">
 
           <div class="timeline-periodo">
@@ -2237,11 +2451,8 @@
 
         </div>
 
-
       </div>
 
-
-      <!-- OTRAS EXPERIENCIAS -->
 
       <div class="otras-experiencias">
 
@@ -2250,7 +2461,6 @@
         </h3>
 
         <div class="otras-grid">
-
 
           <div class="otra-item">
 
@@ -2303,7 +2513,6 @@
 
           </div>
 
-
         </div>
 
       </div>
@@ -2313,9 +2522,7 @@
   </section>
 
 
-  <!-- ========================================
-       FORMACIÓN
-  ======================================== -->
+  <!-- FORMACIÓN -->
 
   <section
     class="formacion"
@@ -2337,9 +2544,7 @@
         reputación y negocios digitales.
       </p>
 
-
       <div class="formacion-layout">
-
 
         <div class="formacion-institucion">
 
@@ -2364,7 +2569,6 @@
 
 
         <div class="formacion-lista">
-
 
           <article class="formacion-item">
 
@@ -2451,7 +2655,6 @@
 
           </article>
 
-
         </div>
 
       </div>
@@ -2461,9 +2664,7 @@
   </section>
 
 
-  <!-- ========================================
-       PROYECTOS
-  ======================================== -->
+  <!-- PROYECTOS -->
 
   <section
     class="proyectos"
@@ -2563,8 +2764,7 @@
             </h3>
 
             <div class="proyecto-tipo">
-              Contenidos, videoclips y reels
-              para gira promocional
+              Contenidos, videoclips y reels para gira promocional
             </div>
 
             <p class="proyecto-descripcion">
@@ -2709,7 +2909,7 @@
         </article>
 
 
-        <!-- CTA FLOTANTE -->
+        <!-- CTA -->
 
         <aside class="proyecto-cta">
 
@@ -2726,6 +2926,86 @@
 
         </aside>
 
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       NEWSLETTER
+  ======================================== -->
+
+  <section
+    class="newsletter"
+    id="newsletter"
+  >
+
+    <div class="newsletter-inner">
+
+
+      <!-- RECURSO VISUAL -->
+
+      <div class="newsletter-visual">
+
+        <img
+          src="newsletter-sintonia.png"
+          alt=""
+        >
+
+      </div>
+
+
+      <!-- CONTENIDO -->
+
+      <div class="newsletter-content">
+
+        <div class="newsletter-eyebrow">
+          Newsletter
+        </div>
+
+        <div class="newsletter-linea"></div>
+
+        <h2>
+          Marketing en
+          <span>SintonIA</span>
+        </h2>
+
+        <p class="newsletter-frase">
+          Ideas sobre marketing, comunicación
+          e inteligencia artificial.
+        </p>
+
+
+        <div class="newsletter-accion">
+
+          <a
+            href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7333666206127714305"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="newsletter-boton"
+          >
+            Suscríbete a Marketing en SintonIA →
+          </a>
+
+
+          <a
+            href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7333666206127714305"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="newsletter-linkedin"
+            aria-label="Suscribirse a Marketing en SintonIA en LinkedIn"
+          >
+
+            <img
+              src="logo-linkedin.png"
+              alt="LinkedIn"
+            >
+
+          </a>
+
+        </div>
 
       </div>
 
