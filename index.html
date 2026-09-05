@@ -38,14 +38,17 @@
       position: absolute;
       top: 0;
       left: 0;
+
       width: 100%;
       z-index: 20;
+
       padding: 22px 7%;
     }
 
     .navbar-inner {
       width: 100%;
       max-width: 1500px;
+
       margin: 0 auto;
 
       display: flex;
@@ -364,7 +367,10 @@
 
     .servicios-grid {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+
+      grid-template-columns:
+        repeat(6, 1fr);
+
       gap: 22px;
     }
 
@@ -495,6 +501,7 @@
       background-size: cover;
       background-position: center right;
       background-repeat: no-repeat;
+
       background-attachment: fixed;
 
       color: #ffffff;
@@ -533,7 +540,7 @@
 
 
     /* ========================================
-       CRONOLOGÍA
+       CRONOLOGÍA EXPERIENCIA
     ======================================== */
 
     .timeline {
@@ -559,7 +566,9 @@
       position: relative;
 
       display: grid;
-      grid-template-columns: 155px 1fr;
+
+      grid-template-columns:
+        155px 1fr;
 
       gap: 70px;
 
@@ -594,7 +603,9 @@
 
       background: #06162b;
 
-      border: 5px solid #39d8dd;
+      border:
+        5px solid
+        #39d8dd;
 
       border-radius: 50%;
 
@@ -628,7 +639,9 @@
 
     .experiencia-card {
       display: grid;
-      grid-template-columns: 150px 1fr;
+
+      grid-template-columns:
+        150px 1fr;
 
       gap: 30px;
 
@@ -808,6 +821,7 @@
 
     .formacion-inner {
       max-width: 1280px;
+
       margin: 0 auto;
     }
 
@@ -931,7 +945,9 @@
 
       background: #f4f8fa;
 
-      border: 4px solid #39d8dd;
+      border:
+        4px solid
+        #39d8dd;
 
       border-radius: 50%;
 
@@ -971,6 +987,7 @@
 
     .formacion-destacado {
       color: #10253a;
+
       font-weight: 700;
     }
 
@@ -997,6 +1014,7 @@
       background-size: cover;
       background-position: center right;
       background-repeat: no-repeat;
+
       background-attachment: fixed;
 
       padding: 105px 7% 120px;
@@ -1007,6 +1025,7 @@
       z-index: 2;
 
       max-width: 1280px;
+
       margin: 0 auto;
     }
 
@@ -1047,7 +1066,7 @@
 
     /* ========================================
        GRID PROYECTOS
-       3 + 3 SIMÉTRICO
+       3 X 2
     ======================================== */
 
     .proyectos-grid {
@@ -1063,7 +1082,6 @@
 
     .proyecto-card,
     .proyecto-cta {
-
       width: 100%;
 
       min-width: 0;
@@ -1112,12 +1130,14 @@
 
 
     /* ========================================
-       LOGOS
-       FRANJA COMPACTA
+       RECURSOS PROYECTOS
+       PROPORCIÓN EXACTA 600 X 300
     ======================================== */
 
     .proyecto-visual {
-      height: 145px;
+      width: 100%;
+
+      aspect-ratio: 2 / 1;
 
       display: flex;
       align-items: center;
@@ -1125,14 +1145,9 @@
 
       overflow: hidden;
 
-      padding: 8px 16px;
+      padding: 0;
 
-      background:
-        linear-gradient(
-          145deg,
-          #f8fbfc,
-          #edf3f6
-        );
+      background: #f4f8fa;
 
       border-bottom:
         1px solid
@@ -1158,38 +1173,9 @@
 
       object-fit: contain;
 
-      transform-origin: center;
-    }
+      object-position: center;
 
-
-    /* ========================================
-       AJUSTE VISUAL INDIVIDUAL
-       SIN CAMBIAR ARCHIVOS
-    ======================================== */
-
-    .proyecto-card:nth-child(1)
-    .proyecto-logo-box img {
-      transform: scale(1.18);
-    }
-
-    .proyecto-card:nth-child(2)
-    .proyecto-logo-box img {
-      transform: scale(1.42);
-    }
-
-    .proyecto-card:nth-child(3)
-    .proyecto-logo-box img {
-      transform: scale(1.22);
-    }
-
-    .proyecto-card:nth-child(4)
-    .proyecto-logo-box img {
-      transform: scale(1.22);
-    }
-
-    .proyecto-card:nth-child(5)
-    .proyecto-logo-box img {
-      transform: scale(1.26);
+      transform: none;
     }
 
 
@@ -1362,7 +1348,6 @@
       .experiencia,
       .formacion,
       .proyectos {
-
         padding-left: 5%;
         padding-right: 5%;
       }
@@ -1532,13 +1517,11 @@
       /* SERVICIOS */
 
       .servicios {
-        padding:
-          75px 6% 85px;
+        padding: 75px 6% 85px;
       }
 
       .servicios h2 {
         font-size: 34px;
-
         margin-bottom: 34px;
       }
 
@@ -1550,7 +1533,6 @@
       .servicio-card:nth-child(4),
       .servicio-card:nth-child(5),
       .servicio-card:last-child {
-
         grid-column: auto;
 
         max-width: none;
@@ -1566,13 +1548,21 @@
         padding:
           75px 6% 85px;
 
-        background-position: center top;
+        background-position:
+          center top;
 
-        background-attachment: scroll;
+        background-attachment:
+          scroll;
+      }
+
+      .experiencia-eyebrow {
+        font-size: 11px;
       }
 
       .experiencia h2 {
         font-size: 36px;
+
+        margin-bottom: 42px;
       }
 
       .timeline::before {
@@ -1602,7 +1592,8 @@
       }
 
       .experiencia-card {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
 
         gap: 14px;
 
@@ -1617,8 +1608,7 @@
       /* FORMACIÓN */
 
       .formacion {
-        padding:
-          80px 6% 90px;
+        padding: 80px 6% 90px;
       }
 
       .formacion h2 {
@@ -1666,9 +1656,11 @@
         padding:
           80px 6% 90px;
 
-        background-position: center top;
+        background-position:
+          center top;
 
-        background-attachment: scroll;
+        background-attachment:
+          scroll;
       }
 
       .proyectos h2 {
@@ -1683,10 +1675,6 @@
 
       .proyectos-grid {
         grid-template-columns: 1fr;
-      }
-
-      .proyecto-visual {
-        height: 135px;
       }
 
       .proyecto-contenido {
@@ -1732,13 +1720,35 @@
       >
 
       <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#formacion">Formación</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#contacto">Contacto</a>
+
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#servicios">
+          Servicios
+        </a>
+
+        <a href="#experiencia">
+          Experiencia
+        </a>
+
+        <a href="#formacion">
+          Formación
+        </a>
+
+        <a href="#proyectos">
+          Proyectos
+        </a>
+
+        <a href="#newsletter">
+          Newsletter
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
       </nav>
 
     </div>
@@ -1841,7 +1851,8 @@
           creatividad, datos e inteligencia artificial,
           así como las nuevas formas en las cuales
           las marcas construyen valor, gestionan
-          su reputación y se relacionan con sus audiencias.
+          su reputación y se relacionan con
+          sus audiencias.
         </p>
 
         <p>
@@ -1880,7 +1891,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">01</span>
+          <span class="servicio-numero">
+            01
+          </span>
 
           <h3>
             Branding & Rebranding
@@ -1897,7 +1910,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">02</span>
+          <span class="servicio-numero">
+            02
+          </span>
 
           <h3>
             Marketing Digital & Contenidos
@@ -1914,7 +1929,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">03</span>
+          <span class="servicio-numero">
+            03
+          </span>
 
           <h3>
             Contenido Audiovisual
@@ -1931,7 +1948,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">04</span>
+          <span class="servicio-numero">
+            04
+          </span>
 
           <h3>
             Prensa & Vocería
@@ -1949,7 +1968,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">05</span>
+          <span class="servicio-numero">
+            05
+          </span>
 
           <h3>
             Web & Experiencia Digital
@@ -2067,12 +2088,13 @@
               </h3>
 
               <p>
-                Docencia en la Facultad de Negocios en cursos
-                de E-Business, Marketing, Analytics,
-                tendencias globales, emprendimiento y audiencias,
-                con foco en estrategia, comportamiento del consumidor,
-                entorno digital y toma de decisiones basada
-                en información.
+                Docencia en la Facultad de Negocios
+                en cursos de E-Business, Marketing,
+                Analytics, tendencias globales,
+                emprendimiento y audiencias, con foco
+                en estrategia, comportamiento del consumidor,
+                entorno digital y toma de decisiones
+                basada en información.
               </p>
 
             </div>
