@@ -2,17 +2,29 @@
 <html lang="es">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Renato Chumbiauca Rebagliati | Marketing en SintonIA</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <!-- FAVICON -->
+  <title>
+    Renato Chumbiauca Rebagliati | Marketing en SintonIA
+  </title>
+
+
+  <!-- ========================================
+       FAVICON
+  ======================================== -->
+
   <link
     rel="icon"
     type="image/png"
     href="favicon.png"
   >
+
 
   <style>
 
@@ -31,8 +43,13 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       background: #06162b;
+
       color: #ffffff;
     }
 
@@ -41,11 +58,13 @@
     }
 
 
+
     /* ========================================
        CABECERA / STICKY HEADER
     ======================================== */
 
     .navbar {
+
       position: fixed;
 
       top: 0;
@@ -55,7 +74,8 @@
 
       z-index: 1000;
 
-      padding: 22px 7%;
+      padding:
+        22px 7%;
 
       background: transparent;
 
@@ -71,15 +91,20 @@
         box-shadow 0.3s ease;
     }
 
+
     .navbar.scrolled {
+
       padding-top: 13px;
       padding-bottom: 13px;
 
       background:
         rgba(6, 22, 43, 0.91);
 
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter:
+        blur(14px);
+
+      -webkit-backdrop-filter:
+        blur(14px);
 
       border-bottom:
         1px solid
@@ -90,24 +115,34 @@
         rgba(0, 0, 0, 0.16);
     }
 
+
     .navbar-inner {
+
       width: 100%;
+
       max-width: 1500px;
 
       margin: 0 auto;
 
       display: flex;
+
       align-items: center;
-      justify-content: space-between;
+
+      justify-content:
+        space-between;
 
       gap: 40px;
     }
 
+
     .logo {
+
       width: auto;
+
       height: 60px;
 
       display: block;
+
       object-fit: contain;
 
       flex-shrink: 0;
@@ -116,24 +151,33 @@
         height 0.3s ease;
     }
 
+
     .navbar.scrolled .logo {
       height: 48px;
     }
 
+
     .navbar nav {
+
       display: flex;
+
       align-items: center;
-      justify-content: flex-end;
+
+      justify-content:
+        flex-end;
 
       gap: 26px;
     }
 
+
     .navbar nav a {
+
       color: #ffffff;
 
       text-decoration: none;
 
       font-size: 14px;
+
       font-weight: 500;
 
       white-space: nowrap;
@@ -142,9 +186,11 @@
         color 0.25s ease;
     }
 
+
     .navbar nav a:hover {
       color: #56d7d5;
     }
+
 
 
     /* ========================================
@@ -152,9 +198,11 @@
     ======================================== */
 
     .hero {
+
       min-height: 100vh;
 
       background:
+
         linear-gradient(
           90deg,
           rgba(6, 22, 43, 0.99) 0%,
@@ -163,39 +211,57 @@
           rgba(6, 22, 43, 0.18) 72%,
           rgba(6, 22, 43, 0.02) 100%
         ),
+
         url('hero-sintonia.png');
 
       background-size: cover;
+
       background-position: center;
-      background-repeat: no-repeat;
+
+      background-repeat:
+        no-repeat;
 
       display: flex;
+
       align-items: center;
 
-      padding: 150px 7% 70px;
+      padding:
+        150px 7% 70px;
     }
+
 
     .hero-content {
       max-width: 760px;
     }
 
+
     .nombre {
+
       color: #56d7d5;
 
       font-size: 17px;
+
       font-weight: 500;
 
       letter-spacing: 3px;
-      text-transform: uppercase;
+
+      text-transform:
+        uppercase;
 
       margin-bottom: 22px;
     }
 
+
     h1 {
+
       max-width: 780px;
 
       font-size:
-        clamp(48px, 5.6vw, 78px);
+        clamp(
+          48px,
+          5.6vw,
+          78px
+        );
 
       line-height: 1.04;
 
@@ -204,20 +270,25 @@
       margin-bottom: 28px;
     }
 
+
     .destacado {
       color: #ff7b72;
     }
 
+
     .frase {
+
       max-width: 660px;
 
       color: #d9eef2;
 
       font-size: 21px;
+
       line-height: 1.65;
 
       margin-bottom: 36px;
     }
+
 
 
     /* ========================================
@@ -225,6 +296,7 @@
     ======================================== */
 
     .botones {
+
       display: flex;
 
       gap: 16px;
@@ -232,14 +304,19 @@
       flex-wrap: wrap;
     }
 
-    .boton {
-      display: inline-block;
 
-      padding: 15px 25px;
+    .boton {
+
+      display:
+        inline-block;
+
+      padding:
+        15px 25px;
 
       border-radius: 6px;
 
       font-size: 15px;
+
       font-weight: 700;
 
       text-decoration: none;
@@ -250,8 +327,11 @@
         border-color 0.25s ease;
     }
 
+
     .boton-principal {
+
       background: #56d7d5;
+
       color: #06162b;
 
       border:
@@ -259,13 +339,18 @@
         #56d7d5;
     }
 
+
     .boton-principal:hover {
+
       background: #ffffff;
 
-      border-color: #ffffff;
+      border-color:
+        #ffffff;
     }
 
+
     .boton-secundario {
+
       background: transparent;
 
       border:
@@ -275,11 +360,14 @@
       color: #56d7d5;
     }
 
+
     .boton-secundario:hover {
+
       background: #56d7d5;
 
       color: #06162b;
     }
+
 
 
     /* ========================================
@@ -287,14 +375,18 @@
     ======================================== */
 
     .sobre-mi {
+
       background: #f4f8fa;
 
       color: #10253a;
 
-      padding: 95px 7%;
+      padding:
+        95px 7%;
     }
 
+
     .sobre-mi-inner {
+
       max-width: 1300px;
 
       margin: 0 auto;
@@ -309,7 +401,9 @@
       align-items: center;
     }
 
+
     .sobre-mi-foto {
+
       position: relative;
 
       padding: 6px;
@@ -317,6 +411,7 @@
       border-radius: 22px;
 
       background:
+
         linear-gradient(
           135deg,
           rgba(86, 215, 213, 0.95) 0%,
@@ -329,7 +424,9 @@
         rgba(16, 37, 58, 0.14);
     }
 
+
     .sobre-mi-foto img {
+
       width: 100%;
 
       display: block;
@@ -339,41 +436,57 @@
       object-fit: cover;
     }
 
+
     .section-label {
+
       color: #2baeb0;
 
       font-size: 14px;
+
       font-weight: 700;
 
       letter-spacing: 3px;
-      text-transform: uppercase;
+
+      text-transform:
+        uppercase;
 
       margin-bottom: 16px;
     }
 
+
     .sobre-mi h2 {
+
       color: #10253a;
 
       font-size:
-        clamp(34px, 3.2vw, 46px);
+        clamp(
+          34px,
+          3.2vw,
+          46px
+        );
 
       line-height: 1.12;
 
       margin-bottom: 28px;
     }
 
+
     .sobre-mi p {
+
       color: #435568;
 
       font-size: 17px;
+
       line-height: 1.75;
 
       margin-bottom: 20px;
     }
 
+
     .sobre-mi strong {
       color: #10253a;
     }
+
 
 
     /* ========================================
@@ -381,11 +494,13 @@
     ======================================== */
 
     .servicios {
+
       position: relative;
 
       overflow: hidden;
 
       background:
+
         linear-gradient(
           180deg,
           #04152a 0%,
@@ -397,7 +512,9 @@
         100px 7% 110px;
     }
 
+
     .servicios::before {
+
       content: "";
 
       position: absolute;
@@ -405,6 +522,7 @@
       inset: 0;
 
       background:
+
         linear-gradient(
           90deg,
           rgba(6, 22, 43, 0.96) 0%,
@@ -413,9 +531,11 @@
           rgba(6, 22, 43, 0.14) 78%,
           rgba(6, 22, 43, 0.04) 100%
         ),
+
         url('hero-sintonia.png');
 
-      background-size: cover;
+      background-size:
+        cover;
 
       background-position:
         center right;
@@ -425,7 +545,9 @@
       pointer-events: none;
     }
 
+
     .servicios-inner {
+
       position: relative;
 
       z-index: 2;
@@ -435,18 +557,26 @@
       margin: 0 auto;
     }
 
+
     .servicios h2 {
+
       color: #ffffff;
 
       font-size:
-        clamp(40px, 4.3vw, 58px);
+        clamp(
+          40px,
+          4.3vw,
+          58px
+        );
 
       line-height: 1.08;
 
       margin-bottom: 42px;
     }
 
+
     .servicios-grid {
+
       display: grid;
 
       grid-template-columns:
@@ -455,7 +585,9 @@
       gap: 22px;
     }
 
+
     .servicio-card {
+
       position: relative;
 
       overflow: hidden;
@@ -468,6 +600,7 @@
         28px 28px 26px;
 
       background:
+
         linear-gradient(
           145deg,
           rgba(12, 42, 66, 0.93),
@@ -486,17 +619,23 @@
         box-shadow 0.3s ease;
     }
 
+
     .servicio-card:nth-child(4) {
+
       grid-column:
         2 / span 2;
     }
 
+
     .servicio-card:nth-child(5) {
+
       grid-column:
         4 / span 2;
     }
 
+
     .servicio-card:hover {
+
       transform:
         translateY(-6px);
 
@@ -508,12 +647,15 @@
         rgba(0, 0, 0, 0.22);
     }
 
+
     .servicio-card::after {
+
       content: "";
 
       position: absolute;
 
       width: 100px;
+
       height: 100px;
 
       border:
@@ -523,15 +665,19 @@
       border-radius: 50%;
 
       right: -42px;
+
       bottom: -42px;
     }
 
+
     .servicio-numero {
+
       display: block;
 
       color: #56d7d5;
 
       font-size: 13px;
+
       font-weight: 700;
 
       letter-spacing: 2px;
@@ -539,12 +685,16 @@
       margin-bottom: 18px;
     }
 
+
     .servicio-card:nth-child(5)
     .servicio-numero {
+
       color: #ff7b72;
     }
 
+
     .servicio-card h3 {
+
       position: relative;
 
       z-index: 2;
@@ -552,12 +702,15 @@
       color: #ffffff;
 
       font-size: 20px;
+
       line-height: 1.25;
 
       margin-bottom: 14px;
     }
 
+
     .servicio-card p {
+
       position: relative;
 
       z-index: 2;
@@ -565,8 +718,10 @@
       color: #c5d8df;
 
       font-size: 15px;
+
       line-height: 1.68;
     }
+
 
 
     /* ========================================
@@ -574,11 +729,13 @@
     ======================================== */
 
     .experiencia {
+
       position: relative;
 
       overflow: hidden;
 
       background:
+
         linear-gradient(
           90deg,
           rgba(6, 22, 43, 0.98) 0%,
@@ -586,6 +743,7 @@
           rgba(6, 22, 43, 0.82) 55%,
           rgba(6, 22, 43, 0.60) 100%
         ),
+
         url('experiencia-sintonia.png');
 
       background-size: cover;
@@ -593,9 +751,11 @@
       background-position:
         center right;
 
-      background-repeat: no-repeat;
+      background-repeat:
+        no-repeat;
 
-      background-attachment: fixed;
+      background-attachment:
+        fixed;
 
       color: #ffffff;
 
@@ -603,7 +763,9 @@
         95px 7% 115px;
     }
 
+
     .experiencia-inner {
+
       position: relative;
 
       z-index: 2;
@@ -613,28 +775,40 @@
       margin: 0 auto;
     }
 
+
     .experiencia-eyebrow {
+
       color: #56d7d5;
 
       font-size: 13px;
+
       font-weight: 700;
 
       letter-spacing: 3px;
-      text-transform: uppercase;
+
+      text-transform:
+        uppercase;
 
       margin-bottom: 14px;
     }
 
+
     .experiencia h2 {
+
       color: #ffffff;
 
       font-size:
-        clamp(42px, 4.6vw, 62px);
+        clamp(
+          42px,
+          4.6vw,
+          62px
+        );
 
       line-height: 1.05;
 
       margin-bottom: 58px;
     }
+
 
 
     /* ========================================
@@ -645,7 +819,9 @@
       position: relative;
     }
 
+
     .timeline::before {
+
       content: "";
 
       position: absolute;
@@ -653,6 +829,7 @@
       left: 190px;
 
       top: 20px;
+
       bottom: 20px;
 
       width: 2px;
@@ -660,7 +837,9 @@
       background: #39d8dd;
     }
 
+
     .timeline-item {
+
       position: relative;
 
       display: grid;
@@ -673,16 +852,20 @@
       padding-bottom: 18px;
     }
 
+
     .timeline-item:last-child {
       padding-bottom: 0;
     }
 
+
     .timeline-periodo {
+
       padding-top: 31px;
 
       color: #39d8dd;
 
       font-size: 15px;
+
       font-weight: 700;
 
       text-align: right;
@@ -690,13 +873,17 @@
       white-space: nowrap;
     }
 
+
     .timeline-punto {
+
       position: absolute;
 
       left: 178px;
+
       top: 23px;
 
       width: 26px;
+
       height: 26px;
 
       background: #06162b;
@@ -714,15 +901,19 @@
       z-index: 5;
     }
 
+
     .timeline-punto::after {
+
       content: "";
 
       position: absolute;
 
       width: 8px;
+
       height: 8px;
 
       top: 4px;
+
       left: 4px;
 
       background: #ffffff;
@@ -731,11 +922,13 @@
     }
 
 
+
     /* ========================================
        TARJETAS EXPERIENCIA
     ======================================== */
 
     .experiencia-card {
+
       display: grid;
 
       grid-template-columns:
@@ -748,6 +941,7 @@
       min-height: 145px;
 
       background:
+
         linear-gradient(
           145deg,
           rgba(9, 36, 58, 0.94),
@@ -764,7 +958,9 @@
         24px 30px;
     }
 
+
     .experiencia-logo {
+
       width: 100%;
 
       max-width: 135px;
@@ -778,20 +974,26 @@
       display: block;
     }
 
+
     .experiencia-empresa {
+
       color: #39d8dd;
 
       font-size: 12px;
+
       font-weight: 700;
 
       letter-spacing: 1px;
 
-      text-transform: uppercase;
+      text-transform:
+        uppercase;
 
       margin-bottom: 6px;
     }
 
+
     .experiencia-card h3 {
+
       color: #ffffff;
 
       font-size: 21px;
@@ -801,7 +1003,9 @@
       margin-bottom: 10px;
     }
 
+
     .experiencia-card p {
+
       color: #c8dae2;
 
       font-size: 14.5px;
@@ -810,11 +1014,13 @@
     }
 
 
+
     /* ========================================
        OTRAS EXPERIENCIAS
     ======================================== */
 
     .otras-experiencias {
+
       margin-top: 55px;
 
       padding-top: 38px;
@@ -824,7 +1030,9 @@
         rgba(86, 215, 213, 0.18);
     }
 
+
     .otras-experiencias h3 {
+
       color: #ffffff;
 
       font-size: 20px;
@@ -832,18 +1040,25 @@
       margin-bottom: 24px;
     }
 
+
     .otras-grid {
+
       display: grid;
 
       grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(
+          2,
+          minmax(0, 1fr)
+        );
 
       gap: 18px;
 
       width: 100%;
     }
 
+
     .otra-item {
+
       display: flex;
 
       align-items: center;
@@ -865,14 +1080,19 @@
       border-radius: 12px;
     }
 
+
     .otra-item img {
+
       width: 90px;
+
       height: 52px;
 
       object-fit: contain;
     }
 
+
     .otra-item strong {
+
       display: block;
 
       color: #ffffff;
@@ -882,20 +1102,26 @@
       margin-bottom: 5px;
     }
 
+
     .otra-cargo {
+
       color: #d5e7ed;
 
       font-size: 14px;
+
       font-weight: 600;
 
       margin-bottom: 5px;
     }
 
+
     .otra-item span {
+
       color: #9ab6c2;
 
       font-size: 13px;
     }
+
 
 
     /* ========================================
@@ -903,6 +1129,7 @@
     ======================================== */
 
     .formacion {
+
       background: #f4f8fa;
 
       color: #10253a;
@@ -911,47 +1138,65 @@
         105px 7% 115px;
     }
 
+
     .formacion-inner {
+
       max-width: 1280px;
 
       margin: 0 auto;
     }
 
+
     .formacion-eyebrow {
+
       color: #2baeb0;
 
       font-size: 13px;
+
       font-weight: 700;
 
       letter-spacing: 3px;
-      text-transform: uppercase;
+
+      text-transform:
+        uppercase;
 
       margin-bottom: 14px;
     }
 
+
     .formacion h2 {
+
       color: #10253a;
 
       font-size:
-        clamp(42px, 4.4vw, 58px);
+        clamp(
+          42px,
+          4.4vw,
+          58px
+        );
 
       line-height: 1.06;
 
       margin-bottom: 16px;
     }
 
+
     .formacion-intro {
+
       max-width: 720px;
 
       color: #607281;
 
       font-size: 18px;
+
       line-height: 1.65;
 
       margin-bottom: 58px;
     }
 
+
     .formacion-layout {
+
       display: grid;
 
       grid-template-columns:
@@ -962,7 +1207,9 @@
       align-items: start;
     }
 
+
     .formacion-institucion {
+
       position: sticky;
 
       top: 110px;
@@ -970,7 +1217,9 @@
       padding-right: 20px;
     }
 
+
     .formacion-imagen {
+
       width: 100%;
 
       max-width: 460px;
@@ -982,7 +1231,9 @@
       margin-bottom: 28px;
     }
 
+
     .formacion-institucion h3 {
+
       color: #10253a;
 
       font-size: 21px;
@@ -992,7 +1243,9 @@
       margin-bottom: 10px;
     }
 
+
     .formacion-institucion p {
+
       max-width: 430px;
 
       color: #657786;
@@ -1002,13 +1255,17 @@
       line-height: 1.7;
     }
 
+
     .formacion-lista {
+
       position: relative;
 
       padding-left: 46px;
     }
 
+
     .formacion-lista::before {
+
       content: "";
 
       position: absolute;
@@ -1016,6 +1273,7 @@
       left: 10px;
 
       top: 8px;
+
       bottom: 8px;
 
       width: 2px;
@@ -1023,24 +1281,31 @@
       background: #39d8dd;
     }
 
+
     .formacion-item {
+
       position: relative;
 
       padding:
         0 0 42px 18px;
     }
 
+
     .formacion-item:last-child {
       padding-bottom: 0;
     }
 
+
     .formacion-punto {
+
       position: absolute;
 
       left: -47px;
+
       top: 2px;
 
       width: 18px;
+
       height: 18px;
 
       background: #f4f8fa;
@@ -1056,10 +1321,13 @@
         rgba(57, 216, 221, 0.12);
     }
 
+
     .formacion-periodo {
+
       color: #2baeb0;
 
       font-size: 13px;
+
       font-weight: 700;
 
       letter-spacing: 1.5px;
@@ -1067,7 +1335,9 @@
       margin-bottom: 8px;
     }
 
+
     .formacion-item h3 {
+
       color: #10253a;
 
       font-size: 23px;
@@ -1077,7 +1347,9 @@
       margin-bottom: 10px;
     }
 
+
     .formacion-item p {
+
       color: #5c6d7b;
 
       font-size: 15px;
@@ -1087,11 +1359,14 @@
       max-width: 660px;
     }
 
+
     .formacion-destacado {
+
       color: #10253a;
 
       font-weight: 700;
     }
+
 
 
     /* ========================================
@@ -1099,11 +1374,13 @@
     ======================================== */
 
     .proyectos {
+
       position: relative;
 
       overflow: hidden;
 
       background:
+
         linear-gradient(
           90deg,
           rgba(6, 22, 43, 0.98) 0%,
@@ -1111,6 +1388,7 @@
           rgba(6, 22, 43, 0.80) 58%,
           rgba(6, 22, 43, 0.58) 100%
         ),
+
         url('hero-sintonia.png');
 
       background-size: cover;
@@ -1118,15 +1396,19 @@
       background-position:
         center right;
 
-      background-repeat: no-repeat;
+      background-repeat:
+        no-repeat;
 
-      background-attachment: fixed;
+      background-attachment:
+        fixed;
 
       padding:
         105px 7% 120px;
     }
 
+
     .proyectos-inner {
+
       position: relative;
 
       z-index: 2;
@@ -1136,30 +1418,43 @@
       margin: 0 auto;
     }
 
+
     .proyectos-eyebrow {
+
       color: #56d7d5;
 
       font-size: 13px;
+
       font-weight: 700;
 
       letter-spacing: 3px;
-      text-transform: uppercase;
+
+      text-transform:
+        uppercase;
 
       margin-bottom: 14px;
     }
 
+
     .proyectos h2 {
+
       color: #ffffff;
 
       font-size:
-        clamp(42px, 4.5vw, 60px);
+        clamp(
+          42px,
+          4.5vw,
+          60px
+        );
 
       line-height: 1.06;
 
       margin-bottom: 16px;
     }
 
+
     .proyectos-intro {
+
       max-width: 780px;
 
       color: #b8ced7;
@@ -1171,25 +1466,34 @@
       margin-bottom: 52px;
     }
 
+
     .proyectos-grid {
+
       display: grid;
 
       grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+        repeat(
+          3,
+          minmax(0, 1fr)
+        );
 
       gap: 22px;
 
       align-items: stretch;
     }
 
+
     .proyecto-card,
     .proyecto-cta {
+
       width: 100%;
 
       min-width: 0;
     }
 
+
     .proyecto-card {
+
       display: flex;
 
       flex-direction: column;
@@ -1199,6 +1503,7 @@
       border-radius: 16px;
 
       background:
+
         linear-gradient(
           145deg,
           rgba(11, 41, 64, 0.97),
@@ -1215,7 +1520,9 @@
         box-shadow 0.3s ease;
     }
 
+
     .proyecto-card:hover {
+
       transform:
         translateY(-5px);
 
@@ -1227,7 +1534,9 @@
         rgba(0, 0, 0, 0.25);
     }
 
+
     .proyecto-visual {
+
       width: 100%;
 
       aspect-ratio: 2 / 1;
@@ -1235,6 +1544,7 @@
       display: flex;
 
       align-items: center;
+
       justify-content: center;
 
       overflow: hidden;
@@ -1246,20 +1556,27 @@
         rgba(86, 215, 213, 0.16);
     }
 
+
     .proyecto-logo-box {
+
       width: 100%;
+
       height: 100%;
 
       display: flex;
 
       align-items: center;
+
       justify-content: center;
 
       overflow: hidden;
     }
 
+
     .proyecto-logo-box img {
+
       width: 100%;
+
       height: 100%;
 
       display: block;
@@ -1271,7 +1588,9 @@
       transform: none;
     }
 
+
     .proyecto-contenido {
+
       flex: 1;
 
       display: flex;
@@ -1281,20 +1600,26 @@
       padding: 24px;
     }
 
+
     .proyecto-categoria {
+
       color: #56d7d5;
 
       font-size: 11px;
+
       font-weight: 700;
 
       letter-spacing: 1.7px;
 
-      text-transform: uppercase;
+      text-transform:
+        uppercase;
 
       margin-bottom: 10px;
     }
 
+
     .proyecto-card h3 {
+
       color: #ffffff;
 
       font-size: 21px;
@@ -1304,7 +1629,9 @@
       margin-bottom: 9px;
     }
 
+
     .proyecto-tipo {
+
       color: #d5e6ec;
 
       font-size: 14px;
@@ -1316,7 +1643,9 @@
       margin-bottom: 15px;
     }
 
+
     .proyecto-descripcion {
+
       color: #aebfc8;
 
       font-size: 14px;
@@ -1327,18 +1656,21 @@
     }
 
 
+
     /* ========================================
        CTA PROYECTOS
     ======================================== */
 
     .proyecto-cta {
+
       min-height: 100%;
 
       display: flex;
 
       flex-direction: column;
 
-      align-items: flex-start;
+      align-items:
+        flex-start;
 
       justify-content: center;
 
@@ -1352,10 +1684,13 @@
       border-radius: 0;
     }
 
+
     .proyecto-cta::before {
+
       content: "";
 
       width: 42px;
+
       height: 4px;
 
       background: #56d7d5;
@@ -1363,7 +1698,9 @@
       margin-bottom: 24px;
     }
 
+
     .proyecto-cta h3 {
+
       max-width: 320px;
 
       color: #ffffff;
@@ -1375,7 +1712,9 @@
       margin-bottom: 32px;
     }
 
+
     .cta-proyecto {
+
       width: 100%;
 
       display: flex;
@@ -1405,7 +1744,9 @@
         box-shadow 0.25s ease;
     }
 
+
     .cta-proyecto:hover {
+
       background: #ffffff;
 
       transform:
@@ -1417,11 +1758,13 @@
     }
 
 
+
     /* ========================================
        NEWSLETTER
     ======================================== */
 
     .newsletter {
+
       position: relative;
 
       overflow: hidden;
@@ -1429,11 +1772,13 @@
       min-height: 690px;
 
       background:
+
         radial-gradient(
           circle at 72% 48%,
           rgba(9, 52, 80, 0.34) 0%,
           rgba(6, 22, 43, 0) 44%
         ),
+
         #06162b;
 
       display: flex;
@@ -1443,7 +1788,9 @@
       padding: 0;
     }
 
+
     .newsletter-inner {
+
       width: 100%;
 
       display: grid;
@@ -1457,11 +1804,8 @@
     }
 
 
-    /* ========================================
-       IMAGEN NEWSLETTER
-    ======================================== */
-
     .newsletter-visual {
+
       position: relative;
 
       min-height: 690px;
@@ -1469,10 +1813,13 @@
       overflow: hidden;
     }
 
+
     .newsletter-visual img {
+
       position: absolute;
 
       width: 100%;
+
       height: 100%;
 
       inset: 0;
@@ -1484,7 +1831,9 @@
       display: block;
     }
 
+
     .newsletter-visual::after {
+
       content: "";
 
       position: absolute;
@@ -1492,6 +1841,7 @@
       inset: 0;
 
       background:
+
         linear-gradient(
           90deg,
           rgba(6, 22, 43, 0.03) 0%,
@@ -1504,11 +1854,8 @@
     }
 
 
-    /* ========================================
-       CONTENIDO NEWSLETTER
-    ======================================== */
-
     .newsletter-content {
+
       position: relative;
 
       z-index: 3;
@@ -1525,7 +1872,9 @@
         90px 8% 90px 5%;
     }
 
+
     .newsletter-eyebrow {
+
       color: #56d7d5;
 
       font-size: 13px;
@@ -1534,13 +1883,17 @@
 
       letter-spacing: 4px;
 
-      text-transform: uppercase;
+      text-transform:
+        uppercase;
 
       margin-bottom: 28px;
     }
 
+
     .newsletter-linea {
+
       width: 56px;
+
       height: 3px;
 
       background: #56d7d5;
@@ -1548,13 +1901,17 @@
       margin-bottom: 30px;
     }
 
+
     .newsletter-brand {
+
       width: 100%;
 
       margin-bottom: 42px;
     }
 
+
     .newsletter-brand img {
+
       width: 100%;
 
       max-width: 440px;
@@ -1570,11 +1927,8 @@
     }
 
 
-    /* ========================================
-       CTA LINKEDIN
-    ======================================== */
-
     .newsletter-accion {
+
       width: 100%;
 
       display: flex;
@@ -1586,7 +1940,9 @@
       max-width: 650px;
     }
 
+
     .newsletter-boton {
+
       flex: 1;
 
       min-height: 64px;
@@ -1620,7 +1976,9 @@
         box-shadow 0.25s ease;
     }
 
+
     .newsletter-boton:hover {
+
       background: #ffffff;
 
       transform:
@@ -1631,8 +1989,11 @@
         rgba(0, 0, 0, 0.24);
     }
 
+
     .newsletter-linkedin {
+
       width: 64px;
+
       height: 64px;
 
       flex-shrink: 0;
@@ -1648,8 +2009,11 @@
       overflow: hidden;
     }
 
+
     .newsletter-linkedin img {
+
       width: 100%;
+
       height: 100%;
 
       display: block;
@@ -1658,72 +2022,428 @@
     }
 
 
+
+    /* ========================================
+       CONTACTO
+    ======================================== */
+
+    .contacto {
+
+      background: #f4f8fa;
+
+      color: #10253a;
+
+      padding:
+        110px 7% 115px;
+    }
+
+
+    .contacto-inner {
+
+      max-width: 1280px;
+
+      margin: 0 auto;
+
+      display: grid;
+
+      grid-template-columns:
+        0.95fr 1.05fr;
+
+      gap: 100px;
+
+      align-items: center;
+    }
+
+
+    .contacto-eyebrow {
+
+      color: #2baeb0;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 18px;
+    }
+
+
+    .contacto h2 {
+
+      color: #10253a;
+
+      font-size:
+        clamp(
+          46px,
+          5vw,
+          68px
+        );
+
+      line-height: 1.04;
+
+      letter-spacing: -1px;
+
+      margin-bottom: 26px;
+    }
+
+
+    .contacto-intro {
+
+      max-width: 560px;
+
+      color: #536878;
+
+      font-size: 18px;
+
+      line-height: 1.72;
+    }
+
+
+    .contacto-opciones {
+
+      display: grid;
+
+      gap: 34px;
+    }
+
+
+    .contacto-item {
+
+      padding-bottom: 34px;
+
+      border-bottom:
+        1px solid
+        rgba(16, 37, 58, 0.13);
+    }
+
+
+    .contacto-item:last-child {
+
+      padding-bottom: 0;
+
+      border-bottom: none;
+    }
+
+
+    .contacto-label {
+
+      color: #2baeb0;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 10px;
+    }
+
+
+    .contacto-dato {
+
+      color: #10253a;
+
+      font-size:
+        clamp(
+          20px,
+          2vw,
+          27px
+        );
+
+      font-weight: 700;
+
+      line-height: 1.3;
+
+      margin-bottom: 17px;
+
+      word-break: break-word;
+    }
+
+
+    .contacto-link {
+
+      display:
+        inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      color: #087f84;
+
+      text-decoration: none;
+
+      font-size: 15px;
+
+      font-weight: 700;
+
+      transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+    }
+
+
+    .contacto-link:hover {
+
+      color: #10253a;
+
+      transform:
+        translateX(4px);
+    }
+
+
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+
+    .footer {
+
+      background: #041326;
+
+      color: #ffffff;
+
+      padding:
+        55px 7% 28px;
+    }
+
+
+    .footer-inner {
+
+      max-width: 1280px;
+
+      margin: 0 auto;
+    }
+
+
+    .footer-top {
+
+      display: grid;
+
+      grid-template-columns:
+        0.8fr 1.2fr;
+
+      gap: 70px;
+
+      align-items: start;
+
+      padding-bottom: 42px;
+    }
+
+
+    .footer-brand img {
+
+      width: 100%;
+
+      max-width: 250px;
+
+      height: auto;
+
+      display: block;
+
+      object-fit: contain;
+
+      margin-bottom: 22px;
+    }
+
+
+    .footer-frase {
+
+      max-width: 390px;
+
+      color: #9fb9c4;
+
+      font-size: 14px;
+
+      line-height: 1.7;
+    }
+
+
+    .footer-nav {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: flex-end;
+
+      gap:
+        16px 25px;
+
+      padding-top: 8px;
+    }
+
+
+    .footer-nav a {
+
+      color: #c9dce3;
+
+      text-decoration: none;
+
+      font-size: 14px;
+
+      transition:
+        color 0.25s ease;
+    }
+
+
+    .footer-nav a:hover {
+      color: #56d7d5;
+    }
+
+
+    .footer-bottom {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content:
+        space-between;
+
+      gap: 25px;
+
+      padding-top: 25px;
+
+      border-top:
+        1px solid
+        rgba(86, 215, 213, 0.14);
+    }
+
+
+    .footer-copy {
+
+      color: #7895a2;
+
+      font-size: 12px;
+
+      line-height: 1.5;
+    }
+
+
+    .footer-volver {
+
+      color: #56d7d5;
+
+      text-decoration: none;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      white-space: nowrap;
+
+      transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+    }
+
+
+    .footer-volver:hover {
+
+      color: #ffffff;
+
+      transform:
+        translateY(-2px);
+    }
+
+
+
     /* ========================================
        TABLET
     ======================================== */
 
     @media (max-width: 1100px) {
 
+
       section[id] {
         scroll-margin-top: 90px;
       }
 
+
       .navbar {
+
         padding:
           20px 5%;
       }
 
+
       .navbar.scrolled {
+
         padding:
           12px 5%;
       }
+
 
       .navbar nav {
         gap: 16px;
       }
 
+
       .navbar nav a {
         font-size: 12px;
       }
+
 
       .logo {
         height: 52px;
       }
 
+
       .navbar.scrolled .logo {
         height: 44px;
       }
+
 
       .hero,
       .sobre-mi,
       .servicios,
       .experiencia,
       .formacion,
-      .proyectos {
+      .proyectos,
+      .contacto {
+
         padding-left: 5%;
+
         padding-right: 5%;
       }
+
 
       .sobre-mi-inner {
         gap: 50px;
       }
 
 
+
       /* SERVICIOS */
 
       .servicios-grid {
+
         grid-template-columns:
-          repeat(2, 1fr);
+          repeat(
+            2,
+            1fr
+          );
       }
+
 
       .servicio-card,
       .servicio-card:nth-child(4),
       .servicio-card:nth-child(5) {
+
         grid-column: auto;
       }
 
+
       .servicio-card:last-child {
-        grid-column: 1 / -1;
+
+        grid-column:
+          1 / -1;
 
         max-width:
           calc(50% - 11px);
@@ -1734,27 +2454,34 @@
       }
 
 
+
       /* EXPERIENCIA */
 
       .timeline::before {
         left: 160px;
       }
 
+
       .timeline-item {
+
         grid-template-columns:
           125px 1fr;
 
         gap: 60px;
       }
 
+
       .timeline-punto {
         left: 148px;
       }
 
+
       .experiencia-card {
+
         grid-template-columns:
           120px 1fr;
       }
+
 
 
       /* FORMACIÓN */
@@ -1764,41 +2491,74 @@
       }
 
 
+
       /* PROYECTOS */
 
       .proyectos-grid {
+
         grid-template-columns:
-          repeat(2, minmax(0, 1fr));
+          repeat(
+            2,
+            minmax(0, 1fr)
+          );
       }
+
 
       .proyecto-cta {
         min-height: 300px;
       }
 
 
+
       /* NEWSLETTER */
 
       .newsletter-inner {
+
         grid-template-columns:
           0.95fr 1.05fr;
 
         min-height: 620px;
       }
 
+
       .newsletter-visual {
         min-height: 620px;
       }
 
+
       .newsletter-content {
+
         padding:
           70px 6% 70px 4%;
       }
+
 
       .newsletter-brand img {
         max-width: 390px;
       }
 
+
+
+      /* CONTACTO */
+
+      .contacto-inner {
+
+        gap: 60px;
+      }
+
+
+
+      /* FOOTER */
+
+      .footer {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+      }
+
     }
+
 
 
     /* ========================================
@@ -1807,45 +2567,59 @@
 
     @media (max-width: 760px) {
 
+
       section[id] {
         scroll-margin-top: 125px;
       }
 
 
+
       /* CABECERA */
 
       .navbar {
+
         padding:
           18px 6%;
       }
 
+
       .navbar.scrolled {
+
         padding:
           10px 6% 12px;
       }
 
+
       .navbar-inner {
+
         flex-direction: column;
 
-        align-items: flex-start;
+        align-items:
+          flex-start;
 
         gap: 16px;
       }
 
+
       .navbar.scrolled
       .navbar-inner {
+
         gap: 10px;
       }
+
 
       .logo {
         height: 48px;
       }
 
+
       .navbar.scrolled .logo {
         height: 40px;
       }
 
+
       .navbar nav {
+
         width: 100%;
 
         justify-content:
@@ -1860,18 +2634,22 @@
         scrollbar-width: none;
       }
 
+
       .navbar nav::-webkit-scrollbar {
         display: none;
       }
+
 
       .navbar nav a {
         font-size: 12px;
       }
 
 
+
       /* HERO */
 
       .hero {
+
         padding:
           180px 6% 60px;
 
@@ -1879,73 +2657,98 @@
           65% center;
       }
 
+
       .nombre {
+
         font-size: 13px;
 
         letter-spacing: 2px;
       }
 
+
       h1 {
+
         font-size:
-          clamp(42px, 12vw, 56px);
+          clamp(
+            42px,
+            12vw,
+            56px
+          );
       }
+
 
       .frase {
         font-size: 18px;
       }
 
 
+
       /* SOBRE MÍ */
 
       .sobre-mi {
+
         padding:
           70px 6%;
       }
 
+
       .sobre-mi-inner {
+
         grid-template-columns:
           1fr;
 
         gap: 45px;
       }
 
+
       .sobre-mi-foto {
         max-width: 470px;
       }
+
 
       .sobre-mi h2 {
         font-size: 34px;
       }
 
+
       .sobre-mi p {
+
         font-size: 16px;
 
         line-height: 1.7;
       }
 
 
+
       /* SERVICIOS */
 
       .servicios {
+
         padding:
           75px 6% 85px;
       }
 
+
       .servicios h2 {
+
         font-size: 34px;
 
         margin-bottom: 34px;
       }
 
+
       .servicios-grid {
+
         grid-template-columns:
           1fr;
       }
+
 
       .servicio-card,
       .servicio-card:nth-child(4),
       .servicio-card:nth-child(5),
       .servicio-card:last-child {
+
         grid-column: auto;
 
         max-width: none;
@@ -1956,9 +2759,11 @@
       }
 
 
+
       /* EXPERIENCIA */
 
       .experiencia {
+
         padding:
           75px 6% 85px;
 
@@ -1969,17 +2774,22 @@
           scroll;
       }
 
+
       .experiencia h2 {
+
         font-size: 36px;
 
         margin-bottom: 42px;
       }
 
+
       .timeline::before {
         left: 10px;
       }
 
+
       .timeline-item {
+
         display: block;
 
         padding-left: 40px;
@@ -1987,7 +2797,9 @@
         padding-bottom: 24px;
       }
 
+
       .timeline-periodo {
+
         text-align: left;
 
         padding-top: 0;
@@ -1997,13 +2809,17 @@
         font-size: 13px;
       }
 
+
       .timeline-punto {
+
         left: -2px;
 
         top: 0;
       }
 
+
       .experiencia-card {
+
         grid-template-columns:
           1fr;
 
@@ -2012,62 +2828,79 @@
         padding: 22px;
       }
 
+
       .otras-grid {
+
         grid-template-columns:
           1fr;
       }
 
 
+
       /* FORMACIÓN */
 
       .formacion {
+
         padding:
           80px 6% 90px;
       }
+
 
       .formacion h2 {
         font-size: 36px;
       }
 
+
       .formacion-intro {
+
         font-size: 16px;
 
         margin-bottom: 45px;
       }
 
+
       .formacion-layout {
+
         grid-template-columns:
           1fr;
 
         gap: 50px;
       }
 
+
       .formacion-institucion {
+
         position: static;
 
         padding-right: 0;
       }
 
+
       .formacion-imagen {
         max-width: 340px;
       }
+
 
       .formacion-lista {
         padding-left: 38px;
       }
 
+
       .formacion-lista::before {
         left: 8px;
       }
+
 
       .formacion-punto {
         left: -39px;
       }
 
 
+
       /* PROYECTOS */
 
       .proyectos {
+
         padding:
           80px 6% 90px;
 
@@ -2078,41 +2911,53 @@
           scroll;
       }
 
+
       .proyectos h2 {
         font-size: 36px;
       }
 
+
       .proyectos-intro {
+
         font-size: 16px;
 
         margin-bottom: 40px;
       }
 
+
       .proyectos-grid {
+
         grid-template-columns:
           1fr;
       }
+
 
       .proyecto-contenido {
         padding: 23px;
       }
 
+
       .proyecto-card h3 {
         font-size: 20px;
       }
 
+
       .proyecto-cta {
+
         min-height: 240px;
 
         padding:
           30px 18px;
       }
 
+
       .proyecto-cta h3 {
+
         font-size: 25px;
 
         max-width: 300px;
       }
+
 
 
       /* NEWSLETTER */
@@ -2121,19 +2966,25 @@
         min-height: auto;
       }
 
+
       .newsletter-inner {
+
         grid-template-columns:
           1fr;
 
         min-height: auto;
       }
 
+
       .newsletter-visual {
         min-height: 410px;
       }
 
+
       .newsletter-visual::after {
+
         background:
+
           linear-gradient(
             180deg,
             rgba(6, 22, 43, 0) 0%,
@@ -2142,7 +2993,9 @@
           );
       }
 
+
       .newsletter-content {
+
         padding:
           35px 6% 80px;
 
@@ -2150,27 +3003,34 @@
           flex-start;
       }
 
+
       .newsletter-eyebrow {
         margin-bottom: 20px;
       }
+
 
       .newsletter-linea {
         margin-bottom: 26px;
       }
 
+
       .newsletter-brand {
         margin-bottom: 32px;
       }
+
 
       .newsletter-brand img {
         max-width: 310px;
       }
 
+
       .newsletter-accion {
         gap: 12px;
       }
 
+
       .newsletter-boton {
+
         min-height: 58px;
 
         padding:
@@ -2179,9 +3039,94 @@
         font-size: 14px;
       }
 
+
       .newsletter-linkedin {
+
         width: 58px;
+
         height: 58px;
+      }
+
+
+
+      /* CONTACTO */
+
+      .contacto {
+
+        padding:
+          80px 6% 85px;
+      }
+
+
+      .contacto-inner {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 55px;
+      }
+
+
+      .contacto h2 {
+        font-size: 42px;
+      }
+
+
+      .contacto-intro {
+
+        font-size: 16px;
+
+        line-height: 1.7;
+      }
+
+
+      .contacto-dato {
+        font-size: 20px;
+      }
+
+
+
+      /* FOOTER */
+
+      .footer {
+
+        padding:
+          48px 6% 25px;
+      }
+
+
+      .footer-top {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 35px;
+
+        padding-bottom: 34px;
+      }
+
+
+      .footer-brand img {
+        max-width: 220px;
+      }
+
+
+      .footer-nav {
+
+        justify-content:
+          flex-start;
+
+        gap:
+          14px 20px;
+      }
+
+
+      .footer-bottom {
+
+        flex-direction: column;
+
+        align-items:
+          flex-start;
       }
 
     }
@@ -2207,6 +3152,7 @@
         alt="Marketing en SintonIA"
         class="logo"
       >
+
 
       <nav>
 
@@ -2245,6 +3191,7 @@
   </header>
 
 
+
   <!-- ========================================
        HERO
   ======================================== -->
@@ -2257,6 +3204,7 @@
         Renato Chumbiauca Rebagliati
       </div>
 
+
       <h1>
 
         Marketing, comunicación e
@@ -2268,6 +3216,7 @@
 
       </h1>
 
+
       <p class="frase">
 
         Conecto estrategia, contenidos,
@@ -2275,6 +3224,7 @@
         marcas y experiencias con sentido.
 
       </p>
+
 
       <div class="botones">
 
@@ -2284,6 +3234,7 @@
         >
           Conoce mi experiencia
         </a>
+
 
         <a
           href="#newsletter"
@@ -2299,6 +3250,7 @@
   </section>
 
 
+
   <!-- ========================================
        SOBRE MÍ
   ======================================== -->
@@ -2309,6 +3261,7 @@
   >
 
     <div class="sobre-mi-inner">
+
 
       <div class="sobre-mi-foto">
 
@@ -2326,9 +3279,11 @@
           Sobre mí
         </div>
 
+
         <h2>
           Marketing, Comunicación y Sostenibilidad
         </h2>
+
 
         <p>
 
@@ -2343,6 +3298,7 @@
 
         </p>
 
+
         <p>
 
           Me interesa la relación entre estrategia,
@@ -2353,6 +3309,7 @@
           sus audiencias.
 
         </p>
+
 
         <p>
 
@@ -2369,6 +3326,7 @@
     </div>
 
   </section>
+
 
 
   <!-- ========================================
@@ -2411,6 +3369,7 @@
         </article>
 
 
+
         <article class="servicio-card">
 
           <span class="servicio-numero">
@@ -2430,6 +3389,7 @@
           </p>
 
         </article>
+
 
 
         <article class="servicio-card">
@@ -2453,6 +3413,7 @@
         </article>
 
 
+
         <article class="servicio-card">
 
           <span class="servicio-numero">
@@ -2473,6 +3434,7 @@
           </p>
 
         </article>
+
 
 
         <article class="servicio-card">
@@ -2504,6 +3466,7 @@
   </section>
 
 
+
   <!-- ========================================
        EXPERIENCIA
   ======================================== -->
@@ -2515,9 +3478,11 @@
 
     <div class="experiencia-inner">
 
+
       <div class="experiencia-eyebrow">
         Trayectoria
       </div>
+
 
       <h2>
         Experiencia
@@ -2537,6 +3502,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2544,6 +3510,7 @@
               alt="Universidad Científica del Sur"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2573,6 +3540,7 @@
         </div>
 
 
+
         <!-- TOULOUSE -->
 
         <div class="timeline-item">
@@ -2583,6 +3551,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2590,6 +3559,7 @@
               alt="Toulouse Lautrec"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2620,6 +3590,7 @@
         </div>
 
 
+
         <!-- PRECISO -->
 
         <div class="timeline-item">
@@ -2630,6 +3601,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2637,6 +3609,7 @@
               alt="Preciso Comunicación Integral"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2668,6 +3641,7 @@
         </div>
 
 
+
         <!-- MIGIVA -->
 
         <div class="timeline-item">
@@ -2678,6 +3652,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2685,6 +3660,7 @@
               alt="MIGIVA Group"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2718,6 +3694,7 @@
         </div>
 
 
+
         <!-- LIBÉLULA -->
 
         <div class="timeline-item">
@@ -2728,6 +3705,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2735,6 +3713,7 @@
               alt="Libélula"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2770,6 +3749,7 @@
       </div>
 
 
+
       <!-- OTRAS EXPERIENCIAS -->
 
       <div class="otras-experiencias">
@@ -2788,6 +3768,7 @@
               src="logo-cafe-taipa.png"
               alt="Café Taipá"
             >
+
 
             <div>
 
@@ -2808,12 +3789,14 @@
           </div>
 
 
+
           <div class="otra-item">
 
             <img
               src="logo-llyc.png"
               alt="LLYC"
             >
+
 
             <div>
 
@@ -2843,6 +3826,7 @@
   </section>
 
 
+
   <!-- ========================================
        FORMACIÓN
   ======================================== -->
@@ -2854,13 +3838,16 @@
 
     <div class="formacion-inner">
 
+
       <div class="formacion-eyebrow">
         Formación
       </div>
 
+
       <h2>
         Formación académica
       </h2>
+
 
       <p class="formacion-intro">
 
@@ -2868,6 +3855,7 @@
         reputación y negocios digitales.
 
       </p>
+
 
 
       <div class="formacion-layout">
@@ -2881,9 +3869,11 @@
             class="formacion-imagen"
           >
 
+
           <h3>
             Universidad de San Martín de Porres
           </h3>
+
 
           <p>
 
@@ -2895,6 +3885,7 @@
           </p>
 
         </div>
+
 
 
         <div class="formacion-lista">
@@ -2923,6 +3914,7 @@
           </article>
 
 
+
           <article class="formacion-item">
 
             <div class="formacion-punto"></div>
@@ -2944,6 +3936,7 @@
             </p>
 
           </article>
+
 
 
           <article class="formacion-item">
@@ -2970,6 +3963,7 @@
             </p>
 
           </article>
+
 
 
           <article class="formacion-item">
@@ -3003,6 +3997,7 @@
   </section>
 
 
+
   <!-- ========================================
        PROYECTOS
   ======================================== -->
@@ -3014,13 +4009,16 @@
 
     <div class="proyectos-inner">
 
+
       <div class="proyectos-eyebrow">
         Portafolio
       </div>
 
+
       <h2>
         Proyectos seleccionados
       </h2>
+
 
       <p class="proyectos-intro">
 
@@ -3030,6 +4028,7 @@
         para organizaciones y marcas de distintos sectores.
 
       </p>
+
 
 
       <div class="proyectos-grid">
@@ -3051,6 +4050,7 @@
             </div>
 
           </div>
+
 
           <div class="proyecto-contenido">
 
@@ -3083,6 +4083,7 @@
         </article>
 
 
+
         <!-- CLOSE ENEMIES -->
 
         <article class="proyecto-card">
@@ -3099,6 +4100,7 @@
             </div>
 
           </div>
+
 
           <div class="proyecto-contenido">
 
@@ -3131,6 +4133,7 @@
         </article>
 
 
+
         <!-- IGNITION -->
 
         <article class="proyecto-card">
@@ -3147,6 +4150,7 @@
             </div>
 
           </div>
+
 
           <div class="proyecto-contenido">
 
@@ -3177,6 +4181,7 @@
         </article>
 
 
+
         <!-- HEAT PUMP -->
 
         <article class="proyecto-card">
@@ -3193,6 +4198,7 @@
             </div>
 
           </div>
+
 
           <div class="proyecto-contenido">
 
@@ -3222,6 +4228,7 @@
         </article>
 
 
+
         <!-- CONTAXIOMA -->
 
         <article class="proyecto-card">
@@ -3238,6 +4245,7 @@
             </div>
 
           </div>
+
 
           <div class="proyecto-contenido">
 
@@ -3267,7 +4275,8 @@
         </article>
 
 
-        <!-- CTA PROYECTOS -->
+
+        <!-- CTA -->
 
         <aside class="proyecto-cta">
 
@@ -3292,6 +4301,7 @@
   </section>
 
 
+
   <!-- ========================================
        NEWSLETTER
   ======================================== -->
@@ -3304,8 +4314,6 @@
     <div class="newsletter-inner">
 
 
-      <!-- IMAGEN -->
-
       <div class="newsletter-visual">
 
         <img
@@ -3316,7 +4324,6 @@
       </div>
 
 
-      <!-- CONTENIDO -->
 
       <div class="newsletter-content">
 
@@ -3324,10 +4331,10 @@
           Newsletter
         </div>
 
+
         <div class="newsletter-linea"></div>
 
 
-        <!-- LOGO -->
 
         <div class="newsletter-brand">
 
@@ -3339,7 +4346,6 @@
         </div>
 
 
-        <!-- LINKEDIN -->
 
         <div class="newsletter-accion">
 
@@ -3377,35 +4383,248 @@
   </section>
 
 
+
   <!-- ========================================
-       STICKY HEADER SCRIPT
+       CONTACTO
+  ======================================== -->
+
+  <section
+    class="contacto"
+    id="contacto"
+  >
+
+    <div class="contacto-inner">
+
+
+      <div class="contacto-presentacion">
+
+        <div class="contacto-eyebrow">
+          Contacto
+        </div>
+
+
+        <h2>
+          Conversemos
+        </h2>
+
+
+        <p class="contacto-intro">
+
+          Si tienes un proyecto, una idea
+          o buscas apoyo en marketing,
+          comunicación, branding o contenidos,
+          escríbeme.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="contacto-opciones">
+
+
+        <!-- EMAIL -->
+
+        <div class="contacto-item">
+
+          <div class="contacto-label">
+            Email
+          </div>
+
+
+          <div class="contacto-dato">
+            renato.cr21@gmail.com
+          </div>
+
+
+          <a
+            href="mailto:renato.cr21@gmail.com?subject=Contacto%20desde%20Marketing%20en%20SintonIA&body=Hola%20Renato%2C%20quisiera%20conversar%20contigo."
+            class="contacto-link"
+          >
+            Escríbeme →
+          </a>
+
+        </div>
+
+
+
+        <!-- LINKEDIN -->
+
+        <div class="contacto-item">
+
+          <div class="contacto-label">
+            LinkedIn
+          </div>
+
+
+          <div class="contacto-dato">
+            Renato Chumbiauca Rebagliati
+          </div>
+
+
+          <a
+            href="https://www.linkedin.com/in/renatochumbiauca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contacto-link"
+          >
+            Conectemos en LinkedIn →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       FOOTER
+  ======================================== -->
+
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+
+      <div class="footer-top">
+
+
+        <!-- MARCA -->
+
+        <div class="footer-brand">
+
+          <img
+            src="logo-sintonia.png"
+            alt="Marketing en SintonIA"
+          >
+
+
+          <p class="footer-frase">
+
+            Marketing, comunicación e inteligencia
+            artificial en sintonía.
+
+          </p>
+
+        </div>
+
+
+
+        <!-- NAVEGACIÓN -->
+
+        <nav class="footer-nav">
+
+          <a href="#sobre-mi">
+            Sobre mí
+          </a>
+
+          <a href="#servicios">
+            Servicios
+          </a>
+
+          <a href="#experiencia">
+            Experiencia
+          </a>
+
+          <a href="#formacion">
+            Formación
+          </a>
+
+          <a href="#proyectos">
+            Proyectos
+          </a>
+
+          <a href="#newsletter">
+            Newsletter
+          </a>
+
+          <a href="#contacto">
+            Contacto
+          </a>
+
+        </nav>
+
+
+      </div>
+
+
+
+      <div class="footer-bottom">
+
+
+        <p class="footer-copy">
+
+          © 2026 Renato Chumbiauca Rebagliati.
+          Todos los derechos reservados.
+
+        </p>
+
+
+        <a
+          href="#"
+          class="footer-volver"
+          aria-label="Volver al inicio"
+        >
+          Volver arriba ↑
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ========================================
+       STICKY HEADER
   ======================================== -->
 
   <script>
 
     const navbar =
-      document.querySelector('.navbar');
+      document.querySelector(
+        '.navbar'
+      );
+
 
     function actualizarNavbar() {
 
-      if (window.scrollY > 40) {
+      if (
+        window.scrollY > 40
+      ) {
 
-        navbar.classList.add('scrolled');
+        navbar.classList.add(
+          'scrolled'
+        );
 
       } else {
 
-        navbar.classList.remove('scrolled');
+        navbar.classList.remove(
+          'scrolled'
+        );
 
       }
 
     }
 
+
     actualizarNavbar();
+
 
     window.addEventListener(
       'scroll',
       actualizarNavbar,
-      { passive: true }
+      {
+        passive: true
+      }
     );
 
   </script>
