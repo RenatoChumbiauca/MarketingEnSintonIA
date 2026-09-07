@@ -230,16 +230,16 @@
 
 
     /* ========================================
-       AJUSTE DE ANCLAS PARA STICKY HEADER
+       ANCLAS / STICKY HEADER
     ======================================== */
 
-    section[id] {
+    [id] {
       scroll-margin-top: 80px;
     }
 
 
     /* ========================================
-       CABECERA / STICKY HEADER
+       CABECERA
     ======================================== */
 
     .navbar {
@@ -344,6 +344,7 @@
 
       display: flex;
       align-items: center;
+
       padding: 150px 7% 70px;
     }
 
@@ -441,6 +442,7 @@
     .sobre-mi-inner {
       max-width: 1300px;
       margin: 0 auto;
+
       display: grid;
       grid-template-columns: 0.78fr 1.22fr;
       gap: 75px;
@@ -1028,6 +1030,7 @@
       background-position: center right;
       background-repeat: no-repeat;
       background-attachment: fixed;
+
       padding: 105px 7% 120px;
     }
 
@@ -1398,6 +1401,7 @@
     .contacto-inner {
       max-width: 1280px;
       margin: 0 auto;
+
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
       gap: 100px;
@@ -1531,6 +1535,7 @@
       width: 100%;
       max-width: 460px;
       justify-self: end;
+
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       column-gap: 55px;
@@ -1588,7 +1593,7 @@
 
     @media (max-width: 1100px) {
 
-      section[id] {
+      [id] {
         scroll-margin-top: 72px;
       }
 
@@ -1722,7 +1727,7 @@
 
     @media (max-width: 760px) {
 
-      section[id] {
+      [id] {
         scroll-margin-top: 110px;
       }
 
@@ -2070,7 +2075,9 @@
 <body>
 
 
-  <!-- CABECERA -->
+  <!-- ========================================
+       CABECERA
+  ======================================== -->
 
   <header class="navbar">
 
@@ -2093,13 +2100,33 @@
 
       <nav>
 
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#formacion">Formación</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#servicios">
+          Servicios
+        </a>
+
+        <a href="#experiencia">
+          Experiencia
+        </a>
+
+        <a href="#formacion">
+          Formación
+        </a>
+
+        <a href="#proyectos">
+          Proyectos
+        </a>
+
+        <a href="#newsletter">
+          Newsletter
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
 
       </nav>
 
@@ -2108,7 +2135,9 @@
   </header>
 
 
-  <!-- HERO -->
+  <!-- ========================================
+       HERO
+  ======================================== -->
 
   <section
     class="hero"
@@ -2167,14 +2196,17 @@
   </section>
 
 
-  <!-- SOBRE MÍ -->
+  <!-- ========================================
+       SOBRE MÍ
+  ======================================== -->
 
-  <section
-    class="sobre-mi"
-    id="sobre-mi"
-  >
+  <section class="sobre-mi">
 
-    <div class="sobre-mi-inner">
+    <div
+      class="sobre-mi-inner"
+      id="sobre-mi"
+    >
+
 
       <div class="sobre-mi-foto">
 
@@ -2241,14 +2273,16 @@
   </section>
 
 
-  <!-- SERVICIOS -->
+  <!-- ========================================
+       SERVICIOS
+  ======================================== -->
 
-  <section
-    class="servicios"
-    id="servicios"
-  >
+  <section class="servicios">
 
-    <div class="servicios-inner">
+    <div
+      class="servicios-inner"
+      id="servicios"
+    >
 
       <h2>
         Servicios
@@ -2257,9 +2291,12 @@
 
       <div class="servicios-grid">
 
+
         <article class="servicio-card">
 
-          <span class="servicio-numero">01</span>
+          <span class="servicio-numero">
+            01
+          </span>
 
           <h3>
             Branding & Rebranding
@@ -2276,7 +2313,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">02</span>
+          <span class="servicio-numero">
+            02
+          </span>
 
           <h3>
             Marketing Digital & Contenidos
@@ -2293,7 +2332,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">03</span>
+          <span class="servicio-numero">
+            03
+          </span>
 
           <h3>
             Contenido Audiovisual
@@ -2310,7 +2351,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">04</span>
+          <span class="servicio-numero">
+            04
+          </span>
 
           <h3>
             Prensa & Vocería
@@ -2328,7 +2371,9 @@
 
         <article class="servicio-card">
 
-          <span class="servicio-numero">05</span>
+          <span class="servicio-numero">
+            05
+          </span>
 
           <h3>
             Web & Experiencia Digital
@@ -2343,6 +2388,7 @@
 
         </article>
 
+
       </div>
 
     </div>
@@ -2350,14 +2396,17 @@
   </section>
 
 
-  <!-- EXPERIENCIA -->
+  <!-- ========================================
+       EXPERIENCIA
+  ======================================== -->
 
-  <section
-    class="experiencia"
-    id="experiencia"
-  >
+  <section class="experiencia">
 
-    <div class="experiencia-inner">
+    <div
+      class="experiencia-inner"
+      id="experiencia"
+    >
+
 
       <div class="experiencia-eyebrow">
         Trayectoria
@@ -2380,6 +2429,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2387,6 +2437,7 @@
               alt="Universidad Científica del Sur"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2422,6 +2473,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2429,6 +2481,7 @@
               alt="Toulouse Lautrec"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2465,6 +2518,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2472,6 +2526,7 @@
               alt="Preciso Comunicación Integral"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2509,6 +2564,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2516,6 +2572,7 @@
               alt="MIGIVA Group"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2555,6 +2612,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2562,6 +2620,7 @@
               alt="Libélula"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2591,6 +2650,7 @@
 
         </div>
 
+
       </div>
 
 
@@ -2603,12 +2663,14 @@
 
         <div class="otras-grid">
 
+
           <div class="otra-item">
 
             <img
               src="logo-cafe-taipa.png"
               alt="Café Taipá"
             >
+
 
             <div>
 
@@ -2636,6 +2698,7 @@
               alt="LLYC"
             >
 
+
             <div>
 
               <strong>
@@ -2654,6 +2717,7 @@
 
           </div>
 
+
         </div>
 
       </div>
@@ -2663,14 +2727,17 @@
   </section>
 
 
-  <!-- FORMACIÓN -->
+  <!-- ========================================
+       FORMACIÓN
+  ======================================== -->
 
-  <section
-    class="formacion"
-    id="formacion"
-  >
+  <section class="formacion">
 
-    <div class="formacion-inner">
+    <div
+      class="formacion-inner"
+      id="formacion"
+    >
+
 
       <div class="formacion-eyebrow">
         Formación
@@ -2690,6 +2757,7 @@
 
       <div class="formacion-layout">
 
+
         <div class="formacion-institucion">
 
           <img
@@ -2698,9 +2766,11 @@
             class="formacion-imagen"
           >
 
+
           <h3>
             Universidad de San Martín de Porres
           </h3>
+
 
           <p>
             Formación profesional y de posgrado
@@ -2802,6 +2872,7 @@
 
           </article>
 
+
         </div>
 
       </div>
@@ -2811,14 +2882,17 @@
   </section>
 
 
-  <!-- PROYECTOS -->
+  <!-- ========================================
+       PROYECTOS
+  ======================================== -->
 
-  <section
-    class="proyectos"
-    id="proyectos"
-  >
+  <section class="proyectos">
 
-    <div class="proyectos-inner">
+    <div
+      class="proyectos-inner"
+      id="proyectos"
+    >
+
 
       <div class="proyectos-eyebrow">
         Portafolio
@@ -3069,6 +3143,7 @@
 
         </aside>
 
+
       </div>
 
     </div>
@@ -3076,7 +3151,9 @@
   </section>
 
 
-  <!-- NEWSLETTER -->
+  <!-- ========================================
+       NEWSLETTER
+  ======================================== -->
 
   <section
     class="newsletter"
@@ -3152,14 +3229,16 @@
   </section>
 
 
-  <!-- CONTACTO -->
+  <!-- ========================================
+       CONTACTO
+  ======================================== -->
 
-  <section
-    class="contacto"
-    id="contacto"
-  >
+  <section class="contacto">
 
-    <div class="contacto-inner">
+    <div
+      class="contacto-inner"
+      id="contacto"
+    >
 
 
       <div class="contacto-presentacion">
@@ -3232,6 +3311,7 @@
 
         </div>
 
+
       </div>
 
     </div>
@@ -3239,13 +3319,17 @@
   </section>
 
 
-  <!-- FOOTER -->
+  <!-- ========================================
+       FOOTER
+  ======================================== -->
 
   <footer class="footer">
 
     <div class="footer-inner">
 
+
       <div class="footer-top">
+
 
         <div class="footer-brand">
 
@@ -3265,20 +3349,42 @@
 
         <nav class="footer-nav">
 
-          <a href="#sobre-mi">Sobre mí</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#experiencia">Experiencia</a>
-          <a href="#formacion">Formación</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#newsletter">Newsletter</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#sobre-mi">
+            Sobre mí
+          </a>
+
+          <a href="#servicios">
+            Servicios
+          </a>
+
+          <a href="#experiencia">
+            Experiencia
+          </a>
+
+          <a href="#formacion">
+            Formación
+          </a>
+
+          <a href="#proyectos">
+            Proyectos
+          </a>
+
+          <a href="#newsletter">
+            Newsletter
+          </a>
+
+          <a href="#contacto">
+            Contacto
+          </a>
 
         </nav>
+
 
       </div>
 
 
       <div class="footer-bottom">
+
 
         <p class="footer-copy">
           © 2026 Renato Chumbiauca Rebagliati.
@@ -3294,6 +3400,7 @@
           Volver arriba ↑
         </a>
 
+
       </div>
 
     </div>
@@ -3301,7 +3408,9 @@
   </footer>
 
 
-  <!-- STICKY HEADER -->
+  <!-- ========================================
+       STICKY HEADER
+  ======================================== -->
 
   <script>
 
