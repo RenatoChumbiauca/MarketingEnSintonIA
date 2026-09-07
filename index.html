@@ -167,6 +167,7 @@
 
   <!-- ========================================
        DATOS ESTRUCTURADOS
+       REFORZAMOS EL NOMBRE DEL SITIO
   ======================================== -->
 
   <script type="application/ld+json">
@@ -199,6 +200,9 @@
         "@id": "https://marketingensintonia.com/#website",
         "url": "https://marketingensintonia.com/",
         "name": "Marketing en SintonIA",
+        "alternateName": [
+          "SintonIA"
+        ],
         "description": "Marketing, comunicación e inteligencia artificial.",
         "inLanguage": "es-PE",
         "publisher": {
@@ -502,6 +506,7 @@
 
     /* ========================================
        SERVICIOS
+       PARALLAX
     ======================================== */
 
     .servicios {
@@ -537,6 +542,11 @@
 
       background-size: cover;
       background-position: center right;
+      background-repeat: no-repeat;
+
+      /* PARALLAX */
+      background-attachment: fixed;
+
       opacity: 0.42;
       pointer-events: none;
     }
@@ -1817,6 +1827,11 @@
 
       .servicios {
         padding: 75px 6% 85px;
+      }
+
+      /* PARALLAX DESACTIVADO EN MÓVIL */
+      .servicios::before {
+        background-attachment: scroll;
       }
 
       .servicios h2 {
