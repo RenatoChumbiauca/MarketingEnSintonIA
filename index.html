@@ -40,7 +40,7 @@
 
   <meta
     name="description"
-    content="Estrategia de marketing, comunicación, branding, contenidos, reputación e inteligencia artificial. Conoce la experiencia y proyectos de Renato Chumbiauca."
+    content="Estrategia, branding, contenidos, reputación e inteligencia artificial. Conoce mis servicios, experiencia y proyectos."
   >
 
   <meta
@@ -50,7 +50,7 @@
 
   <meta
     name="robots"
-    content="index, follow, max-image-preview:large"
+    content="index, follow, max-image-preview:large, max-snippet:150"
   >
 
   <link
@@ -61,6 +61,7 @@
 
   <!-- ========================================
        OPEN GRAPH
+       WHATSAPP / LINKEDIN / FACEBOOK
   ======================================== -->
 
   <meta
@@ -85,7 +86,7 @@
 
   <meta
     property="og:description"
-    content="Estrategia de marketing, comunicación, branding, contenidos, reputación e inteligencia artificial."
+    content="Estrategia, branding, contenidos, reputación e inteligencia artificial. Conoce mis servicios, experiencia y proyectos."
   >
 
   <meta
@@ -140,7 +141,7 @@
 
   <meta
     name="twitter:description"
-    content="Estrategia de marketing, comunicación, branding, contenidos, reputación e inteligencia artificial."
+    content="Estrategia, branding, contenidos, reputación e inteligencia artificial. Conoce mis servicios, experiencia y proyectos."
   >
 
   <meta
@@ -167,7 +168,7 @@
 
   <!-- ========================================
        DATOS ESTRUCTURADOS
-       REFORZAMOS EL NOMBRE DEL SITIO
+       SCHEMA.ORG
   ======================================== -->
 
   <script type="application/ld+json">
@@ -446,7 +447,6 @@
     .sobre-mi-inner {
       max-width: 1300px;
       margin: 0 auto;
-
       display: grid;
       grid-template-columns: 0.78fr 1.22fr;
       gap: 75px;
@@ -505,8 +505,7 @@
 
 
     /* ========================================
-       SERVICIOS
-       PARALLAX
+       SERVICIOS + PARALLAX
     ======================================== */
 
     .servicios {
@@ -543,8 +542,6 @@
       background-size: cover;
       background-position: center right;
       background-repeat: no-repeat;
-
-      /* PARALLAX */
       background-attachment: fixed;
 
       opacity: 0.42;
@@ -1829,7 +1826,6 @@
         padding: 75px 6% 85px;
       }
 
-      /* PARALLAX DESACTIVADO EN MÓVIL */
       .servicios::before {
         background-attachment: scroll;
       }
@@ -2413,9 +2409,15 @@
 
   <!-- ========================================
        EXPERIENCIA
+       DATA-NOSNIPPET:
+       EVITA QUE GOOGLE USE ESTOS PÁRRAFOS
+       COMO DESCRIPCIÓN PRINCIPAL
   ======================================== -->
 
-  <section class="experiencia">
+  <section
+    class="experiencia"
+    data-nosnippet
+  >
 
     <div
       class="experiencia-inner"
