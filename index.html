@@ -49,6 +49,16 @@
   >
 
   <meta
+    name="application-name"
+    content="Marketing en SintonIA"
+  >
+
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Marketing en SintonIA"
+  >
+
+  <meta
     name="robots"
     content="index, follow, max-image-preview:large, max-snippet:150"
   >
@@ -174,6 +184,32 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://marketingensintonia.com/#website",
+        "url": "https://marketingensintonia.com/",
+        "name": "Marketing en SintonIA",
+        "alternateName": "SintonIA",
+        "description": "Marketing, comunicación e inteligencia artificial.",
+        "inLanguage": "es-PE",
+        "publisher": {
+          "@id": "https://marketingensintonia.com/#renato"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://marketingensintonia.com/#webpage",
+        "url": "https://marketingensintonia.com/",
+        "name": "Renato Chumbiauca | Marketing, Comunicación e IA",
+        "description": "Estrategia, branding, contenidos, reputación e inteligencia artificial. Conoce mis servicios, experiencia y proyectos.",
+        "isPartOf": {
+          "@id": "https://marketingensintonia.com/#website"
+        },
+        "about": {
+          "@id": "https://marketingensintonia.com/#renato"
+        },
+        "inLanguage": "es-PE"
+      },
+      {
         "@type": "Person",
         "@id": "https://marketingensintonia.com/#renato",
         "name": "Renato Chumbiauca Rebagliati",
@@ -194,20 +230,6 @@
           "Sostenibilidad",
           "Inteligencia artificial"
         ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://marketingensintonia.com/#website",
-        "url": "https://marketingensintonia.com/",
-        "name": "Marketing en SintonIA",
-        "alternateName": [
-          "SintonIA"
-        ],
-        "description": "Marketing, comunicación e inteligencia artificial.",
-        "inLanguage": "es-PE",
-        "publisher": {
-          "@id": "https://marketingensintonia.com/#renato"
-        }
       }
     ]
   }
@@ -234,7 +256,7 @@
 
 
     /* ========================================
-       ANCLAS / STICKY HEADER
+       ANCLAS
     ======================================== */
 
     [id] {
@@ -356,6 +378,16 @@
       max-width: 760px;
     }
 
+    .site-brand-name {
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      opacity: 0.82;
+    }
+
     .nombre {
       color: #56d7d5;
       font-size: 17px;
@@ -383,6 +415,14 @@
       font-size: 21px;
       line-height: 1.65;
       margin-bottom: 36px;
+    }
+
+    .seo-summary {
+      max-width: 690px;
+      margin-top: 22px;
+      color: #9fb9c4;
+      font-size: 13.5px;
+      line-height: 1.65;
     }
 
 
@@ -446,6 +486,7 @@
     .sobre-mi-inner {
       max-width: 1300px;
       margin: 0 auto;
+
       display: grid;
       grid-template-columns: 0.78fr 1.22fr;
       gap: 75px;
@@ -504,7 +545,7 @@
 
 
     /* ========================================
-       SERVICIOS + PARALLAX
+       SERVICIOS
     ======================================== */
 
     .servicios {
@@ -1786,6 +1827,11 @@
         background-position: 65% center;
       }
 
+      .site-brand-name {
+        font-size: 11px;
+        letter-spacing: 1.8px;
+      }
+
       .nombre {
         font-size: 13px;
         letter-spacing: 2px;
@@ -1797,6 +1843,10 @@
 
       .frase {
         font-size: 18px;
+      }
+
+      .seo-summary {
+        font-size: 12.5px;
       }
 
       .sobre-mi {
@@ -2156,6 +2206,12 @@
 
     <div class="hero-content">
 
+
+      <div class="site-brand-name">
+        Marketing en SintonIA
+      </div>
+
+
       <div class="nombre">
         Renato Chumbiauca Rebagliati
       </div>
@@ -2201,6 +2257,13 @@
 
       </div>
 
+
+      <p class="seo-summary">
+        Estrategia, branding, contenidos, reputación e inteligencia artificial.
+        Conoce mis servicios, experiencia y proyectos.
+      </p>
+
+
     </div>
 
   </section>
@@ -2233,35 +2296,46 @@
           Sobre mí
         </div>
 
+
         <h2>
           Marketing, Comunicación y Sostenibilidad
         </h2>
 
+
         <p>
+
           <strong>
             Soy Renato Chumbiauca Rebagliati
           </strong>,
+
           profesional de marketing y comunicación
           con experiencia en estrategia, branding,
           reputación, sostenibilidad, contenidos
           y entornos digitales.
+
         </p>
 
+
         <p>
+
           Me interesa la relación entre estrategia,
           creatividad, datos e inteligencia artificial,
           así como las nuevas formas en las cuales
           las marcas construyen valor, gestionan
           su reputación y se relacionan con
           sus audiencias.
+
         </p>
 
+
         <p>
+
           Hoy pongo esa experiencia al servicio
           de organizaciones, marcas y profesionales
           a través de asesoría y proyectos en marketing,
           comunicación, branding, reputación,
           sostenibilidad y transformación digital.
+
         </p>
 
       </div>
@@ -2286,7 +2360,9 @@
         Servicios
       </h2>
 
+
       <div class="servicios-grid">
+
 
         <article class="servicio-card">
 
@@ -2384,6 +2460,7 @@
 
         </article>
 
+
       </div>
 
     </div>
@@ -2395,26 +2472,34 @@
        EXPERIENCIA
   ======================================== -->
 
-  <section
-    class="experiencia"
-    data-nosnippet
-  >
+  <section class="experiencia">
 
     <div
       class="experiencia-inner"
       id="experiencia"
     >
 
+
       <div class="experiencia-eyebrow">
         Trayectoria
       </div>
+
 
       <h2>
         Experiencia
       </h2>
 
 
-      <div class="timeline">
+      <!--
+        Solo el contenido detallado de experiencia
+        queda excluido como candidato para snippets
+        de Google.
+      -->
+
+      <div
+        class="timeline"
+        data-nosnippet
+      >
 
 
         <div class="timeline-item">
@@ -2425,6 +2510,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2432,6 +2518,7 @@
               alt="Universidad Científica del Sur"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2467,6 +2554,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2474,6 +2562,7 @@
               alt="Toulouse Lautrec"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2510,6 +2599,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2517,6 +2607,7 @@
               alt="Preciso Comunicación Integral"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2554,6 +2645,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2561,6 +2653,7 @@
               alt="MIGIVA Group"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2600,6 +2693,7 @@
 
           <div class="timeline-punto"></div>
 
+
           <article class="experiencia-card">
 
             <img
@@ -2607,6 +2701,7 @@
               alt="Libélula"
               class="experiencia-logo"
             >
+
 
             <div>
 
@@ -2640,11 +2735,15 @@
       </div>
 
 
-      <div class="otras-experiencias">
+      <div
+        class="otras-experiencias"
+        data-nosnippet
+      >
 
         <h3>
           Otras experiencias relevantes
         </h3>
+
 
         <div class="otras-grid">
 
@@ -2655,6 +2754,7 @@
               src="logo-cafe-taipa.png"
               alt="Café Taipá"
             >
+
 
             <div>
 
@@ -2681,6 +2781,7 @@
               src="logo-llyc.png"
               alt="LLYC"
             >
+
 
             <div>
 
@@ -2721,13 +2822,16 @@
       id="formacion"
     >
 
+
       <div class="formacion-eyebrow">
         Formación
       </div>
 
+
       <h2>
         Formación académica
       </h2>
+
 
       <p class="formacion-intro">
         Una trayectoria que conecta comunicación,
@@ -2746,9 +2850,11 @@
             class="formacion-imagen"
           >
 
+
           <h3>
             Universidad de San Martín de Porres
           </h3>
+
 
           <p>
             Formación profesional y de posgrado
@@ -2871,13 +2977,16 @@
       id="proyectos"
     >
 
+
       <div class="proyectos-eyebrow">
         Portafolio
       </div>
 
+
       <h2>
         Proyectos seleccionados
       </h2>
+
 
       <p class="proyectos-intro">
         Una selección de proyectos desarrollados
@@ -2904,6 +3013,7 @@
             </div>
 
           </div>
+
 
           <div class="proyecto-contenido">
 
@@ -2947,6 +3057,7 @@
 
           </div>
 
+
           <div class="proyecto-contenido">
 
             <div class="proyecto-categoria">
@@ -2988,6 +3099,7 @@
             </div>
 
           </div>
+
 
           <div class="proyecto-contenido">
 
@@ -3031,6 +3143,7 @@
 
           </div>
 
+
           <div class="proyecto-contenido">
 
             <div class="proyecto-categoria">
@@ -3071,6 +3184,7 @@
             </div>
 
           </div>
+
 
           <div class="proyecto-contenido">
 
@@ -3149,7 +3263,9 @@
           Newsletter
         </div>
 
+
         <div class="newsletter-linea"></div>
+
 
         <div class="newsletter-brand">
 
@@ -3208,15 +3324,18 @@
       id="contacto"
     >
 
+
       <div class="contacto-presentacion">
 
         <div class="contacto-eyebrow">
           Contacto
         </div>
 
+
         <h2>
           Conversemos
         </h2>
+
 
         <p class="contacto-intro">
           Si tienes un proyecto, una idea
@@ -3237,9 +3356,11 @@
             Email
           </div>
 
+
           <div class="contacto-dato">
             renato@marketingensintonia.com
           </div>
+
 
           <a
             href="mailto:renato@marketingensintonia.com?subject=Contacto%20desde%20Marketing%20en%20SintonIA&body=Hola%20Renato%2C%20quisiera%20conversar%20contigo."
@@ -3257,9 +3378,11 @@
             LinkedIn
           </div>
 
+
           <div class="contacto-dato">
             Renato Chumbiauca Rebagliati
           </div>
+
 
           <a
             href="https://www.linkedin.com/in/renatochumbiauca/"
@@ -3298,6 +3421,7 @@
             src="logo-sintonia.png"
             alt="Marketing en SintonIA"
           >
+
 
           <p class="footer-frase">
             Marketing, comunicación e inteligencia
@@ -3345,10 +3469,12 @@
 
       <div class="footer-bottom">
 
+
         <p class="footer-copy">
           © 2026 Renato Chumbiauca Rebagliati.
           Todos los derechos reservados.
         </p>
+
 
         <a
           href="#inicio"
@@ -3357,6 +3483,7 @@
         >
           Volver arriba ↑
         </a>
+
 
       </div>
 
