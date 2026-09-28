@@ -309,6 +309,7 @@
     .logo-link {
       display: flex;
       align-items: center;
+      gap: 12px;
       flex-shrink: 0;
       text-decoration: none;
     }
@@ -323,6 +324,24 @@
 
     .navbar.scrolled .logo {
       height: 54px;
+    }
+
+    .brand-name {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      opacity: 0.88;
+
+      transition:
+        opacity 0.25s ease,
+        color 0.25s ease;
+    }
+
+    .logo-link:hover .brand-name {
+      opacity: 1;
+      color: #56d7d5;
     }
 
     .navbar nav {
@@ -486,7 +505,6 @@
     .sobre-mi-inner {
       max-width: 1300px;
       margin: 0 auto;
-
       display: grid;
       grid-template-columns: 0.78fr 1.22fr;
       gap: 75px;
@@ -1669,6 +1687,10 @@
         height: 48px;
       }
 
+      .brand-name {
+        font-size: 11px;
+      }
+
       .hero,
       .sobre-mi,
       .servicios,
@@ -1802,6 +1824,11 @@
 
       .navbar.scrolled .logo {
         height: 44px;
+      }
+
+      .brand-name {
+        font-size: 10px;
+        letter-spacing: 0.3px;
       }
 
       .navbar nav {
@@ -2146,7 +2173,7 @@
       <a
         href="#inicio"
         class="logo-link"
-        aria-label="Volver al inicio"
+        aria-label="Marketing en SintonIA"
       >
 
         <img
@@ -2154,6 +2181,10 @@
           alt="Marketing en SintonIA"
           class="logo"
         >
+
+        <span class="brand-name">
+          Marketing en SintonIA
+        </span>
 
       </a>
 
@@ -2206,16 +2237,13 @@
 
     <div class="hero-content">
 
-
       <div class="site-brand-name">
         Marketing en SintonIA
       </div>
 
-
       <div class="nombre">
         Renato Chumbiauca Rebagliati
       </div>
-
 
       <h1>
 
@@ -2228,7 +2256,6 @@
 
       </h1>
 
-
       <p class="frase">
 
         Conecto estrategia, contenidos,
@@ -2236,7 +2263,6 @@
         marcas y experiencias con sentido.
 
       </p>
-
 
       <div class="botones">
 
@@ -2247,7 +2273,6 @@
           Conoce mi experiencia
         </a>
 
-
         <a
           href="#newsletter"
           class="boton boton-secundario"
@@ -2257,12 +2282,10 @@
 
       </div>
 
-
       <p class="seo-summary">
         Estrategia, branding, contenidos, reputación e inteligencia artificial.
         Conoce mis servicios, experiencia y proyectos.
       </p>
-
 
     </div>
 
@@ -2296,46 +2319,35 @@
           Sobre mí
         </div>
 
-
         <h2>
           Marketing, Comunicación y Sostenibilidad
         </h2>
 
-
         <p>
-
           <strong>
             Soy Renato Chumbiauca Rebagliati
           </strong>,
-
           profesional de marketing y comunicación
           con experiencia en estrategia, branding,
           reputación, sostenibilidad, contenidos
           y entornos digitales.
-
         </p>
 
-
         <p>
-
           Me interesa la relación entre estrategia,
           creatividad, datos e inteligencia artificial,
           así como las nuevas formas en las cuales
           las marcas construyen valor, gestionan
           su reputación y se relacionan con
           sus audiencias.
-
         </p>
 
-
         <p>
-
           Hoy pongo esa experiencia al servicio
           de organizaciones, marcas y profesionales
           a través de asesoría y proyectos en marketing,
           comunicación, branding, reputación,
           sostenibilidad y transformación digital.
-
         </p>
 
       </div>
@@ -2360,9 +2372,7 @@
         Servicios
       </h2>
 
-
       <div class="servicios-grid">
-
 
         <article class="servicio-card">
 
@@ -2460,7 +2470,6 @@
 
         </article>
 
-
       </div>
 
     </div>
@@ -2479,28 +2488,18 @@
       id="experiencia"
     >
 
-
       <div class="experiencia-eyebrow">
         Trayectoria
       </div>
-
 
       <h2>
         Experiencia
       </h2>
 
-
-      <!--
-        Solo el contenido detallado de experiencia
-        queda excluido como candidato para snippets
-        de Google.
-      -->
-
       <div
         class="timeline"
         data-nosnippet
       >
-
 
         <div class="timeline-item">
 
@@ -2510,7 +2509,6 @@
 
           <div class="timeline-punto"></div>
 
-
           <article class="experiencia-card">
 
             <img
@@ -2518,7 +2516,6 @@
               alt="Universidad Científica del Sur"
               class="experiencia-logo"
             >
-
 
             <div>
 
@@ -2554,7 +2551,6 @@
 
           <div class="timeline-punto"></div>
 
-
           <article class="experiencia-card">
 
             <img
@@ -2562,7 +2558,6 @@
               alt="Toulouse Lautrec"
               class="experiencia-logo"
             >
-
 
             <div>
 
@@ -2599,7 +2594,6 @@
 
           <div class="timeline-punto"></div>
 
-
           <article class="experiencia-card">
 
             <img
@@ -2607,7 +2601,6 @@
               alt="Preciso Comunicación Integral"
               class="experiencia-logo"
             >
-
 
             <div>
 
@@ -2645,7 +2638,6 @@
 
           <div class="timeline-punto"></div>
 
-
           <article class="experiencia-card">
 
             <img
@@ -2653,7 +2645,6 @@
               alt="MIGIVA Group"
               class="experiencia-logo"
             >
-
 
             <div>
 
@@ -2693,7 +2684,6 @@
 
           <div class="timeline-punto"></div>
 
-
           <article class="experiencia-card">
 
             <img
@@ -2701,7 +2691,6 @@
               alt="Libélula"
               class="experiencia-logo"
             >
-
 
             <div>
 
@@ -2731,7 +2720,6 @@
 
         </div>
 
-
       </div>
 
 
@@ -2744,9 +2732,7 @@
           Otras experiencias relevantes
         </h3>
 
-
         <div class="otras-grid">
-
 
           <div class="otra-item">
 
@@ -2754,7 +2740,6 @@
               src="logo-cafe-taipa.png"
               alt="Café Taipá"
             >
-
 
             <div>
 
@@ -2782,7 +2767,6 @@
               alt="LLYC"
             >
 
-
             <div>
 
               <strong>
@@ -2800,7 +2784,6 @@
             </div>
 
           </div>
-
 
         </div>
 
@@ -2822,25 +2805,20 @@
       id="formacion"
     >
 
-
       <div class="formacion-eyebrow">
         Formación
       </div>
 
-
       <h2>
         Formación académica
       </h2>
-
 
       <p class="formacion-intro">
         Una trayectoria que conecta comunicación,
         reputación y negocios digitales.
       </p>
 
-
       <div class="formacion-layout">
-
 
         <div class="formacion-institucion">
 
@@ -2850,11 +2828,9 @@
             class="formacion-imagen"
           >
 
-
           <h3>
             Universidad de San Martín de Porres
           </h3>
-
 
           <p>
             Formación profesional y de posgrado
@@ -2867,7 +2843,6 @@
 
 
         <div class="formacion-lista">
-
 
           <article class="formacion-item">
 
@@ -2956,7 +2931,6 @@
 
           </article>
 
-
         </div>
 
       </div>
@@ -2977,16 +2951,13 @@
       id="proyectos"
     >
 
-
       <div class="proyectos-eyebrow">
         Portafolio
       </div>
 
-
       <h2>
         Proyectos seleccionados
       </h2>
-
 
       <p class="proyectos-intro">
         Una selección de proyectos desarrollados
@@ -2994,7 +2965,6 @@
         estrategia digital y posicionamiento,
         para organizaciones y marcas de distintos sectores.
       </p>
-
 
       <div class="proyectos-grid">
 
@@ -3013,7 +2983,6 @@
             </div>
 
           </div>
-
 
           <div class="proyecto-contenido">
 
@@ -3057,7 +3026,6 @@
 
           </div>
 
-
           <div class="proyecto-contenido">
 
             <div class="proyecto-categoria">
@@ -3099,7 +3067,6 @@
             </div>
 
           </div>
-
 
           <div class="proyecto-contenido">
 
@@ -3143,7 +3110,6 @@
 
           </div>
 
-
           <div class="proyecto-contenido">
 
             <div class="proyecto-categoria">
@@ -3184,7 +3150,6 @@
             </div>
 
           </div>
-
 
           <div class="proyecto-contenido">
 
@@ -3227,7 +3192,6 @@
 
         </aside>
 
-
       </div>
 
     </div>
@@ -3246,7 +3210,6 @@
 
     <div class="newsletter-inner">
 
-
       <div class="newsletter-visual">
 
         <img
@@ -3256,16 +3219,13 @@
 
       </div>
 
-
       <div class="newsletter-content">
 
         <div class="newsletter-eyebrow">
           Newsletter
         </div>
 
-
         <div class="newsletter-linea"></div>
-
 
         <div class="newsletter-brand">
 
@@ -3275,7 +3235,6 @@
           >
 
         </div>
-
 
         <div class="newsletter-accion">
 
@@ -3287,7 +3246,6 @@
           >
             Suscríbete a Marketing en SintonIA →
           </a>
-
 
           <a
             href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7333666206127714305"
@@ -3324,18 +3282,15 @@
       id="contacto"
     >
 
-
       <div class="contacto-presentacion">
 
         <div class="contacto-eyebrow">
           Contacto
         </div>
 
-
         <h2>
           Conversemos
         </h2>
-
 
         <p class="contacto-intro">
           Si tienes un proyecto, una idea
@@ -3346,9 +3301,7 @@
 
       </div>
 
-
       <div class="contacto-opciones">
-
 
         <div class="contacto-item">
 
@@ -3356,11 +3309,9 @@
             Email
           </div>
 
-
           <div class="contacto-dato">
             renato@marketingensintonia.com
           </div>
-
 
           <a
             href="mailto:renato@marketingensintonia.com?subject=Contacto%20desde%20Marketing%20en%20SintonIA&body=Hola%20Renato%2C%20quisiera%20conversar%20contigo."
@@ -3371,18 +3322,15 @@
 
         </div>
 
-
         <div class="contacto-item">
 
           <div class="contacto-label">
             LinkedIn
           </div>
 
-
           <div class="contacto-dato">
             Renato Chumbiauca Rebagliati
           </div>
-
 
           <a
             href="https://www.linkedin.com/in/renatochumbiauca/"
@@ -3394,7 +3342,6 @@
           </a>
 
         </div>
-
 
       </div>
 
@@ -3411,9 +3358,7 @@
 
     <div class="footer-inner">
 
-
       <div class="footer-top">
-
 
         <div class="footer-brand">
 
@@ -3422,14 +3367,12 @@
             alt="Marketing en SintonIA"
           >
 
-
           <p class="footer-frase">
             Marketing, comunicación e inteligencia
             artificial en sintonía.
           </p>
 
         </div>
-
 
         <nav class="footer-nav">
 
@@ -3463,18 +3406,14 @@
 
         </nav>
 
-
       </div>
 
-
       <div class="footer-bottom">
-
 
         <p class="footer-copy">
           © 2026 Renato Chumbiauca Rebagliati.
           Todos los derechos reservados.
         </p>
-
 
         <a
           href="#inicio"
@@ -3483,7 +3422,6 @@
         >
           Volver arriba ↑
         </a>
-
 
       </div>
 
@@ -3501,7 +3439,6 @@
     const navbar =
       document.querySelector('.navbar');
 
-
     function actualizarNavbar() {
 
       if (window.scrollY > 40) {
@@ -3516,9 +3453,7 @@
 
     }
 
-
     actualizarNavbar();
-
 
     window.addEventListener(
       'scroll',
