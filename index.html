@@ -325,7 +325,26 @@
     .navbar.scrolled .logo {
       height: 54px;
     }
-.navbar nav {
+
+    .brand-name {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      opacity: 0.88;
+
+      transition:
+        opacity 0.25s ease,
+        color 0.25s ease;
+    }
+
+    .logo-link:hover .brand-name {
+      opacity: 1;
+      color: #56d7d5;
+    }
+
+    .navbar nav {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -377,7 +396,18 @@
     .hero-content {
       max-width: 760px;
     }
-.nombre {
+
+    .site-brand-name {
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      opacity: 0.82;
+    }
+
+    .nombre {
       color: #56d7d5;
       font-size: 17px;
       font-weight: 500;
@@ -478,7 +508,7 @@
       display: grid;
       grid-template-columns: 0.78fr 1.22fr;
       gap: 75px;
-      align-items: center;
+      align-items: start;
     }
 
     .sobre-mi-foto {
@@ -1656,7 +1686,12 @@
       .navbar.scrolled .logo {
         height: 48px;
       }
-.hero,
+
+      .brand-name {
+        font-size: 11px;
+      }
+
+      .hero,
       .sobre-mi,
       .servicios,
       .experiencia,
@@ -1790,7 +1825,13 @@
       .navbar.scrolled .logo {
         height: 44px;
       }
-.navbar nav {
+
+      .brand-name {
+        font-size: 10px;
+        letter-spacing: 0.3px;
+      }
+
+      .navbar nav {
         width: 100%;
         justify-content: flex-start;
         gap: 18px;
@@ -1812,7 +1853,13 @@
         padding: 180px 6% 60px;
         background-position: 65% center;
       }
-.nombre {
+
+      .site-brand-name {
+        font-size: 11px;
+        letter-spacing: 1.8px;
+      }
+
+      .nombre {
         font-size: 13px;
         letter-spacing: 2px;
       }
@@ -2134,7 +2181,12 @@
           alt="Marketing en SintonIA"
           class="logo"
         >
-</a>
+
+        <span class="brand-name">
+          Marketing en SintonIA
+        </span>
+
+      </a>
 
 
       <nav>
@@ -2184,7 +2236,12 @@
   >
 
     <div class="hero-content">
-<div class="nombre">
+
+      <div class="site-brand-name">
+        Marketing en SintonIA
+      </div>
+
+      <div class="nombre">
         Renato Chumbiauca Rebagliati
       </div>
 
@@ -2430,10 +2487,6 @@
       class="experiencia-inner"
       id="experiencia"
     >
-
-      <div class="experiencia-eyebrow">
-        Trayectoria
-      </div>
 
       <h2>
         Experiencia
@@ -2748,18 +2801,9 @@
       id="formacion"
     >
 
-      <div class="formacion-eyebrow">
-        Formación
-      </div>
-
       <h2>
-        Formación académica
+        Formación
       </h2>
-
-      <p class="formacion-intro">
-        Una trayectoria que conecta comunicación,
-        reputación y negocios digitales.
-      </p>
 
       <div class="formacion-layout">
 
@@ -2894,20 +2938,9 @@
       id="proyectos"
     >
 
-      <div class="proyectos-eyebrow">
-        Portafolio
-      </div>
-
       <h2>
-        Proyectos seleccionados
+        Proyectos
       </h2>
-
-      <p class="proyectos-intro">
-        Una selección de proyectos desarrollados
-        en comunicación, branding, contenidos,
-        estrategia digital y posicionamiento,
-        para organizaciones y marcas de distintos sectores.
-      </p>
 
       <div class="proyectos-grid">
 
@@ -2939,7 +2972,7 @@
 
             <div class="proyecto-tipo">
               Estrategia de comunicaciones para el
-              Consejo Nacional de Competitividad y Formalización
+              CNCF
             </div>
 
             <p class="proyecto-descripcion">
